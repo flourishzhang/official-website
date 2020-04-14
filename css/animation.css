@@ -1,0 +1,93 @@
+@keyframes fromBottom {
+    from {
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+        transform: translateY(100px);
+    }
+    to {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromRight {
+    from {
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromLeft {
+    from {
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+    to {
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes fromTop {
+    from {
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    to {
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.fromBottom{
+    opacity: 0;
+    -webkit-animation: 1s ease forwards alternate;
+    -o-animation: 1s ease forwards alternate;
+    animation: 1s ease forwards alternate;
+}
+.fromRight{
+    opacity: 0;
+    -webkit-animation: 1s ease forwards alternate;
+    -o-animation: 1s ease forwards alternate;
+    animation: 1s ease forwards alternate;
+}
+.fromLeft{
+    opacity: 0;
+    -webkit-animation: 1s ease forwards alternate;
+    -o-animation: 1s ease forwards alternate;
+    animation: 1s ease forwards alternate;
+}
+
+.fromTop{
+    opacity: 0;
+    -webkit-animation: 1s ease forwards alternate;
+    -o-animation: 1s ease forwards alternate;
+    animation: 1s ease forwards alternate;
+}
