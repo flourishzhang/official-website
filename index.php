@@ -23,7 +23,8 @@ switch ($do) {
     case "warehouse":require("pc/warehouse.php");break;//
     case "work":require("pc/work.php");break;//
     case "wu":require("pc/wu.php");break;//
-    case "phonedemo":require("phone/demo.php");break;//
+    case "phoneInternet":require("phone/Internet.php");break;//
+    case "phonemovie":require("phone/movie.php");break;//
     case "phonenews_det":require("phone/news_det.php");break;//
     case "phonenews":require("phone/news.php");break;//
     case "phonepower":require("phone/power.php");break;//

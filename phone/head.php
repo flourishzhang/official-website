@@ -28,22 +28,22 @@
                 <div  style="margin: 35px 15px 10px;color: #333; ">官网导航</div>
                 <ul style="background: #fff;color: #333;" class="mui-table-view">
                     <li class="mui-table-view-cell">
-                        <a>首页</a>
+                        <a href="<?php SiteUrl();?>/index.html">首页</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a>物联网</a>
+                        <a href="<?php SiteUrl();?>/phonessWu.html">物联网</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a>解决方案</a>
+                        <a href="<?php SiteUrl();?>/sFang.html">解决方案</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a>新闻资讯</a>
+                        <a href="<?php SiteUrl();?>/news.html">新闻资讯</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a>人才合作</a>
+                        <a href="<?php SiteUrl();?>/sWork.html">人才合作</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a>关于我们</a>
+                        <a href="<?php SiteUrl();?>/sGuan.html">关于我们</a>
                     </li>
                 </ul>
             </div>

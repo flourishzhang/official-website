@@ -2,8 +2,9 @@
 <?php
 $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 $type = isset($_GET["type"]) ? $_GET["type"] : null;
-$totalpage = ceil (GetNewsTotalCount (1, $type, null, true) / 5);
-$newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`", 1, $type, null, 1, $page, 5, true);
+$keyword = isset($_GET["keyword"]) ? $_GET["keyword"] : null;
+$totalpage = ceil (GetNewsTotalCount (1, $type, $keyword, true) / 5);
+$newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`", 1, $type, $keyword, 1, $page, 5, true);
 ?>
 <html lang="en">
     <head>
@@ -45,7 +46,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
             <input type="text" id="w_input_news" placeholder="请输入关键字搜索">
         </div>
         <div class="w-news-btn">
-            <a id="w_news_search" data-url="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>">搜索</a>
+            <a id="w_news_search" data-url="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>-keyword-">搜索</a>
         </div>
     </div>
     <div class="w-news-box4">
@@ -73,7 +74,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
 if ($page > 1) {
 ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html" class="bianse">首页</a>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html" class="bianse">首页</a>
                 </li>
 <?php
 }
@@ -86,11 +87,11 @@ if ($totalpage < 5) {
                 </li>
 <?php   } else if ($i == 1) { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php   } else { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php
         }
@@ -104,7 +105,7 @@ if ($totalpage < 5) {
                 </li>
 <?php   } else { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php
         }
@@ -118,11 +119,11 @@ if ($totalpage < 5) {
                 </li>
 <?php   } else if ($i == 1) { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php   } else { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php
         }
@@ -136,7 +137,7 @@ if ($totalpage < 5) {
                 </li>
 <?php   } else { ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><?php echo $i;?></a>
                 </li>
 <?php
         }
@@ -145,7 +146,7 @@ if ($totalpage < 5) {
 if ($page != $totalpage) {
 ?>
                 <li>
-                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?>.html" class="bianse">尾页</a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html" class="bianse">尾页</a>
                 </li>
 <?php
 }

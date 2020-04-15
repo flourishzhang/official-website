@@ -81,7 +81,7 @@ $("#w_input_news").bind("input propertychange",function(event){
        let keyword = $("#w_input_news").val()
        let url = $("#w_news_search").attr('data-url')
        if(keyword.length!=0){
-        $("#w_news_search").attr('href',url+'-'+ keyword+'.html')
+        $("#w_news_search").attr('href',url+ keyword+'.html')
        }else{
         $("#w_news_search").attr('href','javascript:')
        }
