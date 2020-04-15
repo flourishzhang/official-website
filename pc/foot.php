@@ -66,12 +66,25 @@ function theLocation() {
 }
 theLocation();
 
+let keyword1 = $("#w_input_news").val()
+let url1 = $("#w_news_search").attr('data-url')
+if(keyword1.length!=0){
+    $("#w_news_search").attr('href',url1+'-'+ keyword1+'.html')
+}else{
+    $("#w_news_search").attr('href','javascript:')
+}
+
+
 $("#w_input_news").bind("input propertychange",function(event){
        console.log($("#w_input_news").val())
        console.log($("#w_news_search").attr('data-url'))
        let keyword = $("#w_input_news").val()
        let url = $("#w_news_search").attr('data-url')
-       $("#w_news_search").attr('href',url+'-'+ keyword+'.html')
+       if(keyword.length!=0){
+        $("#w_news_search").attr('href',url+'-'+ keyword+'.html')
+       }else{
+        $("#w_news_search").attr('href','javascript:')
+       }
 });
 </script>
 </html>

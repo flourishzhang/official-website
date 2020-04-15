@@ -751,6 +751,9 @@ nav:hover {
     font-size: 23px;
 }
 .w-news-box3>.w-news-btn>a{
+    display: block;
+    width: 100%;
+    height: 100%;
     color: #fff;
     text-decoration: none;
 }
