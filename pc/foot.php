@@ -65,5 +65,13 @@ function theLocation() {
     map.panTo(new_point);
 }
 theLocation();
+
+$("#w_input_news").bind("input propertychange",function(event){
+       console.log($("#w_input_news").val())
+       console.log($("#w_news_search").attr('data-url'))
+       let keyword = $("#w_input_news").val()
+       let url = $("#w_news_search").attr('data-url')
+       $("#w_news_search").attr('href',url+'-'+ keyword+'.html')
+});
 </script>
 </html>

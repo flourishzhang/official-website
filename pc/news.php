@@ -42,10 +42,10 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
     </div>
     <div class="w-news-box3 clearfix">
         <div class="w-news-input">
-            <input type="text" placeholder="请输入关键字搜索">
+            <input type="text" id="w_input_news" placeholder="请输入关键字搜索">
         </div>
         <div class="w-news-btn">
-            <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html">搜索</a>
+            <a id="w_news_search" data-url="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>">搜索</a>
         </div>
     </div>
     <div class="w-news-box4">
