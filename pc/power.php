@@ -21,7 +21,7 @@
     </div>
     <div class="y-power-box2">
         <div class="y-power-return">
-            <a href="">
+            <a href="<?php SiteUrl();?>/fang.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>

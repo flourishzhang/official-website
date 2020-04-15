@@ -220,9 +220,14 @@ nav:hover {
     background: #60c0ff;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
-
-.w-index-box2>.w-index-content>.w-index-left>.w-index-btn>.iconfont {
+.w-index-box2>.w-index-content>.w-index-left>.w-index-btn>a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.w-index-box2>.w-index-content>.w-index-left>.w-index-btn>a>.iconfont {
     font-size: 20px;
 }
 
@@ -333,9 +338,14 @@ nav:hover {
     background: #5966d1;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
-
-.w-index-box3>.w-index-ul>div>.w-index-btn>.iconfont {
+.w-index-box3>.w-index-ul>div>.w-index-btn>a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.w-index-box3>.w-index-ul>div>.w-index-btn>a>.iconfont {
     font-size: 20px;
 }
 
@@ -498,15 +508,19 @@ nav:hover {
     float: left;
     width: 40%;
     height: 500px;
+    cursor: pointer;
 }
-
-.w-index-box5>.w-index-content>.w-index-news>img {
+.w-index-box5>.w-index-content>.w-index-news>a{
+    text-decoration: none;
+}
+.w-index-box5>.w-index-content>.w-index-news>a>img {
     width: 100%;
 }
 
-.w-index-box5>.w-index-content>.w-index-news>div {
+.w-index-box5>.w-index-content>.w-index-news>a>div {
     width: 100%;
     height: 60px;
+    color: #333;
     line-height: 60px;
     font-size: 26px;
     font-weight: bold;
@@ -515,7 +529,7 @@ nav:hover {
     overflow: hidden;
 }
 
-.w-index-box5>.w-index-content>.w-index-news>p {
+.w-index-box5>.w-index-content>.w-index-news>a>p {
     font-size: 17px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -560,19 +574,23 @@ nav:hover {
 .w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context {
     float: right;
     width: 76%;
+    cursor: pointer;
 }
-
-.w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context>h3 {
+.w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context>a{
+    text-decoration: none;
+}
+.w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context>a>h3 {
     width: 100%;
     height: 60px;
     font-size: 28px;
+    color: #333;
     font-weight: bold;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context>p {
+.w-index-box5>.w-index-content>.w-index-more>.w-index-ul>.w-index-new-context>a>p {
     font-size: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -597,9 +615,14 @@ nav:hover {
     background: #60c0ff;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
 }
-
-.w-index-box5>.w-index-content>.w-index-more>.w-index-btn>.iconfont {
+.w-index-box5>.w-index-content>.w-index-more>.w-index-btn>a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.w-index-box5>.w-index-content>.w-index-more>.w-index-btn>a>.iconfont {
     font-size: 20px;
 }
 
@@ -726,6 +749,10 @@ nav:hover {
     text-align: center;
     line-height: 60px;
     font-size: 23px;
+}
+.w-news-box3>.w-news-btn>a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .w-news-box4 {
@@ -1753,6 +1780,10 @@ nav:hover {
     border-radius: 3px;
     margin-top: 10px;
 }
+.w-p-index-box2>.w-index-btn>a{
+    color: #fff;
+    text-decoration: none;
+}
 .w-p-index-box2>.w-index-btn>.iconfont{
     font-size: 15px;
 }
@@ -1986,8 +2017,10 @@ nav:hover {
     text-align: center;
     font-size: 14px;
 }
+.w-p-news-box2>div>a{
+    color: #333;
+}
 .w-p-news-box2>.active{
-    height: 38px;
     line-height: 40px;
     border-bottom: 2px solid blue;
 }

@@ -1,3 +1,11 @@
+<?php
+$articleid = $_GET["id"];
+$type = isset($_GET["type"]) ? $_GET["type"] : null;
+$info = GetArticleInfo ($articleid, true);
+$articleinfo = $info["articleinfo"];
+$previousArticleInfo = $info["previousArticleInfo"];
+$nextArticleInfo = $info["nextArticleInfo"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,47 +30,53 @@
     <div class="y-detail-box2">
         <div class="y-detail-title">
             <ul class="clearfix">
-                <li  class="active">
-                    <a href=""> ALL +</a>
+                <li  <?php if ($type == null) echo " class=\"active\"";?>>
+                    <a href="<?php SiteUrl();?>/news.html"> ALL +</a>
                 </li>
-                <li >
-                    <a href=""> 公司动态</a>
+                <li <?php if ($type == 1) echo " class=\"active\"";?>>
+                    <a href="<?php SiteUrl();?>/news-type-1.html"> 公司动态</a>
                 </li>
-                <li>
-                    <a href=""> 媒体报道</a>
+                <li <?php if ($type == 2) echo " class=\"active\"";?>>
+                    <a href="<?php SiteUrl();?>/news-type-2.html"> 媒体报道</a>
                 </li>
-                <li>
-                    <a href=""> 行业资讯</a>
+                <li <?php if ($type == 3) echo " class=\"active\"";?>>
+                    <a href="<?php SiteUrl();?>/news-type-3.html"> 行业资讯</a>
                 </li>
             </ul>
         </div>
         <div class="y-detail-body">
             <div class="return">
-                <a class="p1">返回ALL+ 列表
+                <a  href="<?php SiteUrl();?>/news.html" class="p1">返回ALL+ 列表
                     <span class="iconfont iconxiangzuo"></span>
                 </a>
             </div>
             <div class="body-title">
-                <h3>学习篇 ---利用C语言写http以及https客户端 -1.1版本</h3>
-                <p>2020-03-11 16:00:00</p>
-                <div class="body-text"></div>
+                <h3><?php echo $articleinfo["title"];?></h3>
+                <p><?php echo $articleinfo["publishtime"];?></p>
+                <div class="body-text"><?php echo $articleinfo["content"];?></div>
             </div>
             <div class="body-foot">
                 <ul class="clearfix">
                     <li>
                         <span>文章来源：</span>
-                        <a href=""><span>沃航科技</span></a>
+                        <a href="<?php SiteUrl();?><?php RecommendPcUrl ();?>"><span><?php RecommendName ();?></span></a>
                     </li>
                     <li>
-
                         <span>优秀解决方案推荐：</span>
-                        <a href=""><span>沃航科技</span></a>
+                        <a href="<?php SiteUrl();?><?php RecommendPcUrl ();?>"><span><?php RecommendName ();?></span></a>
                     </li>
+                    <?php if ($previousArticleInfo["articleid"] != 0) { ?>
                     <li>
-
                         <span>上一篇：</span>
-                        <a href=""><span>沃航科技</span></a>
+                        <a href="<?php SiteUrl();?>/detail-id-<?php echo $previousArticleInfo["articleid"];?>.html"><span><?php echo $previousArticleInfo["title"];?></span></a>
                     </li>
+                    <?php } ?>
+                    <?php if ($nextArticleInfo["articleid"] != 0) { ?>
+                    <li>
+                        <span>下一篇：</span>
+                        <a href="<?php SiteUrl();?>/detail-id-<?php echo $nextArticleInfo["articleid"];?>.html">"><span><?php echo $nextArticleInfo["title"];?></span></a>
+                    </li>
+                    <?php } ?>
                 </ul>
             </div>
         </div>

@@ -21,7 +21,7 @@
         <img src="../img/warehouse/wh_box1.png" alt="">
     </div>
     <div class="w-wh-box2">
-        <a class="w-wh-return" href="">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-wh-return" href="<?php SiteUrl();?>/fang.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 系统简介

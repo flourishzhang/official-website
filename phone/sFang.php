@@ -9,31 +9,33 @@
                 <img src="../img/s-fang/titleright.png" style="margin-left:0.5em">
             </div>
         </div>
-        <div class="y-ph-fang-body clearfix">
-            <a href="">
-                <img src="../img/s-fang/f1.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f2.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f3.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f4.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f5.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f6.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f7.png">
-            </a>
-            <a href="">
-                <img src="../img/s-fang/f8.png">
-            </a>
+        <div class="y-ph-fang-body ">
+            <ul  class="clearfix">
+                <li>
+                    <img src="../img/s-fang/f1.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f2.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f3.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f4.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f5.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f6.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f7.png">
+                </li>
+                <li>
+                    <img src="../img/s-fang/f8.png">
+                </li>
+            </ul>
         </div>
     </div>
 <?php require ("phone/foot.php");?>

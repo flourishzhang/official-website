@@ -12,7 +12,7 @@
         <div class="w-index-contant">
             <img src="../img/phone_index/index_box2.png" alt="">
         </div>
-        <div class="w-index-btn">查看更多<span class="iconfont iconxiangyou"></span></div>
+        <div class="w-index-btn"><a href="">查看更多<span class="iconfont iconxiangyou"></span></a></div>
     </div>
     <div class="w-p-index-box3">
         <div class="w-index-title">

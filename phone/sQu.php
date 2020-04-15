@@ -23,22 +23,24 @@
                 <img src="../img/s-qu/t1.png" alt="">
             </div>
         </div>
-        <div class="y-ph-qu-body3  clearfix">
-            <a href="">
-                <img src="../img/s-qu/g1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/g2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/g3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/g4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/g5.png" alt="">
-            </a>
+        <div class="y-ph-qu-body3 ">
+            <ul  class="clearfix">
+                <li>
+                    <img src="../img/s-qu/g1.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/g2.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/g3.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/g4.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/g5.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
     <div class="y-ph-qu-box4">
@@ -48,33 +50,35 @@
             </div>
         </div>
         <div class="y-ph-qu-body4 clearfix">
-            <a href="">
-                <img src="../img/s-qu/s1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s5.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s6.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s7.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s8.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/s9.png" alt="">
-            </a>
+            <ul>
+                <li>
+                    <img src="../img/s-qu/s1.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s2.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s3.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s4.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s5.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s6.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s7.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s8.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/s9.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
     <div class="y-ph-qu-box5">
@@ -93,25 +97,27 @@
                 <img src="../img/s-qu/t1.png" alt="">
             </div>
         </div>
-        <div class="y-ph-qu-body6 clearfix">
-            <a href="">
-                <img src="../img/s-qu/y1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/y2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/y3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/y4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/y5.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-qu/y6.png" alt="">
-            </a>
+        <div class="y-ph-qu-body6 ">
+            <ul  class="clearfix">
+                <li>
+                    <img src="../img/s-qu/y1.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/y2.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/y3.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/y4.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/y5.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-qu/y6.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
 <?php require ("phone/foot.php");?>

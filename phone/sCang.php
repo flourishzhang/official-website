@@ -13,25 +13,27 @@
                 <img src="../img/s-cang/t1.png" alt="">
             </div>
         </div>
-        <div class="y-ph-cang-body2  clearfix">
-            <a href="">
-                <img src="../img/s-cang/x1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/x2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/x3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/x4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/x5.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/x6.png" alt="">
-            </a>
+        <div class="y-ph-cang-body2">
+            <ul class="clearfix">
+                <li>
+                    <img src="../img/s-cang/x1.png" alt="">
+                </li>
+                <li >
+                    <img src="../img/s-cang/x2.png" alt="">
+                </li>
+                <li >
+                    <img src="../img/s-cang/x3.png" alt="">
+                </li>
+                <li >
+                    <img src="../img/s-cang/x4.png" alt="">
+                </li>
+                <li >
+                    <img src="../img/s-cang/x5.png" alt="">
+                </li>
+                <li >
+                    <img src="../img/s-cang/x6.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
     <div class="y-ph-cang-box3">
@@ -41,7 +43,7 @@
             </div>
         </div>
         <div class="y-ph-cang-body3  ">
-            <ul class="clearfix">
+            <ul >
                 <li>
                     <img src="../img/s-cang/c1.png" alt="">
                 </li>
@@ -61,27 +63,29 @@
             </div>
         </div>
         <div class="y-ph-cang-body4  ">
-            <a href="">
-                <img src="../img/s-cang/g1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g5.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g6.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-cang/g7.png" alt="">
-            </a>
+            <ul class="clearfix">
+                <li>
+                    <img src="../img/s-cang/g1.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g2.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g3.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g4.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g5.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g6.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-cang/g7.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
 <?php require ("phone/foot.php");?>

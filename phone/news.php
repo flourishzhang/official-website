@@ -3,10 +3,10 @@
         <img src="../img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-news-box2 clearfix">
-        <div class="active">ALL+</div>
-        <div>公司动态</div>
-        <div>媒体报道</div>
-        <div>行业资讯</div>
+        <div class="active"><a href="">ALL+</a></div>
+        <div><a href="">公司动态</a></div>
+        <div><a href="">媒体报道</a></div>
+        <div><a href="">行业资讯</a></div>
     </div>
     <div class="w-p-news-box3">
         <ul>

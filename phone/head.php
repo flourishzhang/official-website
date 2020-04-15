@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/wstyle.css">
+    <link rel="stylesheet" href="../css/ystyle.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <script src="../js/jquery-2.0.3.min.js"></script>
     <script src="../js/mui.min.js"></script>

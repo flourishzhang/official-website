@@ -21,7 +21,7 @@
         <img src="../img/movie/moive_box1.png" alt="">
     </div>
     <div class="w-mv-box2">
-        <a class="w-mv-return" href="">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-mv-return" href="<?php SiteUrl();?>/fang.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-mv-title">
             <div>
                 方案简介

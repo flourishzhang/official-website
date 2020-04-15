@@ -1,20 +1,24 @@
 <!DOCTYPE html>
+<?php
+$page = isset($_GET["page"]) ? $_GET["page"] : 1;
+$type = isset($_GET["type"]) ? $_GET["type"] : null;
+$totalpage = ceil (GetNewsTotalCount (1, $type, null, true) / 5);
+$newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`", 1, $type, null, 1, $page, 5, true);
+?>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新闻资讯</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <script src="../js/jquery-2.0.3.min.js"></script>
-    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/banner.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新闻资讯</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/init.css">
+        <link rel="stylesheet" href="../css/wstyle.css">
+        <link rel="stylesheet" href="../css/iconfont.css">
+        <script src="../js/jquery-2.0.3.min.js"></script>
+        <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+        <script src="../js/banner.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    </head>
 <body>
 <?php require ("pc/head.php");?>
     <div class="w-news-box1">
@@ -22,17 +26,17 @@
     </div>
     <div class="w-news-box2">
         <ul class="clearfix">
-            <li class="active">
-                <a href=""> ALL +</a>
+            <li <?php if ($type == null) echo " class=\"active\"";?>>
+                <a href="<?php SiteUrl();?>/news.html"> ALL +</a>
             </li>
-            <li>
-                <a href=""> 公司动态</a>
+            <li <?php if ($type == 1) echo " class=\"active\"";?>>
+                <a href="<?php SiteUrl();?>/news-type-1.html"> 公司动态</a>
             </li>
-            <li>
-                <a href=""> 媒体报道</a>
+            <li <?php if ($type == 2) echo " class=\"active\"";?>>
+                <a href="<?php SiteUrl();?>/news-type-2.html"> 媒体报道</a>
             </li>
-            <li>
-                <a href=""> 行业资讯</a>
+            <li <?php if ($type == 3) echo " class=\"active\"";?>>
+                <a href="<?php SiteUrl();?>/news-type-3.html"> 行业资讯</a>
             </li>
         </ul>
     </div>
@@ -40,108 +44,112 @@
         <div class="w-news-input">
             <input type="text" placeholder="请输入关键字搜索">
         </div>
-        <div class="w-news-btn">搜索</div>
+        <div class="w-news-btn">
+            <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html">搜索</a>
+        </div>
     </div>
     <div class="w-news-box4">
         <ul class="clearfix">
+        <?php foreach ($newsList as $news) { ?>
             <li>
-                <a href="">
+                <a  href="<?php SiteUrl ();?>/detail-id-<?php echo $news["articleid"];?>.html">
                     <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
+                        <img src="<?php SiteUrl ();echo $news["thumbnail"];?>">
                     </div>
                     <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
+                        <p><?php echo $news["title"];?></p>
+                        <p><?php echo $news["desc"];?></p>
+                        <p><?php echo $news["publishtime"];?></p>
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
-                    </div>
-                    <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
-                    </div>
-                    <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
-                    </div>
-                    <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
-                    </div>
-                    <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <div class="new-left">
-                        <img src="../img/news/news_bx4.png">
-                    </div>
-                    <div class="new-right">
-                        <p>wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景wfproxy是沃航科技推出的最新工具，旨在解决企业内网穿透，远程办公等使用场景</p>
-                        <p>该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。该工具目前实现了socks5代理功能，根据实际使用情况以及功能，用户可根据软件，配合wfvpn进行内网访问。</p>
-                        <p>2020-03-12 21:40:20</p>
-                    </div>
-                </a>
-            </li>
+        <?php } ?>
         </ul>
     </div>
     <div class="w-news-box5">
         <div class="new-page">
             <ul class="clearfix">
+            <?php
+if ($page > 1) {
+?>
                 <li>
-                    <a href="" class="bianse">首页</a>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html" class="bianse">首页</a>
                 </li>
+<?php
+}
+if ($totalpage < 5) {
+    for ($i = 1 ; $i <= $totalpage ; $i++) {
+        if ($i == $page) {
+?>
                 <li>
-                    <a href="javascript:;" class="active-a">1</a>
+                    <a href="javascript:;" class="active-a"><?php echo $i;?></a>
                 </li>
+<?php   } else if ($i == 1) { ?>
                 <li>
-                    <a href="javascript:;">1</a>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
                 </li>
+<?php   } else { ?>
                 <li>
-                    <a href="javascript:;">2</a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
                 </li>
+<?php
+        }
+    }
+} else if ($totalpage - $page <= 2) {
+    for ($i = $totalpage-5 ; $i <= $totalpage ; $i++) {
+        if ($i == $page) {
+?>
                 <li>
-                    <a href="javascript:;">3</a>
+                    <a href="javascript:;" class="active-a"><?php echo $i;?></a>
                 </li>
+<?php   } else { ?>
                 <li>
-                    <a href="javascript:;">4</a>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
                 </li>
+<?php
+        }
+    }
+} else if ($page <= 2) {
+    for ($i = 1 ; $i <= 5 ; $i++) {
+        if ($i == $page) {
+?>
                 <li>
-                    <a href="javascript:;" class="bianse">尾页</a>
+                    <a href="javascript:;" class="active-a"><?php echo $i;?></a>
                 </li>
+<?php   } else if ($i == 1) { ?>
+                <li>
+                    <a href="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                </li>
+<?php   } else { ?>
+                <li>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                </li>
+<?php
+        }
+    }
+} else {
+    for ($i = $page-2 ; $i <= $page+2 ; $i++) {
+        if ($i == $page) {
+?>
+                <li>
+                    <a href="javascript:;" class="active-a"><?php echo $i;?></a>
+                </li>
+<?php   } else { ?>
+                <li>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $i;if ($type != 0) echo "-type-".$type;?>.html"><?php echo $i;?></a>
+                </li>
+<?php
+        }
+    }
+}
+if ($page != $totalpage) {
+?>
+                <li>
+                    <a href="<?php SiteUrl ();?>/news-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?>.html" class="bianse">尾页</a>
+                </li>
+<?php
+}
+?>
             </ul>
         </div>
     </div>

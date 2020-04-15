@@ -20,22 +20,24 @@
                 <img src="../img/s-guan/titleright.png" style="margin-left:0.5em">
             </div>
         </div>
-        <div class="y-ph-guan-body3 clearfix">
-            <a href="">
-                <img src="../img/s-guan/g1.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-guan/g2.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-guan/g3.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-guan/g4.png" alt="">
-            </a>
-            <a href="">
-                <img src="../img/s-guan/g5.png" alt="">
-            </a>
+        <div class="y-ph-guan-body3 ">
+            <ul  class="clearfix">
+                <li>
+                    <img src="../img/s-guan/g1.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-guan/g2.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-guan/g3.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-guan/g4.png" alt="">
+                </li>
+                <li>
+                    <img src="../img/s-guan/g5.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
     <div class="y-ph-guan-box4">

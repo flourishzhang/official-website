@@ -21,7 +21,7 @@
         <img src="../img/community/community_box1.png" alt="">
     </div>
     <div class="w-ct-box2">
-        <a class="w-ct-return" href="">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php SiteUrl();?>/fang.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-ct-title">
             <div>
                 方案简介

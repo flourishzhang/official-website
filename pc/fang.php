@@ -29,7 +29,7 @@
             </div>
             <ul class="clearfix">
                 <li>
-                    <a>
+                    <a href="<?php SiteUrl();?>/warehouse.html">
                         <img src="../img/fang/f1.png">
                         <h3>仓库管理系统</h3>
                         <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
@@ -37,57 +37,61 @@
                         <p class="y-more1">查看更多
                             <span class="iconfont iconxiangyou"></span>
                         </p>
-
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="../img/fang/f2.png">
-                        <h3> 智慧小区</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
-                        </p>
-                        <p class="y-more1">查看更多
-                            <span class="iconfont iconxiangyou"></span></p>
+                    <a href="<?php SiteUrl();?>/community.html">
+                    <img src="../img/fang/f2.png">
+                    <h3> 智慧小区</h3>
+                    <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                    </p>
+                    <p class="y-more1">查看更多
+                        <span class="iconfont iconxiangyou"></span>
+                    </p>
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="../img/fang/f3.png">
-                        <h3> 电力远程控制</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
-                        </p>
-                        <p class="y-more1">查看更多
-                            <span class="iconfont iconxiangyou"></span></p>
+                    <a href="<?php SiteUrl();?>/power.html">
+                    <img src="../img/fang/f3.png">
+                    <h3> 电力远程控制</h3>
+                    <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                    </p>
+                    <p class="y-more1">查看更多
+                        <span class="iconfont iconxiangyou"></span>
+                    </p>
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="../img/fang/f4.png">
-                        <h3> 智慧农业</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
-                        </p>
-                        <p class="y-more1">查看更多
-                            <span class="iconfont iconxiangyou"></span></p>
+                    <a href="<?php SiteUrl();?>/nong.html">
+                    <img src="../img/fang/f4.png">
+                    <h3> 智慧农业</h3>
+                    <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                    </p>
+                    <p class="y-more1">查看更多
+                        <span class="iconfont iconxiangyou"></span>
+                    </p>
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="../img/fang/f5.png">
-                        <h3> 影院服务平台</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
-                        </p>
-                        <p class="y-more1">查看更多
-                            <span class="iconfont iconxiangyou"></span></p>
+                    <a href="<?php SiteUrl();?>/movie.html">
+                    <img src="../img/fang/f5.png">
+                    <h3> 影院服务平台</h3>
+                    <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                    </p>
+                    <p class="y-more1">查看更多
+                        <span class="iconfont iconxiangyou"></span>
+                    </p>
                     </a>
                 </li>
                 <li>
-                    <a>
-                        <img src="../img/fang/f6.png">
-                        <h3> 无人网吧</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
-                        </p>
-                        <p class="y-more1">查看更多
-                            <span class="iconfont iconxiangyou"></span></p>
+                    <a href="<?php SiteUrl();?>/bar.html">
+                    <img src="../img/fang/f6.png">
+                    <h3> 无人网吧</h3>
+                    <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                    </p>
+                    <p class="y-more1">查看更多
+                        <span class="iconfont iconxiangyou"></span>
+                    </p>
                     </a>
                 </li>
                 <!-- <li>
@@ -96,6 +100,7 @@
                         <h3> 单片机</h3>
                         <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
                         </p>
+
                         <p class="y-more1">查看更多
                             <span class="iconfont iconxiangyou"></span></p>
                     </a>
@@ -106,6 +111,7 @@
                         <h3> 嵌入式</h3>
                         <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
                         </p>
+
                         <p class="y-more1">查看更多
                             <span class="iconfont iconxiangyou"></span></p>
                     </a>
