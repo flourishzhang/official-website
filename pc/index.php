@@ -43,7 +43,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <p style="padding-top:10px;">经营范围为:系统集成;信息技术咨询服务;数据处理;软 件开发;设计服务;商标代理服务;知识产权代理服务;广告 设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务; 工业设计;服务器搬迁维护等。
                 </p>
                 <div class="w-index-btn">
-                    <a href="<?php SiteUrl();?>/guan.html"> 查看更多<span class="iconfont icongengduo"></span></a>
+                    <a href="<?php SiteUrl();?>/about.html"> 查看更多<span class="iconfont icongengduo"></span></a>
                 </div>
             </div>
             <div class="w-index-right">
@@ -66,7 +66,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <h3>仓储管理系统</h3>
                 <p>系统采用业界主流的硬件平台、操 作系统平台、数据库平台以及标准 的协议,保证系统的开放性。采用 分散控制、集中管理的结构,使得 系统可扩充性很强。</p>
                 <div class="w-index-btn">
-                    <a href="<?php SiteUrl();?>/warehouse.html">查看更多<span class="iconfont icongengduo"></span></a>
+                    <a href="<?php SiteUrl();?>/gym.html">查看更多<span class="iconfont icongengduo"></span></a>
                 </div>
             </div>
             <div class="w-index-top" style="margin: 20px 30px;">
@@ -85,7 +85,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <h3>电力远程控制</h3>
                 <p>通过网络监控各个设备结点。以分 散监控集中管理的方式有效解决用 电单位电气线路老旧、小微企业无 专业电工、肉眼无法直观系统即时 排查电气隐患、隐蔽工程隐患检查 难等难题。
                 </p>
-                <div class="w-index-btn"><a href="<?php SiteUrl();?>/power.html">查看更多<span class="iconfont icongengduo"></span></a></div>
+                <div class="w-index-btn"><a href="<?php SiteUrl();?>/powerful.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
             <div class="w-index-bottom">
                 <div class="w-index-iconfont">
@@ -95,7 +95,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <p>主要由农业温室大棚、各种无线传 感器、控制器及后台系统软件和用 户端APP等组成。
 
                 </p>
-                <div class="w-index-btn"><a href="<?php SiteUrl();?>/nong.html">查看更多<span class="iconfont icongengduo"></span></a></div>
+                <div class="w-index-btn"><a href="<?php SiteUrl();?>/agriculture.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
             <div class="w-index-bottom" style="margin: 20px 30px;">
                 <div class="w-index-iconfont">
@@ -104,7 +104,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <h3>影院服务平台</h3>
                 <p>影院服务平台方案包含线上用户端 小程序与影院后台两个部分，线下 无纸化检票系统。
                 </p>
-                <div class="w-index-btn"><a href="<?php SiteUrl();?>/movie.html">查看更多<span class="iconfont icongengduo"></span></a></div>
+                <div class="w-index-btn"><a href="<?php SiteUrl();?>/cinema.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
             <div class="w-index-bottom">
                 <div class="w-index-iconfont">
@@ -113,7 +113,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <h3>无人网吧</h3>
                 <p>利用app开J，支付宝/微信收费的 方式实现无人化, 24小时营业的无 人网吧。
                 </p>
-                <div class="w-index-btn"><a href="<?php SiteUrl();?>/bar.html">查看更多<span class="iconfont icongengduo"></span></a></div>
+                <div class="w-index-btn"><a href="<?php SiteUrl();?>/cybercafe.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
         </div>
     </div>
@@ -171,7 +171,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         </div>
         <div class="w-index-content clearfix">
             <div class="w-index-news">
-                <a href=<?php echo isset($newsList[0]) ? SiteUrl ()."/detail-id-".$newsList[0]["articleid"].".html":SiteUrl ()."/news.html";?>>
+                <a href=<?php echo isset($newsList[0]) ? SiteUrl ()."/article-id-".$newsList[0]["articleid"].".html":SiteUrl ()."/news.html";?>>
                     <img src=<?php echo isset($newsList[0]) ? $newsList[0]["thumbnail"] : "../img/index/index_box5.png";?> alt="">
                     <div><?php echo isset($newsList[0]) ? $newsList[0]["title"] : "暂无内容";?></div>
                     <p><?php echo isset($newsList[0]) ? $newsList[0]["desc"] : "暂无内容";?></p>
@@ -184,7 +184,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <p><?php echo isset($newsList[1]) ? date('Y',strtotime($newsList[1]["createtime"])):"";?></p>
                     </div>
                     <div class="w-index-new-context">
-                    <a href=<?php echo isset($newsList[1]) ? SiteUrl ()."/detail-id-".$newsList[1]["articleid"].".html":SiteUrl ()."/news.html";?>>
+                    <a href=<?php echo isset($newsList[1]) ? SiteUrl ()."/article-id-".$newsList[1]["articleid"].".html":SiteUrl ()."/news.html";?>>
                             <h3><?php echo isset($newsList[1]) ? $newsList[1]["title"] : "暂无内容";?></h3>
                             <p><?php echo isset($newsList[1]) ? $newsList[1]["desc"] : "暂无内容";?></p>
                         </a>
@@ -196,7 +196,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <p><?php echo isset($newsList[2]) ? date('Y',strtotime($newsList[2]["createtime"])):"";?></p>
                     </div>
                     <div class="w-index-new-context">
-                    <a href=<?php echo isset($newsList[2]) ? SiteUrl ()."/detail-id-".$newsList[2]["articleid"].".html":SiteUrl ()."/news.html";?>>
+                    <a href=<?php echo isset($newsList[2]) ? SiteUrl ()."/article-id-".$newsList[2]["articleid"].".html":SiteUrl ()."/news.html";?>>
                             <h3><?php echo isset($newsList[2]) ? $newsList[2]["title"] : "暂无内容";?></h3>
                             <p><?php echo isset($newsList[2]) ? $newsList[2]["desc"] : "暂无内容";?></p>
                         </a>

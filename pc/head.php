@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm,s,src,bp,s2,curProtocol;
+        hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2efac3d09a135e88e39c98a3388123df";
+        s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884":"https://jspassport.ssl.qhimg.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+        bp = document.createElement('script');
+        curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        s2 = document.getElementsByTagName("script")[0];
+        s2.parentNode.insertBefore(bp, s2);
+    })();
+</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,19 +45,19 @@
                     <a href="<?php SiteUrl();?>/index.html" style="color: #000">首页</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/wu.html" style="color: #000">物联网</a>
+                    <a href="<?php SiteUrl();?>/iot.html" style="color: #000">物联网</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/fang.html" style="color: #000">解决方案</a>
+                    <a href="<?php SiteUrl();?>/solution.html" style="color: #000">解决方案</a>
                 </li>
                 <li>
                     <a href="<?php SiteUrl();?>/news.html" style="color: #000">新闻资讯</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/guan.html" style="color: #000">关于我们</a>
+                    <a href="<?php SiteUrl();?>/about.html" style="color: #000">关于我们</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/work.html" style="color: #000">人才合作</a>
+                    <a href="<?php SiteUrl();?>/recruit.html" style="color: #000">人才合作</a>
                 </li>
             </ul>
         </div>

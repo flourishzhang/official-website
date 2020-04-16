@@ -12,18 +12,18 @@ switch ($do) {
             require("pc/index.php");
         }
         break;
-    case "bar":require("pc/bar.php");break;//
+    case "cybercafe":require("pc/bar.php");break;//
     case "community":require("pc/community.php");break;//
-    case "detail":require("pc/detail.php");break;//
-    case "fang":require("pc/fang.php");break;//
-    case "guan":require("pc/guan.php");break;//
-    case "movie":require("pc/movie.php");break;//
+    case "article":require("pc/detail.php");break;//
+    case "solution":require("pc/fang.php");break;//
+    case "about":require("pc/guan.php");break;//
+    case "cinema":require("pc/movie.php");break;//
     case "news":require("pc/news.php");break;//
-    case "nong":require("pc/nong.php");break;//
-    case "power":require("pc/power.php");break;//
-    case "warehouse":require("pc/warehouse.php");break;//
-    case "work":require("pc/work.php");break;//
-    case "wu":require("pc/wu.php");break;//
+    case "agriculture":require("pc/nong.php");break;//
+    case "powerful":require("pc/power.php");break;//
+    case "gym":require("pc/warehouse.php");break;//
+    case "recruit":require("pc/work.php");break;//
+    case "iot":require("pc/wu.php");break;//
     case "phonefarming":$title="_智慧农业";require("phone/farming.php");break;//
     case "phoneInternet":$title="_无人网吧";require("phone/Internet.php");break;//
     case "phonemovie":$title="_影院服务平台";require("phone/movie.php");break;//

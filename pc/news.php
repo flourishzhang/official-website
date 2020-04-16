@@ -10,7 +10,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>新闻资讯</title>
+        <title><?php WebsiteTitle ();?>_新闻资讯</title>
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/init.css">
         <link rel="stylesheet" href="../css/wstyle.css">
@@ -53,7 +53,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
         <ul class="clearfix">
         <?php foreach ($newsList as $news) { ?>
             <li>
-                <a  href="<?php SiteUrl ();?>/detail-id-<?php echo $news["articleid"];?>.html">
+                <a  href="<?php SiteUrl ();?>/article-id-<?php echo $news["articleid"];?>.html">
                     <div class="new-left">
                         <img src="<?php SiteUrl ();echo $news["thumbnail"];?>">
                     </div>

@@ -13,7 +13,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>新闻资讯详情</title>
+    <title><?php WebsiteTitle ();?>_新闻资讯详情</title>
     <link rel="stylesheet" href="../css/ystyle.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -68,13 +68,13 @@ $nextArticleInfo = $info["nextArticleInfo"];
                     <?php if ($previousArticleInfo["articleid"] != 0) { ?>
                     <li>
                         <span>上一篇：</span>
-                        <a href="<?php SiteUrl();?>/detail-id-<?php echo $previousArticleInfo["articleid"];?>.html"><span><?php echo $previousArticleInfo["title"];?></span></a>
+                        <a href="<?php SiteUrl();?>/article-id-<?php echo $previousArticleInfo["articleid"];?>.html"><span><?php echo $previousArticleInfo["title"];?></span></a>
                     </li>
                     <?php } ?>
                     <?php if ($nextArticleInfo["articleid"] != 0) { ?>
                     <li>
                         <span>下一篇：</span>
-                        <a href="<?php SiteUrl();?>/detail-id-<?php echo $nextArticleInfo["articleid"];?>.html">"><span><?php echo $nextArticleInfo["title"];?></span></a>
+                        <a href="<?php SiteUrl();?>/article-id-<?php echo $nextArticleInfo["articleid"];?>.html">"><span><?php echo $nextArticleInfo["title"];?></span></a>
                     </li>
                     <?php } ?>
                 </ul>

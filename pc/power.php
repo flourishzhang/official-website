@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>电力远程控制</title>
+    <title><?php WebsiteTitle ();?>_电力远程控制</title>
     <link rel="stylesheet" href="../css/ystyle.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
@@ -21,7 +21,7 @@
     </div>
     <div class="y-power-box2">
         <div class="y-power-return">
-            <a href="<?php SiteUrl();?>/fang.html">
+            <a href="<?php SiteUrl();?>/solution.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>
