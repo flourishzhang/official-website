@@ -146,7 +146,7 @@ function GetNewsList ($column, $status, $type, $keyword, $order, $page, $size, $
             array_push ($params, $type);
         }
         if ($keyword !== null) {
-            $sql .= " AND `title` LIKE ?";
+            $sql .= " AND `title` or `content` LIKE ?";
             array_push ($params, "%".$keyword."%");
         }
         if ($now) {

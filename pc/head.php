@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+if(isset($_GET["id"])){
+$articleid = $_GET["id"];
+$info = GetArticleInfo ($articleid, true);
+$articleinfo = $info["articleinfo"];
+}
+?>
 <html lang="en">
 <script>
     var _hmt = _hmt || [];
@@ -26,7 +33,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="<?php WebsiteKeyWords ();?>">
-    <meta name="description" content="<?php WebsiteDescription ();?>">
+    <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
     <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/init.css">

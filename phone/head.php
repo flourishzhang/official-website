@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<?php
+if(isset($_GET["id"])){
+$articleid = $_GET["id"];
+$info = GetArticleInfo ($articleid, true);
+$articleinfo = $info["articleinfo"];
+}
+?>
 <html lang="en">
 <script>
     var _hmt = _hmt || [];
@@ -25,7 +32,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="<?php WebsiteKeyWords ();?>">
-    <meta name="description" content="<?php WebsiteDescription ();?>">
+    <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
