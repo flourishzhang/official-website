@@ -3,11 +3,11 @@
                 <div class="w-p-foot">
                     <div>
                         <div class="clearfix">
-                            <p>手机：13397158231</p>
-                            <p>QQ：932773931</p>
+                            <p>手机：<?php WebsiteMobile ();?></p>
+                            <p>QQ：<?php WebsiteQQ ();?></p>
                         </div>
-                        <p>邮箱：jevian_ma@worldflying.cn</p>
-                        <p>地点：武汉市东湖高新开发区光谷总部国际1栋2412室</p>
+                        <p>邮箱：<?php WebsiteAddress ();?></p>
+                        <p>地点：<?php WebsiteEmail ();?></p>
                         <p>
                             <a href="http://www.beian.miit.gov.cn"><?php WebsiteRecord ();?></a>    
                         </p>

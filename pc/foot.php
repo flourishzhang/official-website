@@ -9,11 +9,11 @@
         <div class="w-foot-adress clearfix">
             <div class="w-foot-map" id="container"></div>
             <div class="w-foot-text">
-                <div>地址:武汉市东湖高新开发区光谷总部国际1栋2412室</div>
-                <div>QQ: 932773931</div>
-                <div>电话: 027-59761089</div>
-                <div>手机: 13397 158231</div>
-                <div>邮箱: jevian__ ma@worldlying.cn</div>
+                <div>地址:<?php WebsiteAddress ();?></div>
+                <div>QQ: <?php WebsiteQQ ();?></div>
+                <div>电话:<?php WebsiteTelephone ();?></div>
+                <div>手机:<?php WebsiteMobile ();?></div>
+                <div>邮箱:<?php WebsiteEmail ();?></div>
             </div>
         </div>
         <div class="w-foot-name">
