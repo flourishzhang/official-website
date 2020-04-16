@@ -24,7 +24,9 @@
                     </div>
                     <div class="w-zi">
                         <p>沃航(武汉)科技股份有限公司版权所有</p>
-                        <p>备案号:鄂ICP备16014230号-1</p>
+                        <p>
+                            <a href="">备案号:鄂ICP备16014230号-1</a>
+                        </p>
                     </div>
                 </div>
                 <div class="w-right">

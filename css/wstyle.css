@@ -120,7 +120,7 @@ nav:hover {
 .w-foot>.w-foot-name>div{
     width: 1200px;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 24px 0;
 }
 .w-foot>.w-foot-name>div>.w-left{
     float: left;
@@ -128,26 +128,30 @@ nav:hover {
 }
 .w-foot>.w-foot-name>div>.w-left>.w-tu{
     float: left;
-    width: 80px;
+    width: 99px;
 }
 .w-foot>.w-foot-name>div>.w-left>.w-tu>img{
     width: 100%
 }
 .w-foot>.w-foot-name>div>.w-left>.w-zi{
     float: left;
-    width: calc(100% - 80px);
+    width: calc(100% - 100px);
     padding: 10px 0;
 }
 .w-foot>.w-foot-name>div>.w-left>.w-zi>p{
     padding: 5px 20px;
     color: #fff;
 }
+.w-foot>.w-foot-name>div>.w-left>.w-zi>p>a{
+    color: #fff;
+    text-decoration: none;
+}
 .w-foot>.w-foot-name>div>.w-right{
     float: right;
-    width: 80px;
+    width: 99px;
 }
 .w-foot>.w-foot-name>div>.w-right>img{
-    width: 80px;
+    width: 99px;
 }
 
 /* index */
@@ -2703,7 +2707,10 @@ nav:hover {
     height: 21px;
     color: #333333;
 }
-.w-p-foot>div>P{
+.w-p-foot>div>p{
+    color: #333333;
+}
+.w-p-foot>div>p>a{
     color: #333333;
 }
 
