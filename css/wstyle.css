@@ -2706,3 +2706,18 @@ nav:hover {
 .w-p-foot>div>P{
     color: #333333;
 }
+
+.w-p-search{
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.mui-search:before{
+    margin-top: -22px;
+}
+.w-p-huanhang{
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}

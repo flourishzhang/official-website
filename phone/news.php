@@ -11,16 +11,25 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
         <img src="../img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-news-box2 clearfix">
-        <div <?php if ($type == null) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/phonenews.html">ALL+</a></div>
-        <div <?php if ($type == 1) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/phonenews-type-1.html">公司动态</a></div>
-        <div <?php if ($type == 2) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/phonenews-type-2.html">媒体报道</a></div>
-        <div <?php if ($type == 3) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/phonenews-type-3.html">行业资讯</a></div>
+        <div <?php if ($type == null) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/mobilenews.html">ALL+</a></div>
+        <div <?php if ($type == 1) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/mobilenews-type-1.html">公司动态</a></div>
+        <div <?php if ($type == 2) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/mobilenews-type-2.html">媒体报道</a></div>
+        <div <?php if ($type == 3) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/mobilenews-type-3.html">行业资讯</a></div>
+    </div>
+    <div class="w-p-search">
+        <div class="mui-input-row mui-search" id="searchInputclick">
+            <!-- data-url 需要修改 -->
+            <input type="search" id="searchInput" data-url="<?php SiteUrl ();?>/mobilenews<?php if ($type != 0) echo "-type-".$type;?>-keyword-" onkeyup="enterSearch(event)" class="mui-input-clear" placeholder="请输入关键字搜索">
+        </div>
+        <?php if ($keyword != null){?>
+            <p class="w-p-huanhang">搜索词：<?php echo $keyword?$keyword:""?></p>
+        <?php }?>
     </div>
     <div class="w-p-news-box3">
         <ul>
         <?php foreach ($newsList as $news) { ?>
             <li>
-                <a href="<?php SiteUrl ();?>/phonenews_det-id-<?php echo $news["articleid"];?>.html" class="clearfix">
+                <a href="<?php SiteUrl ();?>/mobilearticle-id-<?php echo $news["articleid"];?>.html" class="clearfix">
                     <div class="w-p-news-zi">
                         <h3><?php echo $news["title"];?></h3>
                         <p><?php echo $news["publishtime"];?></p>

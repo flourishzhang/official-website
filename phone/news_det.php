@@ -28,11 +28,11 @@ $nextArticleInfo = $info["nextArticleInfo"];
             </li>
             <li>
                 <span>上一篇：</span>
-                <a href="<?php SiteUrl();?>/phonenews_det-id-<?php echo $previousArticleInfo["articleid"];?>.html"><?php echo $previousArticleInfo["title"];?></a>
+                <a href="<?php SiteUrl();?>/mobilearticle-id-<?php echo $previousArticleInfo["articleid"];?>.html"><?php echo $previousArticleInfo["title"];?></a>
             </li>
             <li>
                 <span>下一篇：</span>
-                <a href="<?php SiteUrl();?>/phonenews_det-id-<?php echo $nextArticleInfo["articleid"];?>.html"><?php echo $nextArticleInfo["title"];?></a>
+                <a href="<?php SiteUrl();?>/mobilearticle-id-<?php echo $nextArticleInfo["articleid"];?>.html"><?php echo $nextArticleInfo["title"];?></a>
             </li>
         </ul>
     </div>

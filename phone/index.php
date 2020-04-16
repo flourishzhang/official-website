@@ -13,7 +13,7 @@
         <div class="w-index-contant">
             <img src="../img/phone_index/index_box2.png" alt="">
         </div>
-        <div class="w-index-btn"><a href="">查看更多<span class="iconfont iconxiangyou"></span></a></div>
+        <div class="w-index-btn"><a href="<?php SiteUrl();?>/mobileabout.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
     </div>
     <div class="w-p-index-box3">
         <div class="w-index-title">
@@ -24,12 +24,12 @@
             </div>
         </div>
         <div class="w-index-contant clearfix">
-            <a href="<?php SiteUrl();?>/phonesCang.html"><img src="../img/phone_index/index_box3-1.png" alt=""></a>
-            <a href="<?php SiteUrl();?>/phonesQu.html"><img src="../img/phone_index/index_box3-2.png" alt=""></a>
-            <a href="<?php SiteUrl();?>/phonepower.html"><img src="../img/phone_index/index_box3-3.png" alt=""></a>
-            <a href="<?php SiteUrl();?>/phonefarming.html"><img src="../img/phone_index/index_box3-4.png" alt=""></a>
-            <a href="<?php SiteUrl();?>/phonemovie.html"><img src="../img/phone_index/index_box3-5.png" alt=""></a>
-            <a href="<?php SiteUrl();?>/phoneInternet.html"><img src="../img/phone_index/index_box3-6.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobilegym.html"><img src="../img/phone_index/index_box3-1.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobilecommunity.html"><img src="../img/phone_index/index_box3-2.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobilepowerful.html"><img src="../img/phone_index/index_box3-3.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobileagriculture.html"><img src="../img/phone_index/index_box3-4.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobilecinema.html"><img src="../img/phone_index/index_box3-5.png" alt=""></a>
+            <a href="<?php SiteUrl();?>/mobilecybercafe.html"><img src="../img/phone_index/index_box3-6.png" alt=""></a>
         </div>
     </div>
     <div class="w-p-index-box4">
@@ -70,7 +70,7 @@
         </div>
         <div class="w-index-contant">
             <div class="w-index-li">
-                <a href="<?php echo isset($newsList[0]) ? SiteUrl ()."/phonenews_det-id-".$newsList[0]["articleid"].".html":SiteUrl ()."/phonenews.html";?>">
+                <a href="<?php echo isset($newsList[0]) ? SiteUrl ()."/mobilearticle-id-".$newsList[0]["articleid"].".html":SiteUrl ()."/mobilenews.html";?>">
                     <div>
                         <div>
                             <div></div>
@@ -79,7 +79,7 @@
                         <p><?php echo isset($newsList[0]) ? date('Y/m/d',strtotime($newsList[0]["createtime"])):"";?></p>
                     </div>
                 </a>
-                <a href="<?php echo isset($newsList[1]) ? SiteUrl ()."/phonenews_det-id-".$newsList[1]["articleid"].".html":SiteUrl ()."/phonenews.html";?>">
+                <a href="<?php echo isset($newsList[1]) ? SiteUrl ()."/mobilearticle-id-".$newsList[1]["articleid"].".html":SiteUrl ()."/mobilenews.html";?>">
                     <div>
                         <div>
                             <div></div>
@@ -88,7 +88,7 @@
                         <p><?php echo isset($newsList[1]) ? date('Y/m/d',strtotime($newsList[1]["createtime"])):"";?></p>
                     </div>
                 </a>
-                <a href="<?php echo isset($newsList[2]) ? SiteUrl ()."/phonenews_det-id-".$newsList[2]["articleid"].".html":SiteUrl ()."/phonenews.html";?>">
+                <a href="<?php echo isset($newsList[2]) ? SiteUrl ()."/mobilearticle-id-".$newsList[2]["articleid"].".html":SiteUrl ()."/mobilenews.html";?>">
                     <div>
                         <div>
                             <div></div>

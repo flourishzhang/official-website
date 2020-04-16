@@ -24,18 +24,18 @@ switch ($do) {
     case "gym":require("pc/warehouse.php");break;//
     case "recruit":require("pc/work.php");break;//
     case "iot":require("pc/wu.php");break;//
-    case "phonefarming":$title="_智慧农业";require("phone/farming.php");break;//
-    case "phoneInternet":$title="_无人网吧";require("phone/Internet.php");break;//
-    case "phonemovie":$title="_影院服务平台";require("phone/movie.php");break;//
-    case "phonenews_det":$title="_新闻资讯";require("phone/news_det.php");break;//
-    case "phonenews":$title="_新闻资讯";require("phone/news.php");break;//
-    case "phonepower":$title="_电力远程控制";require("phone/power.php");break;//
-    case "phonesCang":$title="_仓库管理系统";require("phone/sCang.php");break;//
-    case "phonesFang":$title="_解决方案";require("phone/sFang.php");break;//
-    case "phonesGuan":$title="_关于我们";require("phone/sGuan.php");break;//
-    case "phonesQu":$title="_智慧小区";require("phone/sQu.php");break;//
-    case "phonesWork":$title="_人才招聘";require("phone/sWork.php");break;//
-    case "phonesWu":$title="_物联网";require("phone/sWu.php");break;//
+    case "mobileagriculture":$title="_智慧农业";require("phone/farming.php");break;//
+    case "mobilecybercafe":$title="_无人网吧";require("phone/Internet.php");break;//
+    case "mobilecinema":$title="_影院服务平台";require("phone/movie.php");break;//
+    case "mobilearticle":$title="_新闻资讯";require("phone/news_det.php");break;//
+    case "mobilenews":$title="_新闻资讯";require("phone/news.php");break;//
+    case "mobilepowerful":$title="_电力远程控制";require("phone/power.php");break;//
+    case "mobilegym":$title="_仓库管理系统";require("phone/sCang.php");break;//
+    case "mobilesolution":$title="_解决方案";require("phone/sFang.php");break;//
+    case "mobileabout":$title="_关于我们";require("phone/sGuan.php");break;//
+    case "mobilecommunity":$title="_智慧小区";require("phone/sQu.php");break;//
+    case "mobilerecruit":$title="_人才招聘";require("phone/sWork.php");break;//
+    case "mobileiot":$title="_物联网";require("phone/sWu.php");break;//
     case "apieditarticle": require("api/editarticle.php");break;
     case "apigetarticledesc": require("api/getarticledesc.php");break;
     case "apigetarticlelist": require("api/getarticlelist.php");break;

@@ -4,7 +4,7 @@
     </div>
     <div class="y-ph-qu-box2">
         <div class="y-ph-qu-return">
-            <a href="<?php SiteUrl();?>/phonesFang.html">返回解决方案列表
+            <a href="<?php SiteUrl();?>/mobilesolution.html">返回解决方案列表
                 <img src="../img/s-qu/next.png" alt="">
             </a>
         </div>
@@ -23,6 +23,7 @@
                 <img src="../img/s-qu/t1.png" alt="">
             </div>
         </div>
+
         <div class="y-ph-qu-body3 ">
             <ul  class="clearfix">
                 <li>

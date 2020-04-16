@@ -3,7 +3,7 @@
         <img src="../img/phone_power/power_box1.png" alt="">
     </div>
     <div class="w-p-power-box2">
-        <a class="w-ct-return" href="<?php SiteUrl();?>/phonesFang.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php SiteUrl();?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介

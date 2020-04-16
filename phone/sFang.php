@@ -12,32 +12,32 @@
         <div class="y-ph-fang-body ">
             <ul  class="clearfix">
                 <li>
-                    <a href="<?php SiteUrl();?>/phonesCang.html">
+                    <a href="<?php SiteUrl();?>/mobilegym.html">
                         <img src="../img/s-fang/f1.png">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/phonesQu.html">
+                    <a href="<?php SiteUrl();?>/mobilecommunity.html">
                         <img src="../img/s-fang/f2.png">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/phonepower.html">
+                    <a href="<?php SiteUrl();?>/mobilepowerful.html">
                         <img src="../img/s-fang/f3.png">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/phonefarming.html">
+                    <a href="<?php SiteUrl();?>/mobileagriculture.html">
                         <img src="../img/s-fang/f4.png">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/phonemovie.html">
+                    <a href="<?php SiteUrl();?>/mobilecinema.html">
                         <img src="../img/s-fang/f5.png">
                     </a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/phoneInternet.html">
+                    <a href="<?php SiteUrl();?>/mobilecybercafe.html">
                         <img src="../img/s-fang/f6.png">
                     </a>
                 </li>

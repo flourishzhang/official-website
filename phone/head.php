@@ -56,7 +56,7 @@
                         <a href="<?php SiteUrl();?>/phonesWu.html">物联网</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonesFang.html">解决方案</a>
+                        <a href="<?php SiteUrl();?>/mobilesolution.html">解决方案</a>
                     </li>
                     <li class="mui-table-view-cell">
                         <a href="<?php SiteUrl();?>/phonenews.html">新闻资讯</a>
