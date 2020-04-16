@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智慧小区</title>
+    <title><?php WebsiteTitle ();?>_智慧小区</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/wstyle.css">

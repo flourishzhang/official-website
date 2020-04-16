@@ -1,5 +1,5 @@
 <?php
-$newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`publishtime`", 1, $null, null, 1, 1, 3, true);
+$newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`publishtime`", 1, null, null, 1, 1, 3, true);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title><?php WebsiteTitle ();?>_首页</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/wstyle.css">

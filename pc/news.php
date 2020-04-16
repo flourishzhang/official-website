@@ -43,7 +43,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
     </div>
     <div class="w-news-box3 clearfix">
         <div class="w-news-input">
-            <input type="text" id="w_input_news" placeholder="请输入关键字搜索">
+            <input type="text" id="w_input_news" value="<?php echo $keyword?$keyword:""?>" placeholder="请输入关键字搜索">
         </div>
         <div class="w-news-btn">
             <a id="w_news_search" data-url="<?php SiteUrl ();?>/news<?php if ($type != 0) echo "-type-".$type;?>-keyword-">搜索</a>

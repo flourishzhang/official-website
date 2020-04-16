@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>无人网吧</title>
+    <title><?php WebsiteTitle ();?>_无人网吧</title>
     <link rel="stylesheet" href="../css/ystyle.css">
     <link rel="stylesheet" href="../css/init.css">
     <link rel="stylesheet" href="../css/bootstrap.css">

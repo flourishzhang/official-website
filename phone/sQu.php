@@ -4,7 +4,7 @@
     </div>
     <div class="y-ph-qu-box2">
         <div class="y-ph-qu-return">
-            <a href="">返回解决方案列表
+            <a href="<?php SiteUrl();?>/phonesFang.html">返回解决方案列表
                 <img src="../img/s-qu/next.png" alt="">
             </a>
         </div>

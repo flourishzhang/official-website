@@ -1,12 +1,13 @@
 <?php
 require_once("functions.php");
 $do = isset($_GET["do"]) ? $_GET["do"] : "index";
+$title;
 
 switch ($do) {
     // 页面展示部分的路由
     case "index":
         if (IsMobile()) {
-            require("phone/index.php");
+            $title="首页";require("phone/index.php");
         } else {
             require("pc/index.php");
         }
@@ -23,17 +24,18 @@ switch ($do) {
     case "warehouse":require("pc/warehouse.php");break;//
     case "work":require("pc/work.php");break;//
     case "wu":require("pc/wu.php");break;//
-    case "phoneInternet":require("phone/Internet.php");break;//
-    case "phonemovie":require("phone/movie.php");break;//
-    case "phonenews_det":require("phone/news_det.php");break;//
-    case "phonenews":require("phone/news.php");break;//
-    case "phonepower":require("phone/power.php");break;//
-    case "phonesCang":require("phone/sCang.php");break;//
-    case "phonesFang":require("phone/sFang.php");break;//
-    case "phonesGuan":require("phone/sGuan.php");break;//
-    case "phonesQu":require("phone/sQu.php");break;//
-    case "phonessWork":require("phone/sWork.php");break;//
-    case "phonessWu":require("phone/sWu.php");break;//
+    case "phonefarming":$title="_智慧农业";require("phone/farming.php");break;//
+    case "phoneInternet":$title="_无人网吧";require("phone/Internet.php");break;//
+    case "phonemovie":$title="_影院服务平台";require("phone/movie.php");break;//
+    case "phonenews_det":$title="_新闻资讯";require("phone/news_det.php");break;//
+    case "phonenews":$title="_新闻资讯";require("phone/news.php");break;//
+    case "phonepower":$title="_电力远程控制";require("phone/power.php");break;//
+    case "phonesCang":$title="_仓库管理系统";require("phone/sCang.php");break;//
+    case "phonesFang":$title="_解决方案";require("phone/sFang.php");break;//
+    case "phonesGuan":$title="_关于我们";require("phone/sGuan.php");break;//
+    case "phonesQu":$title="_智慧小区";require("phone/sQu.php");break;//
+    case "phonesWork":$title="_人才招聘";require("phone/sWork.php");break;//
+    case "phonesWu":$title="_物联网";require("phone/sWu.php");break;//
     case "apieditarticle": require("api/editarticle.php");break;
     case "apigetarticledesc": require("api/getarticledesc.php");break;
     case "apigetarticlelist": require("api/getarticlelist.php");break;

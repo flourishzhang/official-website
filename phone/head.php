@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title>首页</title>
+    <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
     <link rel="stylesheet" href="../css/mui.min.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/init.css">
@@ -31,19 +31,19 @@
                         <a href="<?php SiteUrl();?>/index.html">首页</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonessWu.html">物联网</a>
+                        <a href="<?php SiteUrl();?>/phonesWu.html">物联网</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/sFang.html">解决方案</a>
+                        <a href="<?php SiteUrl();?>/phonesFang.html">解决方案</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/news.html">新闻资讯</a>
+                        <a href="<?php SiteUrl();?>/phonenews.html">新闻资讯</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/sWork.html">人才合作</a>
+                        <a href="<?php SiteUrl();?>/phonesWork.html">人才合作</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/sGuan.html">关于我们</a>
+                        <a href="<?php SiteUrl();?>/phonesGuan.html">关于我们</a>
                     </li>
                 </ul>
             </div>

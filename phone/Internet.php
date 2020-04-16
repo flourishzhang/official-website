@@ -3,7 +3,7 @@
         <img src="../img/phone_internet/it_box1.png" alt="">
     </div>
     <div class="w-p-it-box2">
-        <a class="w-ct-return" href="">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php SiteUrl();?>/phonesFang.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介
