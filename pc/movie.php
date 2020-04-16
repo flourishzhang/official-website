@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php WebsiteTitle ();?>_影院服务平台</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <script src="../js/jquery-2.0.3.min.js"></script>
-    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/banner.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</head>
-
-<body>
 <?php require ("pc/head.php");?>
     <div class="w-mv-box1">
         <img src="../img/movie/moive_box1.png" alt="">
@@ -239,6 +222,3 @@
         <img src="../img/warehouse/wh_box6.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>
-</body>
-
-</html>

@@ -53,19 +53,19 @@
                         <a href="<?php SiteUrl();?>/index.html">首页</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonesWu.html">物联网</a>
+                        <a href="<?php SiteUrl();?>/mobileiot.html">物联网</a>
                     </li>
                     <li class="mui-table-view-cell">
                         <a href="<?php SiteUrl();?>/mobilesolution.html">解决方案</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonenews.html">新闻资讯</a>
+                        <a href="<?php SiteUrl();?>/mobilenews.html">新闻资讯</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonesWork.html">人才合作</a>
+                        <a href="<?php SiteUrl();?>/mobilerecruit.html">人才合作</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/phonesGuan.html">关于我们</a>
+                        <a href="<?php SiteUrl();?>/mobileabout.html">关于我们</a>
                     </li>
                 </ul>
             </div>

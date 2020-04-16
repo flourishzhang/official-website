@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 $page = isset($_GET["page"]) ? $_GET["page"] : 1;
 $type = isset($_GET["type"]) ? $_GET["type"] : null;
@@ -6,21 +5,6 @@ $keyword = isset($_GET["keyword"]) ? $_GET["keyword"] : null;
 $totalpage = ceil (GetNewsTotalCount (1, $type, $keyword, true) / 5);
 $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`", 1, $type, $keyword, 1, $page, 5, true);
 ?>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title><?php WebsiteTitle ();?>_新闻资讯</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/init.css">
-        <link rel="stylesheet" href="../css/wstyle.css">
-        <link rel="stylesheet" href="../css/iconfont.css">
-        <script src="../js/jquery-2.0.3.min.js"></script>
-        <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-        <script src="../js/banner.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-    </head>
-<body>
 <?php require ("pc/head.php");?>
     <div class="w-news-box1">
         <img src="../img/news/news_box1.png" alt="">
@@ -158,6 +142,3 @@ if ($page != $totalpage) {
         <img src="../img/news/news_box6.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>
-</body>
-
-</html>

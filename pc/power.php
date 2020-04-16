@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php WebsiteTitle ();?>_电力远程控制</title>
-    <link rel="stylesheet" href="../css/ystyle.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1692202_201xl3y8wgvi.css">
-    <script src="../js/jquery-3.1.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-</head>
-
-<body>
 <?php require ("pc/head.php");?>
     <div class="y-power-box1">
         <img src="../img/power/banner2.png">
@@ -155,6 +139,3 @@
         <img src="../img/power/foot.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>
-</body>
-
-</html>

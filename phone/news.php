@@ -43,7 +43,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
         </ul>
         <div class="take-more">
             <div class="take-more1" >
-        <a href="<?php SiteUrl ();?>/phonenews<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
+        <a href="<?php SiteUrl ();?>/mobilenews<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
                                     <img src="../img/phone_news/first.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php if ($page == 1) { ?>
@@ -51,7 +51,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
                                     <img src="../img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php } else { ?>
-                                <a href="<?php SiteUrl ();?>/phonenews-page-<?php echo $page-1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
+                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $page-1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
                                     <img src="../img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php } ?>
@@ -62,9 +62,10 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
                                 <a href="#"><img src="../img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
                                 <a href="#"><img src="../img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
 <?php } else { ?>
-                                <a href="<?php SiteUrl ();?>/phonenews-page-<?php echo $page+1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
-                                <a href="<?php SiteUrl ();?>/phonenews-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $page+1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
 <?php } ?>
         </div>
     </div>
+</div>
 <?php require ("phone/foot.php");?>

@@ -1,30 +1,7 @@
 <?php
 $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`publishtime`", 1, null, null, 1, 1, 3, true);
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php WebsiteTitle ();?>_首页</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/ystyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <link rel="stylesheet" href="../css/mui.min.css">
-    <link rel="stylesheet" href="../css/animation.css">
-    <script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script type="text/javascript" src="../js/banner.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/mui.min.js"></script>
-    <script type="text/javascript" src="../js/animation.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
-</head>
-
-<body>
 <?php require ("pc/head.php");?>
     <div class="w-index-box1">
         <img src="../img/index/index_box1.png">
@@ -226,6 +203,3 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         <img src="../img/index/index_box7.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>
-</body>
-
-</html>

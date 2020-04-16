@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foot</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <script src="../js/jquery-2.0.3.min.js"></script>
-    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/banner.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
-</head>
-
-<body>
     <div class="w-foot">
         <div class="w-foot-title">
             <div class="title">
