@@ -720,34 +720,32 @@ nav:hover {
 }
 
 .w-news-box3 {
-    width: 1200px;
+    width: 750px;
     margin: 80px auto;
-    height: 80px;
-    background: rgba(148, 96, 96, 0.4);
+    height: 60px;
 }
 
 .w-news-box3>.w-news-input {
-    width: 71%;
+    width: 80%;
     float: left;
     height: 60px;
     background: #fff;
-    margin: 10px 1%;
     padding: 0 15px;
+    border:1px solid #5966d1;
 }
 
 .w-news-box3>.w-news-input>input {
     width: 100%;
-    height: 60px;
+    height: 58px;
     font-size: 20px;
     border: none;
     outline: 0;
 }
 
 .w-news-box3>.w-news-btn {
-    width: 25%;
+    width: 20%;
     height: 60px;
     float: left;
-    margin: 10px 1%;
     background: #5966d1;
     color: #fff;
     text-align: center;
@@ -2727,4 +2725,51 @@ nav:hover {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+.w-right-fixed{
+    position: fixed;
+    top: 45%;
+    width: 60px;
+    /* width: 160px; */
+    height: 120px;
+    background: #fff;
+    right: 0;
+    z-index: 1000;
+}
+.w-right-fixed>a{
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+.w-right-fixed>a>div{
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 2px rgb(163, 160, 160, .5);
+    background: #fff;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.w-right-fixed>a>div>.tu{
+    float: left;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.w-right-fixed>a>div>.zi{
+    text-align: center;
+    line-height: 60px;
+}
+.w-right-fixed>a>div>.tu>img{
+    width: 45px;
+    height: 45px;
+}
+.w-right-fixed>a>div:hover{
+    width: 160px;
 }

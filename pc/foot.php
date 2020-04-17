@@ -35,6 +35,20 @@
             </div>
         </div>
     </div>
+    <div class="w-right-fixed">
+        <a href="">
+            <div class="creafix">
+                <div class="tu"><img src="../img/qq.png"></div>
+                <div class="zi">QQ客服</div>
+            </div>
+        </a>
+        <a>
+            <div class="creafix">
+                <div class="tu"><img src="../img/phone.png"></div>
+                <div class="zi">027-59761089</div>
+            </div>
+        </a>
+    </div>
 </body>
 <script>
 var map = new BMap.Map("container");

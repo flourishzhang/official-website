@@ -41,13 +41,13 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="../css/wstyle.css">
     <link rel="stylesheet" href="../css/iconfont.css">
     <link rel="stylesheet" href="../css/animation.css">
-    <link rel="stylesheet" href="../css/mui.min.css">
+    <!-- <link rel="stylesheet" href="../css/mui.min.css"> -->
     <script src="../js/jquery-2.0.3.min.js"></script>
     <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="../js/banner.js"></script>
     <script src="../js/animation.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/mui.min.js"></script>
+    <!-- <script src="../js/mui.min.js"></script> -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
 </head>
 
