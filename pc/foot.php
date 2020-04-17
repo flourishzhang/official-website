@@ -36,16 +36,16 @@
         </div>
     </div>
     <div class="w-right-fixed">
-        <a href="">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php WebsiteQQ ();?>&site=qq&menu=yes">
             <div class="creafix">
                 <div class="tu"><img src="../img/qq.png"></div>
-                <div class="zi">QQ客服</div>
+                <div class="zi"><?php WebsiteQQ ();?></div>
             </div>
         </a>
         <a>
             <div class="creafix">
                 <div class="tu"><img src="../img/phone.png"></div>
-                <div class="zi">027-59761089</div>
+                <div class="zi"><?php WebsiteMobile ();?></div>
             </div>
         </a>
     </div>
