@@ -136,7 +136,7 @@ nav:hover {
 .w-foot>.w-foot-name>div>.w-left>.w-zi{
     float: left;
     width: calc(100% - 100px);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .w-foot>.w-foot-name>div>.w-left>.w-zi>p{
     padding: 5px 20px;

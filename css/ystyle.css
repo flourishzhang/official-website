@@ -64,7 +64,7 @@
 }
 
 .y-fang-box2>.y-body>ul>li:hover {
-    box-shadow: 0px 0px 15px rgb(163, 160, 160, .8)
+    box-shadow: 0px 0px 15px rgb(163, 160, 160, .8);
 }
 
 .y-fang-box2>.y-body>ul>li>a {
@@ -73,7 +73,13 @@
 }
 
 .y-fang-box2>.y-body>ul>li>a>img {
-    width: 100%;
+    /* width: 100%; */
+    width:563px;
+    transition: all 0.6s;
+}
+.y-fang-box2>.y-body>ul>li>a>img:hover{
+    transform: scale(1.1);
+
 }
 
 .y-fang-box2>.y-body>ul>li>a>h3 {
@@ -276,8 +282,12 @@
 
 .y-wu-box2>.y-wu-body1>ul>li>img {
     margin-top: 40px;
+    transition: all 0.6s;
 }
 
+.y-wu-box2>.y-wu-body1>ul>li>img:hover{
+transform: scale(1.2)
+}
 .y-wu-box2>.y-wu-body1>ul>li>p {
     font-size: 18px;
     color: #666;
@@ -561,10 +571,22 @@
     float: left;
     margin: 10px 15px;
 }
-
-.y-guan-box3>.y-box3-body>ul>li>img {
-    width: 100%;
+.y-guan-box3>.y-box3-body>ul>li:hover .pic1{
+    display: none;
 }
+.y-guan-box3>.y-box3-body>ul>li:hover .pic2{
+    display: block;
+}
+
+.y-guan-box3>.y-box3-body>ul>li>.pic1{
+    display: block;
+    width:100%;
+}
+.y-guan-box3>.y-box3-body>ul>li>.pic2{
+    display: none;
+    width:94%;
+}
+
 
 .y-guan-box4 {
     width: 100%;
@@ -768,8 +790,13 @@
 .y-work-box3>.y-box3-body>ul>li>.y-box3-tu {
     text-align: center;
     margin-top: 40px;
-}
+    transition: all .5s;
 
+}
+.y-work-box3>.y-box3-body>ul>li>.y-box3-tu:hover{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
 .y-work-box3>.y-box3-body>ul>li>.y-box3-zhi {
     text-align: center;
     width: 100%;
@@ -1604,11 +1631,14 @@
     margin: 10px 25px;
     float: left;
     text-align: center;
+    transition: all .5s;
 }
 
 .y-bar-box5>.y-bar-body5>ul>li:hover {
     background: url(../img/bar/b3.png) no-repeat;
     background-size: 100% 100%;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
 }
 
 .y-bar-box5>.y-bar-body5>ul>li:hover p {
@@ -1619,6 +1649,8 @@
     font-size: 18px;
     color: #666;
     margin-top: 108px;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
 }
 
 .y-bar-box6 {

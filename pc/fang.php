@@ -13,7 +13,7 @@
                 </div>
             </div>
             <ul class="clearfix">
-                <li>
+                <li  class="fromRight">
                     <a href="<?php SiteUrl();?>/gym.html">
                         <img src="../img/fang/f1.png">
                         <h3>仓库管理系统</h3>
@@ -24,7 +24,7 @@
                         </p>
                     </a>
                 </li>
-                <li>
+                <li  class="fromLeft">
                     <a href="<?php SiteUrl();?>/community.html">
                     <img src="../img/fang/f2.png">
                     <h3> 智慧小区</h3>
@@ -35,7 +35,7 @@
                     </p>
                     </a>
                 </li>
-                <li>
+                <li  class="fromRight">
                     <a href="<?php SiteUrl();?>/powerful.html">
                     <img src="../img/fang/f3.png">
                     <h3> 电力远程控制</h3>
@@ -46,7 +46,7 @@
                     </p>
                     </a>
                 </li>
-                <li>
+                <li  class="fromLeft">
                     <a href="<?php SiteUrl();?>/agriculture.html">
                     <img src="../img/fang/f4.png">
                     <h3> 智慧农业</h3>
@@ -57,7 +57,7 @@
                     </p>
                     </a>
                 </li>
-                <li>
+                <li  class="fromRight">
                     <a href="<?php SiteUrl();?>/cinema.html">
                     <img src="../img/fang/f5.png">
                     <h3> 影院服务平台</h3>
@@ -68,7 +68,7 @@
                     </p>
                     </a>
                 </li>
-                <li>
+                <li  class="fromLeft">
                     <a href="<?php SiteUrl();?>/cybercafe.html">
                     <img src="../img/fang/f6.png">
                     <h3> 无人网吧</h3>
@@ -101,7 +101,7 @@
                             <span class="iconfont iconxiangyou"></span></p>
                     </a>
                 </li> -->
-                <li>
+                <li  class="fromRight">
                     <a>
                         <img src="../img/fang/f9.png">
                         <h3> 了解更多方案</h3>
@@ -115,4 +115,3 @@
         <img src="../img/fang/foot1.png">
     </div>
     <?php require ("pc/foot.php");?>
-

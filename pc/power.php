@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="y-power-body  clearfix">
-            <div class="y-power-left">
+            <div class="y-power-left  fromRight">
                 <p>
                     该系统是基于互联网的数据远程实时传输以及数据远程 控制功能开发的。通过网络监控各个设备结点,以分散 监控,集中管理的方式有效解决用电单位电气线路老旧、 小微企业无专业电工、肉眼无法直观系统即时排查电气 隐患、隐蔽工程隐患检查难等难题。
                 </p>
@@ -25,7 +25,7 @@
                 </p>
 
             </div>
-            <div class="y-power-right">
+            <div class="y-power-right  fromLeft">
                 <img src="../img/power/p1.png" alt="">
             </div>
         </div>

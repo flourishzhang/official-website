@@ -5,16 +5,16 @@
     </div>
     <div class="y-guan-box2">
         <div class="y-box2-title">
-            <div class="title">
+            <div class="title  fromTop">
                 <img class="y-left" src="../img/guan/titleleft.png"> 公司简介
                 <img class="y-right" src="../img/guan/titleright.png">
             </div>
         </div>
         <div class="y-box2-body  clearfix">
-            <div class="y-body-left">
+            <div class="y-body-left  fromRight">
                 <img src="../img/guan/g1.png" alt="">
             </div>
-            <div class="y-body-right">
+            <div class="y-body-right  fromLeft">
                 <h3>了解我们</h3>
                 <p>沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。 以精湛的技 术、丰富的经验、优质的服务来为客户提供互联网- -站式解 决方案。
                 </p>
@@ -25,34 +25,39 @@
     </div>
     <div class="y-guan-box3">
         <div class="y-box3-title">
-            <div class="title">
+            <div class="title  fromTop">
                 <img class="y-left" src="../img/guan/titleleft.png"> 我们的理念
                 <img class="y-right" src="../img/guan/titleright.png">
             </div>
         </div>
         <div class="y-box3-body">
             <ul class="clearfix">
-                <li>
-                    <img src="../img/guan/l1.png" alt="">
+                <li >
+                    <img src="../img/guan/l1.png" class="pic1">
+                    <img src="../img/guan/n1.png" class="pic2">
                 </li>
                 <li>
-                    <img src="../img/guan/l2.png" alt="">
+                    <img src="../img/guan/l2.png" class="pic1">
+                    <img src="../img/guan/n2.png" class="pic2">
                 </li>
                 <li>
-                    <img src="../img/guan/l3.png" alt="">
+                    <img src="../img/guan/l3.png" class="pic1">
+                    <img src="../img/guan/n3.png" class="pic2">
                 </li>
-                <li>
-                    <img src="../img/guan/l4.png" alt="">
+                <li >
+                    <img src="../img/guan/l4.png" class="pic1">
+                    <img src="../img/guan/n4.png" class="pic2">
                 </li>
-                <li>
-                    <img src="../img/guan/l5.png" alt="">
+                <li >
+                    <img src="../img/guan/l5.png" class="pic1">
+                    <img src="../img/guan/n5.png" class="pic2">
                 </li>
             </ul>
         </div>
     </div>
     <div class="y-guan-box4">
         <div class="y-box4-title">
-            <div class="title">
+            <div class="title  fromTop">
                 <img class="y-left" src="../img/guan/titleleft.png"> 合作伙伴
                 <img class="y-right" src="../img/guan/titleright.png">
             </div>

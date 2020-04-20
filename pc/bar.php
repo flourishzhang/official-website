@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="y-bar-body  clearfix">
-            <div class="y-bar-left">
+            <div class="y-bar-left fromRight ">
                 <p>
                     针对当前网吧行业的相关痛点,本方案结合当前先进的 物联网技术,利用app开门,支付宝/微信收费的方式实 现无人化, 24小时营业的无人网吧。
                 </p>
@@ -26,7 +26,7 @@
                 </p>
 
             </div>
-            <div class="y-bar-right">
+            <div class="y-bar-right  fromLeft">
                 <img src="../img/bar/b1.png">
             </div>
         </div>
