@@ -52,12 +52,12 @@
 </body>
 <script>
 var map = new BMap.Map("container");
-map.centerAndZoom(new BMap.Point(116.404, 39.915),15);
+map.centerAndZoom(new BMap.Point(<?php echo $webmsg['baidumapx'];?>,<?php echo $webmsg['baidumapy'];?>),<?php echo $webmsg['baidumapzoom'];?>);
 map.enableScrollWheelZoom(true);
 // 用经纬度设置地图中心点114.415836, 30.500568
 function theLocation() {
     map.clearOverlays();
-    var new_point = new BMap.Point(116.404, 39.915);
+    var new_point = new BMap.Point(<?php echo $webmsg['baidumapx'];?>,<?php echo $webmsg['baidumapy'];?>);
     var marker = new BMap.Marker(new_point); // 创建标注
     map.addOverlay(marker); // 将标注添加到地图中
     map.panTo(new_point);
