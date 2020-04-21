@@ -6,7 +6,7 @@
     </div>
     <div class="y-fang-box2">
         <div class="y-body">
-            <div class="y-body-title">
+            <div class="y-body-title fromTop">
                 <div class="title">
                     <img class="y-left" src="../img/fang/titleleft.png"> 解决方案
                     <img class="y-right" src="../img/fang/titleright.png">

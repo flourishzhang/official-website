@@ -387,7 +387,7 @@ transform: scale(1.2)
 
 .y-detail-box2>.y-detail-body>.return {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
     height: 50px;
     line-height: 70px;
     display: flex;
@@ -404,7 +404,8 @@ transform: scale(1.2)
 }
 
 .y-detail-box2>.y-detail-body>.body-title {
-    text-align: center;
+    width: 1200px;
+    margin: 10px auto;
 }
 
 .y-detail-box2>.y-detail-body>.body-title>p {
@@ -412,7 +413,7 @@ transform: scale(1.2)
 }
 
 .y-detail-box2>.y-detail-body>.body-foot {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -421,7 +422,7 @@ transform: scale(1.2)
 }
 
 .y-detail-box2>.y-detail-body>.body-foot>ul>li {
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .y-detail-box2>.y-detail-body>.body-foot>ul>li>span {
@@ -673,9 +674,17 @@ transform: scale(1.2)
     margin-left: 10%;
 }
 
-.y-work-box2>.y-box2-body1>.y-body1-left>div {
-    position: absolute;
-    margin: 20px 5px;
+.y-work-box2>.y-box2-body1>.y-body1-left>.tu {
+    width: 128px;
+    height: 128px;
+    margin: 10px;
+}
+.y-work-box2>.y-box2-body1>.y-body1-left>.tu>img {
+    width: 128px;
+}
+.y-work-box2>.y-box2-body1>.y-body1-left>.zi {
+    margin: 10px;
+    margin-top: 20px;
 }
 
 .y-work-box2>.y-box2-body1>.y-body1-left>div>h4 {
@@ -706,9 +715,14 @@ transform: scale(1.2)
     float: left;
     width: 48%;
 }
-
-.y-work-box2>.y-box2-body2>.y-body2-right>div {
-    position: absolute;
+.y-work-box2>.y-box2-body2>.y-body2-right>.tu {
+    width: 128px;
+    margin: 20px 5px;
+}
+.y-work-box2>.y-box2-body2>.y-body2-right>.tu>img{
+    width: 100%;
+}
+.y-work-box2>.y-box2-body2>.y-body2-right>.zi {
     margin: 20px 5px;
 }
 
@@ -1631,14 +1645,14 @@ transform: scale(1.2)
     margin: 10px 25px;
     float: left;
     text-align: center;
-    transition: all .5s;
+    transition: all 1s;
 }
 
 .y-bar-box5>.y-bar-body5>ul>li:hover {
     background: url(../img/bar/b3.png) no-repeat;
     background-size: 100% 100%;
-    transform: rotateY(360deg);
-    transform-style: preserve-3d;
+    /* transform: rotateY(360deg);
+    transform-style: preserve-3d; */
 }
 
 .y-bar-box5>.y-bar-body5>ul>li:hover p {

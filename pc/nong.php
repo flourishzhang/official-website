@@ -11,32 +11,31 @@
             </a>
         </div>
         <div class="y-nong-title1  clearfix">
-            <div class="title1">
+            <div class="title1 fromTop">
                 方案简介
                 <img class="y-tu" src="../img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body  clearfix">
-            <div class="y-nong-left">
+            <div class="y-nong-left fromRight">
                 <p>
                     智能农业温室大棚，可实时无线采集和传输温室大棚内 空气中以及土壤的温度、湿度、光照、PH、 CO2浓度等 环境参数,通过PC电脑、移动手机和平板电脑以直观的 图表和曲线的方式显示给用户,可根据种植作物的需求 提供各种声光报警信息,并可以自定义规则控制洒水、 农药以及温度。它主要由农业温室大棚、各种无线传感 话、控制器及后台系统软件和用户端APP等组成。</p>
-
             </div>
-            <div class="y-nong-right">
+            <div class="y-nong-right fromLeft">
                 <img src="../img/nong/A1.png" alt="">
             </div>
         </div>
     </div>
     <div class="y-nong-box3">
         <div class="y-nong-title2  clearfix">
-            <div class="title2">
+            <div class="title2 fromTop">
                 功能介绍
                 <img class="y-tu" src="../img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body2">
             <ul class="clearfix">
-                <li>
+                <li class="fromRight">
                     <h3>温室环境实时监控</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -48,7 +47,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="fromLeft">
                     <h3>智能报警系统</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="fromRight">
                     <h3>视频监控</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -72,7 +71,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="fromLeft">
                     <h3>远程自动控制</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -84,7 +83,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="fromRight">
                     <h3>数据分析</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -96,7 +95,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="fromLeft">
                     <h3>可定制更多功能</h3>
                     <div class="y-nong-text  clearfix">
                         <div class="y-text-left">
@@ -113,26 +112,26 @@
     </div>
     <div class="y-nong-box4">
         <div class="y-nong-title4 clearfix">
-            <div>
+            <div class="fromTop">
                 方案的组成
                 <img src="../img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body4">
             <ul class="clearfix">
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.3s;">
                     <h3>传感器</h3>
                     <p>采集温室大棚内空气中以及土壤的温度、湿度、光照、PH、CO2浓度等环境参数</p>
                 </li>
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.5s;">
                     <h3>控制器</h3>
                     <p>可控制洒水、农药、温度等</p>
                 </li>
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.7s;">
                     <h3>用户端App</h3>
                     <p>可以查看环境参数、操作控制器等</p>
                 </li>
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.9s;">
                     <h3>后台</h3>
                     <p>可设置权限、用户、设备、规则、数据等管理</p>
                 </li>

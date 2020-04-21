@@ -1,14 +1,14 @@
 
     <div class="w-foot">
-        <div class="w-foot-title">
+        <div class="w-foot-title fromTop">
             <div class="title">
                 <img class="w-left" src="../img/titleleft.png"> 联系我们
                 <img class="w-right" src="../img/titleright.png">
             </div>
         </div>
         <div class="w-foot-adress clearfix">
-            <div class="w-foot-map" id="container"></div>
-            <div class="w-foot-text">
+            <div class="w-foot-map fromRight" id="container"></div>
+            <div class="w-foot-text fromLeft">
                 <div>地址:<?php WebsiteAddress ();?></div>
                 <div>QQ: <?php WebsiteQQ ();?></div>
                 <div>电话:<?php WebsiteTelephone ();?></div>
@@ -66,7 +66,7 @@ theLocation();
 
 let keyword1 = $("#w_input_news").val()
 let url1 = $("#w_news_search").attr('data-url')
-if(keyword1.length!=0){
+if(keyword1){
     $("#w_news_search").attr('href',url1+'-'+ keyword1+'.html')
 }else{
     $("#w_news_search").attr('href','javascript:')
@@ -74,15 +74,13 @@ if(keyword1.length!=0){
 
 
 $("#w_input_news").bind("input propertychange",function(event){
-       console.log($("#w_input_news").val())
-       console.log($("#w_news_search").attr('data-url'))
-       let keyword = $("#w_input_news").val()
-       let url = $("#w_news_search").attr('data-url')
-       if(keyword.length!=0){
-        $("#w_news_search").attr('href',url+ keyword+'.html')
-       }else{
-        $("#w_news_search").attr('href','javascript:')
-       }
+    let keyword = $("#w_input_news").val()
+    let url = $("#w_news_search").attr('data-url')
+    if(keyword.length!=0){
+    $("#w_news_search").attr('href',url+ keyword+'.html')
+    }else{
+    $("#w_news_search").attr('href','javascript:')
+    }
 });
 </script>
 </html>

@@ -7,14 +7,14 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         <img src="../img/index/index_box1.png">
     </div>
     <div class="w-index-box2">
-        <div class="w-index-title">
+        <div class="w-index-title fromTop">
             <div>
                 公司简介
                 <img src="../img/titleright.png">
             </div>
         </div>
         <div class="w-index-content clearfix">
-            <div class="w-index-left">
+            <div class="w-index-left fromRight">
                 <p style="padding-bottom:10px;">沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。, 以精湛的技 术、丰富的经验、优质的服务来为客户提供互联网- -站式解 决方案。
                 </p>
                 <p style="padding-top:10px;">经营范围为:系统集成;信息技术咨询服务;数据处理;软 件开发;设计服务;商标代理服务;知识产权代理服务;广告 设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务; 工业设计;服务器搬迁维护等。
@@ -23,20 +23,20 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                     <a href="<?php SiteUrl();?>/about.html"> 查看更多<span class="iconfont icongengduo"></span></a>
                 </div>
             </div>
-            <div class="w-index-right">
+            <div class="w-index-right fromLeft">
                 <img src="../img/index/index_box2.png">
             </div>
         </div>
     </div>
     <div class="w-index-box3">
-        <div class="w-index-title">
+        <div class="w-index-title fromTop">
             <div class="title">
                 <img class="w-left" src="../img/titleleft.png"> 解决方案
                 <img class="w-right" src="../img/titleright.png">
             </div>
         </div>
         <div class="w-index-ul clearfix">
-            <div class="w-index-top">
+            <div class="w-index-top fromBottom" style="animation-delay: 0.3s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont icontubiaozhizuomoban"></span>
                 </div>
@@ -46,7 +46,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                     <a href="<?php SiteUrl();?>/gym.html">查看更多<span class="iconfont icongengduo"></span></a>
                 </div>
             </div>
-            <div class="w-index-top" style="margin: 20px 30px;">
+            <div class="w-index-top fromBottom" style="margin: 20px 30px; animation-delay: 0.5s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont iconhaofangtuo400iconfont2xiaoqu"></span>
                 </div>
@@ -55,7 +55,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 </p>
                 <div class="w-index-btn"><a href="<?php SiteUrl();?>/community.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
-            <div class="w-index-top">
+            <div class="w-index-top fromBottom" style="animation-delay: 0.7s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont iconkongzhi"></span>
                 </div>
@@ -64,7 +64,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 </p>
                 <div class="w-index-btn"><a href="<?php SiteUrl();?>/powerful.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
-            <div class="w-index-bottom">
+            <div class="w-index-bottom fromBottom" style="animation-delay: 0.3s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont iconnongye"></span>
                 </div>
@@ -74,7 +74,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 </p>
                 <div class="w-index-btn"><a href="<?php SiteUrl();?>/agriculture.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
-            <div class="w-index-bottom" style="margin: 20px 30px;">
+            <div class="w-index-bottom fromBottom" style="margin: 20px 30px; animation-delay: 0.5s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont icondianyingyuan"></span>
                 </div>
@@ -83,7 +83,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 </p>
                 <div class="w-index-btn"><a href="<?php SiteUrl();?>/cinema.html">查看更多<span class="iconfont icongengduo"></span></a></div>
             </div>
-            <div class="w-index-bottom">
+            <div class="w-index-bottom fromBottom" style="animation-delay: 0.7s;">
                 <div class="w-index-iconfont">
                     <span class="iconfont iconshubiao"></span>
                 </div>
@@ -95,7 +95,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         </div>
     </div>
     <div class="w-index-box4" id="slideBox1">
-        <div class="w-index-title">
+        <div class="w-index-title fromTop">
             <div>
                 公司案例
                 <img src="../img/titleright.png">
@@ -141,20 +141,20 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
     </div>
     <div class="w-index-box5">
         <div class="w-index-title">
-            <div class="title">
+            <div class="title fromTop">
                 <img class="w-left" src="../img/titleleft.png"> 新闻资讯
                 <img class="w-right" src="../img/titleright.png">
             </div>
         </div>
         <div class="w-index-content clearfix">
-            <div class="w-index-news">
+            <div class="w-index-news fromRight">
                 <a href=<?php echo isset($newsList[0]) ? SiteUrl ()."/article-id-".$newsList[0]["articleid"].".html":SiteUrl ()."/news.html";?>>
                     <img src=<?php echo isset($newsList[0]) ? $newsList[0]["thumbnail"] : "../img/index/index_box5.png";?> alt="">
                     <div><?php echo isset($newsList[0]) ? $newsList[0]["title"] : "暂无内容";?></div>
                     <p><?php echo isset($newsList[0]) ? $newsList[0]["desc"] : "暂无内容";?></p>
                 </a>
             </div>
-            <div class="w-index-more">
+            <div class="w-index-more fromLeft">
                 <div class="w-index-ul clearfix">
                     <div class="w-index-time">
                         <h3><?php echo isset($newsList[1]) ? date('m/d',strtotime($newsList[1]["createtime"])):"";?></h3>
@@ -189,13 +189,13 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         </div>
     </div>
     <div class="w-index-box6">
-        <div class="w-index-title">
+        <div class="w-index-title fromTop">
             <div>
                 服务结构
                 <img src="../img/titleright.png">
             </div>
         </div>
-        <div class="w-index-img">
+        <div class="w-index-img fromBottom">
             <img src="../img/index/index_box6.png" alt="">
         </div>
     </div>

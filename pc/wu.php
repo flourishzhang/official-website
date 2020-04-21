@@ -4,7 +4,7 @@
         <img src="../img/wu/background3.png">
         <div>
             <div class="y-wu-body1">
-                <div class="y-wu-title">
+                <div class="y-wu-title fromTop">
                     <p>物联网模块</p>
                     <p>全系产品内置协议端、免开发</p>
                     <span class="iconfont iconxiangxia"></span>
@@ -48,7 +48,7 @@
     <div class="y-wu-box2">
         <img src="../img/wu/w3.png" alt="">
         <div class="y-wu-body1">
-            <div>
+            <div class="fromTop">
                 <p>物联网解决方案</p>
                 <p>从消费级到工业级物联网，满足你的需求</p>
                 <span class="iconfont iconxiangxia"></span>

@@ -32,23 +32,23 @@
         </div>
         <div class="y-box3-body">
             <ul class="clearfix">
-                <li >
+                <li class="fromBottom" style="animation-delay: 0.3s;">
                     <img src="../img/guan/l1.png" class="pic1">
                     <img src="../img/guan/n1.png" class="pic2">
                 </li>
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.5s;">
                     <img src="../img/guan/l2.png" class="pic1">
                     <img src="../img/guan/n2.png" class="pic2">
                 </li>
-                <li>
+                <li class="fromBottom" style="animation-delay: 0.7s;">
                     <img src="../img/guan/l3.png" class="pic1">
                     <img src="../img/guan/n3.png" class="pic2">
                 </li>
-                <li >
+                <li class="fromBottom" style="animation-delay: 0.9s;">
                     <img src="../img/guan/l4.png" class="pic1">
                     <img src="../img/guan/n4.png" class="pic2">
                 </li>
-                <li >
+                <li class="fromBottom" style="animation-delay: 1.1s;">
                     <img src="../img/guan/l5.png" class="pic1">
                     <img src="../img/guan/n5.png" class="pic2">
                 </li>
@@ -62,7 +62,7 @@
                 <img class="y-right" src="../img/guan/titleright.png">
             </div>
         </div>
-        <div class="y-box4-pic">
+        <div class="y-box4-pic fromBottom">
             <img src="../img/guan/g2.png" alt="">
         </div>
     </div>
