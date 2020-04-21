@@ -1,7 +1,7 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-power-box1">
-        <img src="../img/power/banner2.png">
+        <img src="<?php AssetsUrl ();?>/img/power/banner2.png">
     </div>
     <div class="y-power-box2">
         <div class="y-power-return">
@@ -13,7 +13,7 @@
         <div class="y-power-title1  clearfix">
             <div class="title1 fromTop">
                 方案简介
-                <img class="y-tu" src="../img/power/t1.png" alt="">
+                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
             </div>
         </div>
         <div class="y-power-body  clearfix">
@@ -26,7 +26,7 @@
 
             </div>
             <div class="y-power-right  fromLeft">
-                <img src="../img/power/p1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/power/p1.png" alt="">
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="y-power-title2  clearfix">
             <div class="title2 fromTop">
                 系统简介
-                <img class="y-tu" src="../img/power/t1.png" alt="">
+                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
             </div>
         </div>
         <div class="y-power-body2">
@@ -76,7 +76,7 @@
         <div class="y-power-title4 clearfix">
             <div class="fromTop">
                 功能明细
-                <img src="../img/power/t1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
             </div>
         </div>
         <ul>
@@ -88,12 +88,12 @@
                 </div>
                 <div class="y-block"></div>
                 <div class="y-power-tu fromLeft" style="animation-delay: 0.5s;">
-                    <img src="../img/power/p2.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/power/p2.png" alt="">
                 </div>
             </li>
             <li class="clearfix">
                 <div class="y-power-tu fromRight" style="animation-delay: 0.5s;">
-                    <img src="../img/power/p3.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/power/p3.png" alt="">
                 </div>
                 <div class="y-block"></div>
                 <div class="y-power-zi fromRight" style="animation-delay: 0.3s;">
@@ -136,6 +136,6 @@
 
     </div>
     <div class="y-power-box5">
-        <img src="../img/power/foot.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/power/foot.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

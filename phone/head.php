@@ -37,17 +37,17 @@ $articleinfo = $info["articleinfo"];
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
-    <link rel="stylesheet" href="../css/mui.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/ystyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <script src="../js/jquery-2.0.3.min.js"></script>
-    <script src="../js/mui.min.js"></script>
-    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/banner.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/mui.min.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/init.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/ystyle.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/iconfont.css">
+    <script src="<?php AssetsUrl ();?>/js/jquery-2.0.3.min.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/mui.min.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/banner.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- 侧滑导航根容器 -->
@@ -89,7 +89,7 @@ $articleinfo = $info["articleinfo"];
         <!-- 主页面标题 -->
         <header class="mui-bar mui-bar-nav" style="background: #fff;">
             <div class="nav_logo clearfix">
-                <img src="../img/phone_logo.png">
+                <img src="<?php AssetsUrl ();?>/img/phone_logo.png">
             </div>
             <a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
         </header>

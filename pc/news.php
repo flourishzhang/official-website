@@ -7,7 +7,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
 ?>
 <?php require ("pc/head.php");?>
     <div class="w-news-box1">
-        <img src="../img/news/news_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/news/news_box1.png" alt="">
     </div>
     <div class="w-news-box2">
         <ul class="clearfix">
@@ -139,6 +139,6 @@ if ($page != $totalpage) {
         </div>
     </div>
     <div class="w-news-box6">
-        <img src="../img/news/news_box6.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/news/news_box6.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

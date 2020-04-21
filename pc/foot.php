@@ -2,8 +2,8 @@
     <div class="w-foot">
         <div class="w-foot-title fromTop">
             <div class="title">
-                <img class="w-left" src="../img/titleleft.png"> 联系我们
-                <img class="w-right" src="../img/titleright.png">
+                <img class="w-left" src="<?php AssetsUrl ();?>/img/titleleft.png"> 联系我们
+                <img class="w-right" src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <div class="w-foot-adress clearfix">
@@ -20,7 +20,7 @@
             <div class="clearfix">
                 <div class="w-left clearfix">
                     <div class="w-tu">
-                        <img src="../img/logo3.png" alt="">
+                        <img src="<?php AssetsUrl ();?>/img/logo3.png" alt="">
                     </div>
                     <div class="w-zi">
                         <p>沃航(武汉)科技股份有限公司版权所有</p>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="w-right">
-                    <img src="../img/logo4.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/logo4.png" alt="">
                 </div>
             </div>
         </div>
@@ -38,13 +38,13 @@
     <div class="w-right-fixed">
         <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php WebsiteQQ ();?>&site=qq&menu=yes">
             <div class="creafix">
-                <div class="tu"><img src="../img/qq.png"></div>
+                <div class="tu"><img src="<?php AssetsUrl ();?>/img/qq.png"></div>
                 <div class="zi"><?php WebsiteQQ ();?></div>
             </div>
         </a>
         <a>
             <div class="creafix">
-                <div class="tu"><img src="../img/phone.png"></div>
+                <div class="tu"><img src="<?php AssetsUrl ();?>/img/phone.png"></div>
                 <div class="zi"><?php WebsiteMobile ();?></div>
             </div>
         </a>

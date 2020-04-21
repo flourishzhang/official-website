@@ -9,7 +9,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
 
 <?php require ("pc/head.php");?>
     <div class="y-detail-box1">
-        <img src="../img/detail/banner4.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/detail/banner4.png" alt="">
     </div>
     <div class="y-detail-box2">
         <div class="y-detail-title">
@@ -66,6 +66,6 @@ $nextArticleInfo = $info["nextArticleInfo"];
         </div>
     </div>
     <div class="y-detail-box3">
-        <img src="../img/detail/foot.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/detail/foot.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

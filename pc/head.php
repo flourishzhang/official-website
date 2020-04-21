@@ -35,26 +35,26 @@ $articleinfo = $info["articleinfo"];
     <meta name="keywords" content="<?php WebsiteKeyWords ();?>">
     <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
     <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/init.css">
-    <link rel="stylesheet" href="../css/ystyle.css">
-    <link rel="stylesheet" href="../css/wstyle.css">
-    <link rel="stylesheet" href="../css/iconfont.css">
-    <link rel="stylesheet" href="../css/animation.css">
-    <!-- <link rel="stylesheet" href="../css/mui.min.css"> -->
-    <script src="../js/jquery-2.0.3.min.js"></script>
-    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="../js/banner.js"></script>
-    <script src="../js/animation.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <!-- <script src="../js/mui.min.js"></script> -->
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/init.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/ystyle.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/iconfont.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/animation.css">
+    <!-- <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/mui.min.css"> -->
+    <script src="<?php AssetsUrl ();?>/js/jquery-2.0.3.min.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/banner.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/animation.js"></script>
+    <script src="<?php AssetsUrl ();?>/js/bootstrap.min.js"></script>
+    <!-- <script src="<?php AssetsUrl ();?>/js/mui.min.js"></script> -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
 </head>
 
 <body>
     <nav>
         <div class="nav-center">
-            <div class="logo"><img src="../img/head/logo.png"></div>
+            <div class="logo"><img src="<?php AssetsUrl ();?>/img/head/logo.png"></div>
             <ul class="navbar">
                 <li>
                     <a href="<?php SiteUrl();?>/index.html"<?php if($active==1) echo "style=\"color: #000\"";?>>首页</a>

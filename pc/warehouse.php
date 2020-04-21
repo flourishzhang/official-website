@@ -1,14 +1,14 @@
 
 <?php require ("pc/head.php");?>
     <div class="w-wh-box1">
-        <img src="../img/warehouse/wh_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box1.png" alt="">
     </div>
     <div class="w-wh-box2">
         <a class="w-wh-return" href="<?php SiteUrl();?>/solution.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title fromTop">
             <div>
                 系统简介
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -48,7 +48,7 @@
         <div class="w-wh-title fromTop">
             <div>
                 当前问题以及解决方法
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <ul>
@@ -60,12 +60,12 @@
                 </div>
                 <div class="w-wh-ge"></div>
                 <div class="w-wh-tu fromLeft">
-                    <img src="../img/warehouse/wh_box3_1.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box3_1.png" alt="">
                 </div>
             </li>
             <li class="clearfix">
                 <div class="w-wh-tu fromRight">
-                    <img src="../img/warehouse/wh_box3_2.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box3_2.png" alt="">
                 </div>
                 <div class="w-wh-ge"></div>
                 <div class="w-wh-zi fromLeft">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="w-wh-ge"></div>
                 <div class="w-wh-tu fromLeft">
-                    <img src="../img/warehouse/wh_box3_3.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box3_3.png" alt="">
                 </div>
             </li>
         </ul>
@@ -92,7 +92,7 @@
         <div class="w-wh-title fromTop">
             <div>
                 功能说明
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -138,9 +138,9 @@
         <div class="w-wh-contant fromRight">当贴有RFID的物品从门禁中走过后, RFID读取设备发出信号给门禁 控制板,门禁控制板接收到RFID读取器发出的信号后启动视频监控 设备录像,然后将刚才的RFID读取设备接收到的信号以及视频监控 设备监控到的视频一起发送给中央服务器。中央服务器根据数据库 中存储的设备信息,修改对应物品的状态信息。如果使用的是手持 设备,只需要在手持设备上输入设备信息,手持设备会直接访问中 央服务器,拉取对应的RFID标签识别码,然后启动标签识别器,当 用户需要快速寻找某个物体时,可以先将精度调高,当对应物品在
             扫描范围内时,设备发出响声。然后再进一步将扫描精度调低,将 识别区域减小，- -点- -点的缩小扫描范围，直到最终找到物品。
         </div>
-        <div class="w-wh-img fromLeft"><img src="../img/warehouse/wh_box5.png" alt=""></div>
+        <div class="w-wh-img fromLeft"><img src="<?php AssetsUrl ();?>/img/warehouse/wh_box5.png" alt=""></div>
     </div>
     <div class="w-wh-box6">
-        <img src="../img/warehouse/wh_box6.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box6.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

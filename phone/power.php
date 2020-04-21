@@ -1,43 +1,43 @@
 <?php require ("phone/head.php");?>
     <div class="w-p-power-box1">
-        <img src="../img/phone_power/power_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/phone_power/power_box1.png" alt="">
     </div>
     <div class="w-p-power-box2">
         <a class="w-ct-return" href="<?php SiteUrl();?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
-        <img src="../img/phone_power/power_box2.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/phone_power/power_box2.png" alt="">
     </div>
 
     <div class="w-p-power-box3">
         <div class="w-wh-title">
             <div>
                 系统简介
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
             <li>
-                <img src="../img/phone_power/power_box3_1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_1.png" alt="">
             </li>
             <li style="margin: 5px 0.5%;">
-                <img src="../img/phone_power/power_box3_2.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_2.png" alt="">
             </li>
             <li>
-                <img src="../img/phone_power/power_box3_3.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_3.png" alt="">
             </li>
             <li>
-                <img src="../img/phone_power/power_box3_4.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_4.png" alt="">
             </li>
             <li  style="margin: 5px 0.5%;">
-                <img src="../img/phone_power/power_box3_5.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_5.png" alt="">
             </li>
             <li>
-                <img src="../img/phone_power/power_box3_6.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box3_6.png" alt="">
             </li>
         </ul>
     </div>
@@ -46,7 +46,7 @@
         <div class="w-wh-title">
             <div>
                 功能明细
-                <img src="../img/warehouse/wh_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <div class="w-contant clearfix">
@@ -59,12 +59,12 @@
                     </p>
             </div>
             <div class="w-tu">
-                <img src="../img/phone_power/power_box4_1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box4_1.png" alt="">
             </div>
         </div>
         <div class="w-contant">
             <div class="w-tu">
-                <img src="../img/phone_power/power_box4_1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/phone_power/power_box4_1.png" alt="">
             </div>
             <div class="w-zi">
                 <h3>2.用户管理系统</h3>

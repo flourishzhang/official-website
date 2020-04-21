@@ -8,7 +8,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
 ?>
 <?php require ("phone/head.php");?>
     <div class="w-p-news-box1">
-        <img src="../img/phone_news/new_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-newsdet-box2">
         <a class="w-ct-return" href="<?php SiteUrl();?>/phonenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>

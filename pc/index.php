@@ -4,13 +4,13 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
 
 <?php require ("pc/head.php");?>
     <div class="w-index-box1">
-        <img src="../img/index/index_box1.png">
+        <img src="<?php AssetsUrl ();?>/img/index/index_box1.png">
     </div>
     <div class="w-index-box2">
         <div class="w-index-title fromTop">
             <div>
                 公司简介
-                <img src="../img/titleright.png">
+                <img src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <div class="w-index-content clearfix">
@@ -24,15 +24,15 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 </div>
             </div>
             <div class="w-index-right fromLeft">
-                <img src="../img/index/index_box2.png">
+                <img src="<?php AssetsUrl ();?>/img/index/index_box2.png">
             </div>
         </div>
     </div>
     <div class="w-index-box3">
         <div class="w-index-title fromTop">
             <div class="title">
-                <img class="w-left" src="../img/titleleft.png"> 解决方案
-                <img class="w-right" src="../img/titleright.png">
+                <img class="w-left" src="<?php AssetsUrl ();?>/img/titleleft.png"> 解决方案
+                <img class="w-right" src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <div class="w-index-ul clearfix">
@@ -98,7 +98,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         <div class="w-index-title fromTop">
             <div>
                 公司案例
-                <img src="../img/titleright.png">
+                <img src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <a href="javascript:void(0)" class="prev"><span class="iconfont iconzuo"></span></a>
@@ -106,33 +106,33 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         <div class="w-index-banner">
             <ul class="clearfix w-index-banner-ul">
                 <li>
-                    <img src="../img/index/index_banner1.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner1.png" alt="">
                     <h3>自助服务终端</h3>
                     <p>本项目是一个政务类软硬件相结合的系统集成类项目，不动产自助打印终端是以现有窗口登记业务流程为依据，进行简化和优化，将业务流程电子化、自助化办理的创新成果，不仅能大大提升办事效率，减少排队；同时，该设备可实现社区化部署，市民任何时间均可就近自助办理，是落实“简政放权”的切实工作体现，节省时间、人员成本。<br/> 产品的主要功能有：电子表单、指纹采集、高清摄像、电子签名、身份验证、资料扫描、人脸识别。 这是国内首台不动产预受理系统，做到真正的全自助办理、无纸化绿色政务，身份证的的调档做到高效率，高准确性，并具有防破坏报警，社区化部署等特点。
                     </p>
                 </li>
                 <li>
-                    <img src="../img/index/index_banner2.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner2.png" alt="">
                     <h3>MiNi共享KTV</h3>
                     <p>MiNi共享KTV是一个由软件和硬件组成的综合性集成项目，包含了手机端的微信小程序，云端服务器，以及线下主机服务器，电子显示屏，等一系列连接控制。用户通过手机微信小程序来完成用户身份验证、充值押金、扫码开门、对唱歌机的控制、完成支付并查看自己的消费信息，以及在手机端的社交。</p>
                 </li>
                 <li>
-                    <img src="../img/index/index_banner3.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner3.png" alt="">
                     <h3>智能喷码设备</h3>
                     <p>本项目产品是一款工业级应用设备，在各种物体表面上喷印上图案文字和数码，是集机电一体化的高科技产品。产品广泛应用于食品工业、化妆品工业、医药工业、汽车等零件加工行业、电线电缆行业、铝塑管行业、烟酒行业以及其它领域。可用于喷印生产日期、批号、条型码以及商标图案、防伪标记和中文字样，是贯彻卫生法和促进包装现代化强有力的设备。</p>
                 </li>
                 <li>
-                    <img src="../img/index/index_banner4.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner4.png" alt="">
                     <h3>电力能效分析系统</h3>
                     <p>本系统是一个电力行业的能效管理系统，电力能效管理系统软件借助了计算机、通信设备、计量保护装置等，为系统的实时数据采集、开关状态检测及远程控制提供了基础平台。该电力监控系统可以为企业提供“监控一体化”的整体解决方案，主要包括实时历史数据库AcrSpace、工业自动化组态软件AcrControl、电力自动化软件AcrNetPower、“软”控制策略软件AcrStrategy、通信网关服务器AcrFieldComm、OPC产品、Web门户工具等，可以广泛地应用于企业信息化、DCS系统、PLC系统、SCADA系统。</p>
                 </li>
                 <li>
-                    <img src="../img/index/index_banner5.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner5.png" alt="">
                     <h3>教育云平台</h3>
                     <p>为学校用户提供教育信息化所需的网络空间、资源获取与共享平台服务及教学、科研、管理等应用的云服务。为学校用户提供教育信息化所需的网络空间、资源获取与共享平台</p>
                 </li>
                 <li>
-                    <img src="../img/index/index_banner6.png" alt="">
+                    <img src="<?php AssetsUrl ();?>/img/index/index_banner6.png" alt="">
                     <h3>校园O2O</h3>
                     <p>校园o2o平台是一个新兴的电子商务平台，主要是为了广大学生群体建立一个实用性，广泛性，快捷性的消费平台。就大学生的消费的状况，市场份额相当巨大，消费潜力也是非常可观，这样的市场为该平台的发展提供了广大的发展前景。<br>校园o2o特点：与其他消费平台相比，该平台用户更为固定主要以学生为主，自身公司形式开展，更具有可靠性。消费手段和消费产品多元化，团队成员更贴近校园群体。以消费群体为主体，更加得到消费者的认可。</p>
                 </li>
@@ -142,8 +142,8 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
     <div class="w-index-box5">
         <div class="w-index-title">
             <div class="title fromTop">
-                <img class="w-left" src="../img/titleleft.png"> 新闻资讯
-                <img class="w-right" src="../img/titleright.png">
+                <img class="w-left" src="<?php AssetsUrl ();?>/img/titleleft.png"> 新闻资讯
+                <img class="w-right" src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <div class="w-index-content clearfix">
@@ -192,14 +192,14 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         <div class="w-index-title fromTop">
             <div>
                 服务结构
-                <img src="../img/titleright.png">
+                <img src="<?php AssetsUrl ();?>/img/titleright.png">
             </div>
         </div>
         <div class="w-index-img fromBottom">
-            <img src="../img/index/index_box6.png" alt="">
+            <img src="<?php AssetsUrl ();?>/img/index/index_box6.png" alt="">
         </div>
     </div>
     <div class="w-index-box7">
-        <img src="../img/index/index_box7.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/index/index_box7.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

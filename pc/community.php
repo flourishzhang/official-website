@@ -1,14 +1,14 @@
 
 <?php require ("pc/head.php");?>
     <div class="w-ct-box1">
-        <img src="../img/community/community_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/community/community_box1.png" alt="">
     </div>
     <div class="w-ct-box2">
         <a class="w-ct-return" href="<?php SiteUrl();?>/fang.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-ct-title fromTop">
             <div>
                 方案简介
-                <img src="../img/community/community_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_title.png" alt="">
             </div>
         </div>
         <div class="clearfix w-ct-div">
@@ -19,7 +19,7 @@
                 PC和电视屏上,实现在任何时间、任何地点、以任何主
                 体、向任何对象、传播任何信息的应用系统。
             </div>
-            <div class="w-ct-img fromLeft"><img src="../img/community/community_box2.png" alt=""></div>
+            <div class="w-ct-img fromLeft"><img src="<?php AssetsUrl ();?>/img/community/community_box2.png" alt=""></div>
         </div>
     </div>
     
@@ -27,38 +27,38 @@
         <div class="w-ct-title fromTop">
             <div>
                 功能介绍
-                <img src="../img/community/community_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
             <li class="fromBottom" style="animation-delay: 0.3s;">
-                <img src="../img/community/community_box3_1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_box3_1.png" alt="">
                 <h3>物业服务</h3>
                 <p>在线报修,维修记录查询,社区公告，
                     便民电话,投书建议等功能。
                     </p>
             </li>
             <li class="fromBottom" style="animation-delay: 0.5s; margin: 21px 42px;">
-                <img src="../img/community/community_box3_2.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_box3_2.png" alt="">
                 <h3>安防服务</h3>
                 <p>视频监控、一卡通身份识别制度、楼宇
                     对讲、进出口管理等功能。
                     </p>
             </li>
             <li class="fromBottom" style="animation-delay: 0.7s;">
-                <img src="../img/community/community_box3_3.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_box3_3.png" alt="">
                 <h3>查询与缴费</h3>
                 <p>查询或缴纳水费、电费、煤气费。物业
                     费等等。
                     </p>
             </li>
             <li class="fromBottom" style="animation-delay: 0.3s;">
-                <img src="../img/community/community_box3_4.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_box3_4.png" alt="">
                 <h3>水位报警系统</h3>
                 <p>小区防洪水位监测。</p>
             </li>
             <li class="fromBottom" style="animation-delay: 0.5s;margin: 21px 42px;">
-                <img src="../img/community/community_box3_5.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_box3_5.png" alt="">
                 <h3>更多功能</h3>
                 <p>更多功能请联系我们商务。</p>
             </li>
@@ -69,7 +69,7 @@
         <div class="w-ct-title fromTop">
             <div>
                 设备介绍
-                <img src="../img/community/community_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -137,11 +137,11 @@
         <div class="w-ct-title fromTop">
             <div>
                 业务逻辑图
-                <img src="../img/community/community_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_title.png" alt="">
             </div>
         </div>
         <div class="w-ct-img clearfix fromBottom">   
-            <img src="../img/community/community_box5.png" alt="">
+            <img src="<?php AssetsUrl ();?>/img/community/community_box5.png" alt="">
         </div>
     </div>
 
@@ -149,7 +149,7 @@
         <div class="w-ct-title fromTop">
             <div>
                 设计原则
-                <img src="../img/community/community_title.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/community/community_title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -205,6 +205,6 @@
     </div>
 
     <div class="w-ct-box7">
-        <img src="../img/warehouse/wh_box6.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box6.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>

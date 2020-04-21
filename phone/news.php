@@ -8,7 +8,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
 ?>
 <?php require ("phone/head.php");?>
     <div class="w-p-news-box1">
-        <img src="../img/phone_news/new_box1.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-news-box2 clearfix">
         <div <?php if ($type == null) echo " class=\"active\"";?>><a href="<?php SiteUrl();?>/mobilenews.html">ALL+</a></div>
@@ -44,26 +44,26 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
         <div class="take-more">
             <div class="take-more1" >
         <a href="<?php SiteUrl ();?>/mobilenews<?php if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
-                                    <img src="../img/phone_news/first.png" alt="<?php WebsiteImportantWord ();?>">
+                                    <img src="<?php AssetsUrl ();?>/img/phone_news/first.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php if ($page == 1) { ?>
                                 <a href="#">
-                                    <img src="../img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
+                                    <img src="<?php AssetsUrl ();?>/img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php } else { ?>
                                 <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $page-1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html">
-                                    <img src="../img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
+                                    <img src="<?php AssetsUrl ();?>/img/phone_news/left.png" alt="<?php WebsiteImportantWord ();?>">
                                 </a>
 <?php } ?>
                             </div>
                             <span>第 <?php echo $page;?> 页</span>
                             <div class="take-more1" style="float: right;">
 <?php if ($page == $totalpage) { ?>
-                                <a href="#"><img src="../img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
-                                <a href="#"><img src="../img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="#"><img src="<?php AssetsUrl ();?>/img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="#"><img src="<?php AssetsUrl ();?>/img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
 <?php } else { ?>
-                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $page+1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
-                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="../img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $page+1;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="<?php AssetsUrl ();?>/img/phone_news/right.png" alt="<?php WebsiteImportantWord ();?>"></a>
+                                <a href="<?php SiteUrl ();?>/mobilenews-page-<?php echo $totalpage;if ($type != 0) echo "-type-".$type;?><?php if ($keyword != null) echo "-keyword-".$keyword;?>.html"><img src="<?php AssetsUrl ();?>/img/phone_news/last.png" alt="<?php WebsiteImportantWord ();?>"></a>
 <?php } ?>
         </div>
     </div>
