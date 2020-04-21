@@ -57,22 +57,22 @@ $articleinfo = $info["articleinfo"];
             <div class="logo"><img src="../img/head/logo.png"></div>
             <ul class="navbar">
                 <li>
-                    <a href="<?php SiteUrl();?>/index.html" style="color: #000">首页</a>
+                    <a href="<?php SiteUrl();?>/index.html"<?php if($active==1) echo "style=\"color: #000\"";?>>首页</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/iot.html" style="color: #000">物联网</a>
+                    <a href="<?php SiteUrl();?>/iot.html" <?php if($active==2) echo "style=\"color: #000\"";?>>物联网</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/solution.html" style="color: #000">解决方案</a>
+                    <a href="<?php SiteUrl();?>/solution.html" <?php if($active==3) echo "style=\"color: #000\"";?>>解决方案</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/news.html" style="color: #000">新闻资讯</a>
+                    <a href="<?php SiteUrl();?>/news.html" <?php if($active==4) echo "style=\"color: #000\"";?>>新闻资讯</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/about.html" style="color: #000">关于我们</a>
+                    <a href="<?php SiteUrl();?>/about.html" <?php if($active==5) echo "style=\"color: #000\"";?>>关于我们</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/recruit.html" style="color: #000">人才合作</a>
+                    <a href="<?php SiteUrl();?>/recruit.html" <?php if($active==6) echo "style=\"color: #000\"";?>>人才合作</a>
                 </li>
             </ul>
         </div>
