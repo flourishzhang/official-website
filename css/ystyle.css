@@ -377,6 +377,7 @@ transform: scale(1.2)
 }
 .y-detail-title>ul>li>a {
     color: #000;
+    text-decoration: none;
 }
 
 .y-detail-box2>.y-detail-body {
