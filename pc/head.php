@@ -38,8 +38,8 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/init.css">
     <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/ystyle.css">
-    <!-- <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css"> -->
-    <link rel="stylesheet" href="../css/wstyle.css">
+    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css">
+    <!-- <link rel="stylesheet" href="../css/wstyle.css"> -->
     <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/iconfont.css">
     <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/animation.css">
     <!-- <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/mui.min.css"> -->
