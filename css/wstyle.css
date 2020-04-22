@@ -305,8 +305,21 @@ nav:hover {
     position: relative;
     margin: 20px 0;
     background: #fff;
+    position: relative;z-index: 0;
 }
-
+.w-index-box3>.w-index-ul>div::before{
+    border-radius: 10px;
+    content:'';
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    background: -webkit-linear-gradient(top,#4990ff,#21cefe);
+    opacity: 0; 
+    transition: opacity 1s;
+    z-index: -1;
+}
 .w-index-box3>.w-index-ul>div>.w-index-iconfont {
     width: 70px;
     height: 70px;
@@ -324,7 +337,7 @@ nav:hover {
 
 .w-index-box3>.w-index-ul>div>h3 {
     font-size: 25px;
-    color: #5966d1;
+    color: #333;
     padding: 10px 30px;
     font-weight: bold;
 }
@@ -332,7 +345,7 @@ nav:hover {
 .w-index-box3>.w-index-ul>div>p {
     padding: 10px 30px;
     font-size: 20px;
-    color: #5966d1;
+    color: #666;
     line-height: 35px;
 }
 
@@ -358,8 +371,9 @@ nav:hover {
     font-size: 20px;
 }
 
-.w-index-box3>.w-index-ul>div:hover {
-    background: -webkit-linear-gradient(bottom,#4990ff,#21cefe);
+.w-index-box3>.w-index-ul>div:hover::before {
+    /* background: -webkit-linear-gradient(bottom,#4990ff,#21cefe); */
+    opacity: 1;
 }
 
 .w-index-box3>.w-index-ul>div:hover p {
@@ -623,7 +637,7 @@ nav:hover {
     position: absolute;
     bottom: 30px;
     left: 25px;
-    background: -webkit-linear-gradient(bottom,#4990ff,#21cefe);
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
     font-size: 20px;
     cursor: pointer;
