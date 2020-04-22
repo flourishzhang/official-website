@@ -167,6 +167,7 @@ nav:hover {
 .w-index-box2 {
     width: 1200px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .w-index-box2>.w-index-title {
@@ -221,12 +222,15 @@ nav:hover {
     position: absolute;
     bottom: 5px;
     left: 20px;
-    background: #60c0ff;
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
     font-size: 20px;
     cursor: pointer;
 }
 .w-index-box2>.w-index-content>.w-index-left>.w-index-btn>a{
+    display: block;
+    width: 100%;
+    height: 100%;
     color: #fff;
     font-size: 20px;
     text-decoration: none;
@@ -300,6 +304,7 @@ nav:hover {
     border-radius: 10px;
     position: relative;
     margin: 20px 0;
+    background: #fff;
 }
 
 .w-index-box3>.w-index-ul>div>.w-index-iconfont {
@@ -307,13 +312,13 @@ nav:hover {
     height: 70px;
     border-radius: 35px;
     margin: 30px 30px 10px 30px;
-    background: #cdd1f1;
+    background: -webkit-linear-gradient(top,#4990ff,#21cefe);
     text-align: center;
     line-height: 70px;
 }
 
 .w-index-box3>.w-index-ul>div>.w-index-iconfont>.iconfont {
-    color: #5966d1;
+    color: #fff;
     font-size: 35px;
 }
 
@@ -339,7 +344,7 @@ nav:hover {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    background: #5966d1;
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
     font-size: 20px;
     cursor: pointer;
@@ -354,7 +359,7 @@ nav:hover {
 }
 
 .w-index-box3>.w-index-ul>div:hover {
-    background: #92d4ff;
+    background: -webkit-linear-gradient(bottom,#4990ff,#21cefe);
 }
 
 .w-index-box3>.w-index-ul>div:hover p {
@@ -374,7 +379,7 @@ nav:hover {
 }
 
 .w-index-box3>.w-index-ul>div:hover .w-index-btn {
-    background: #5c93e8;
+    background: #35afff;
 }
 
 .w-index-box4 {
@@ -458,7 +463,7 @@ nav:hover {
 
 .w-index-box4>a>.iconfont {
     font-size: 70px;
-    color: #5966d1;
+    color: #4498ff;
 }
 
 .w-index-box4>.next {
@@ -618,7 +623,7 @@ nav:hover {
     position: absolute;
     bottom: 30px;
     left: 25px;
-    background: #60c0ff;
+    background: -webkit-linear-gradient(bottom,#4990ff,#21cefe);
     color: #fff;
     font-size: 20px;
     cursor: pointer;
