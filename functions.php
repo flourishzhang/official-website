@@ -100,7 +100,7 @@ function SiteUrl () {
 function AssetsUrl () {
     $webmsg = WebsiteMsg ();
     if($_SERVER['HTTP_HOST']=='localhost'){
-        echo 'localhost';
+        echo '..';
     }else{
         echo $webmsg["assetsurl"];
     }
