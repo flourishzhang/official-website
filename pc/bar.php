@@ -192,7 +192,4 @@
             </ul>
         </div>
     </div>
-    <div class="y-bar-box7">
-        <img src="<?php AssetsUrl ();?>/img/bar/foot.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

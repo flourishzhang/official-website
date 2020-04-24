@@ -66,7 +66,4 @@
             <img src="<?php AssetsUrl ();?>/img/guan/g2.png" alt="">
         </div>
     </div>
-    <div class="y-guan-box5">
-        <img src="<?php AssetsUrl ();?>/img/guan/foot1.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

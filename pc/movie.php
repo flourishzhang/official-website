@@ -218,7 +218,4 @@
         </div>
         
     </div>
-    <div class="w-wh-box6">
-        <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box6.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

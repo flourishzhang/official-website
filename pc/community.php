@@ -203,8 +203,4 @@
             </li>
         </ul>
     </div>
-
-    <div class="w-ct-box7">
-        <img src="<?php AssetsUrl ();?>/img/warehouse/wh_box6.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

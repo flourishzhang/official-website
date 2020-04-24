@@ -3,6 +3,16 @@
     <div class="y-wu-box1">
         <img src="<?php AssetsUrl ();?>/img/wu/background3.png">
         <div>
+            <div class="y-wu-dong">
+                <div class="animate-wang-top" style="top:150px;left:210px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong1.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:80px;left:500px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong2.png" alt=""></div>
+                <div class="animate-wang-top" style="top:100px;left:700px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong3.png" alt=""></div>
+                <div class="animate-wang-top" style="top:120px;left:950px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong4.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:350px;left:200px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong5.png" alt=""></div>
+                <div class="animate-wang-top" style="top:380px;left:400px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong6.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:350px;left:700px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong7.png" alt=""></div>
+                <div class="animate-wang-top" style="top:310px;left:880px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong8.png" alt=""></div>
+            </div>
             <div class="y-wu-body1">
                 <div class="y-wu-title fromTop">
                     <p>物联网模块</p>
@@ -10,32 +20,32 @@
                     <span class="iconfont iconxiangxia"></span>
                 </div>
                 <ul class="clearfix">
-                    <li  >
+                    <li  class="fromRight">
                         <img src="<?php AssetsUrl ();?>/img/wu/m1.png" alt="">
                         <p class="y-wu-p1">wifi模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
-                    <li>
+                    <li class="fromTop">
                         <img src="<?php AssetsUrl ();?>/img/wu/m2.png" alt="">
                         <p class="y-wu-p1">GPRS模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
-                    <li  >
+                    <li  class="fromLeft">
                         <img src="<?php AssetsUrl ();?>/img/wu/m3.png" alt="">
                         <p class="y-wu-p1">GPRS GPS 二合一模块</p>
                         <p class="y-wu-p2">GPRS无线通信 + GPS定位</p>
                     </li>
-                    <li  >
+                    <li  class="fromRight">
                         <img src="<?php AssetsUrl ();?>/img/wu/m4.png" alt="">
                         <p class="y-wu-p1">Lora模块</p>
                         <p class="y-wu-p2">Lora射频无线通信串口透传</p>
                     </li>
-                    <li >
+                    <li class="fromBottom">
                         <img src="<?php AssetsUrl ();?>/img/wu/m5.png" alt="">
                         <p class="y-wu-p1">智能主控板</p>
                         <p class="y-wu-p2">特种机械/车辆信息网关</p>
                     </li>
-                    <li  >
+                    <li  class="fromLeft">
                         <img src="<?php AssetsUrl ();?>/img/wu/m6.png" alt="">
                         <p class="y-wu-p1"> 开发板评估板系列</p>
                         <p class="y-wu-p2">应用广泛的开发板</p>

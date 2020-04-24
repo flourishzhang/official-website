@@ -201,7 +201,4 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
             <img src="<?php AssetsUrl ();?>/img/index/index_box6.png" alt="">
         </div>
     </div>
-    <div class="w-index-box7">
-        <img src="<?php AssetsUrl ();?>/img/index/index_box7.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

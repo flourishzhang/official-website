@@ -66,8 +66,24 @@
         opacity: 1;
     }
 }
-
-
+@keyframes wangBottom{
+    25%{transform:translateY(-20px)}
+    50%{transform:translateY(0px)}
+    75%{transform:translateY(20px)}
+    100%{transform:translateY(0)}
+}
+@keyframes wangTop{
+    25%{transform:translateY(20px)}
+    50%{transform:translateY(0px)}
+    75%{transform:translateY(-20px)}
+    100%{transform:translateY(0)}
+}
+.animate-wang-top{
+    animation:wangTop 2s linear infinite
+}
+.animate-wang-bottom{
+    animation:wangBottom 2s linear infinite
+}
 .fromBottom{
     opacity: 0;
     -webkit-animation: 1s ease forwards alternate;

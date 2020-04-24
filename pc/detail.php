@@ -65,7 +65,4 @@ $nextArticleInfo = $info["nextArticleInfo"];
             </div>
         </div>
     </div>
-    <div class="y-detail-box3">
-        <img src="<?php AssetsUrl ();?>/img/detail/foot.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

@@ -138,7 +138,4 @@
             </ul>
         </div>
     </div>
-    <div class="y-nong-box5">
-        <img src="<?php AssetsUrl ();?>/img/nong/foot.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

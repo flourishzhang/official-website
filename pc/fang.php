@@ -111,7 +111,4 @@
             </ul>
         </div>
     </div>
-    <div class="y-fang-box3">
-        <img src="<?php AssetsUrl ();?>/img/fang/foot1.png">
-    </div>
     <?php require ("pc/foot.php");?>

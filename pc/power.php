@@ -135,7 +135,4 @@
         </div>
 
     </div>
-    <div class="y-power-box5">
-        <img src="<?php AssetsUrl ();?>/img/power/foot.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

@@ -237,7 +237,4 @@
             </ul>
         </div>
     </div>
-    <div class="y-work-box4">
-        <img src="<?php AssetsUrl ();?>/img/work/foot.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

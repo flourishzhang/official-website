@@ -138,7 +138,4 @@ if ($page != $totalpage) {
             </ul>
         </div>
     </div>
-    <div class="w-news-box6">
-        <img src="<?php AssetsUrl ();?>/img/news/news_box6.png" alt="">
-    </div>
     <?php require ("pc/foot.php");?>

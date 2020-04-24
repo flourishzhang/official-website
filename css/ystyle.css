@@ -51,7 +51,8 @@
 
 .y-fang-box2>.y-body>ul {
     width: 1200px;
-    margin: 80px auto;
+    margin: 50px auto;
+    margin-bottom: 0px;
 }
 
 .y-fang-box2>.y-body>ul>li {
@@ -147,7 +148,20 @@
     height: 300px;
     position: initial;
 }
-
+.y-wu-box1>div>.y-wu-dong{
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.y-wu-box1>div>.y-wu-dong>div{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.y-wu-box1>div>.y-wu-dong>div>img{
+    width: 100%;
+}
 .y-wu-box1>div>.y-wu-body1 {
     width: 1200px;
     height: 1200px;
@@ -156,7 +170,6 @@
 
 .y-wu-box1>div>.y-wu-body1>.y-wu-title {
     text-align: center;
-    margin-top: 400px;
 }
 
 .y-wu-box1>div>.y-wu-body1>.y-wu-title>p:nth-child(1) {
@@ -190,25 +203,28 @@
     margin: 30px 35px;
     float: left;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
-
+.y-wu-box1>div>.y-wu-body1>ul>li::before{
+    border-radius: 10px;
+    content:'';
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    background: -webkit-linear-gradient(top,#4990ff,#21cefe);
+    opacity: 0; 
+    transition: opacity 1s;
+    z-index: -1;
+}
 .y-wu-box1>div>.y-wu-body1>ul>li:hover {
     color: #fff;
-    background-image: linear-gradient(125deg,#E4FFCD,#21cefe, #4990ff,#E4FFCD);
-    background-size: 400%;
-    animation: bganimation 15s infinite;
 }
-@keyframes bganimation {
-    0%{
-      background-position: 0% 50%;
-    }
-    50%{
-      background-position: 100% 50%;
-    }
-    100%{
-      background-position: 0% 50%;
-    }
-  }
+.y-wu-box1>div>.y-wu-body1>ul>li:hover::before {
+    opacity: 1; 
+}
 .y-wu-box1>div>.y-wu-body1>ul>li:hover .y-wu-p2 {
     color: #fff;
 }
@@ -459,6 +475,7 @@ transform: scale(1.2)
 .y-detail-box2>.y-detail-body>.return>a {
     font-size: 22px;
     color: #298be2;
+    text-decoration: none;
 }
 
 .y-detail-box2>.y-detail-body>.return>a>.iconfont {
@@ -694,7 +711,6 @@ transform: scale(1.2)
 .y-guan-box4>.y-box4-pic {
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 .y-guan-box4>.y-box4-pic>img {
@@ -857,7 +873,7 @@ transform: scale(1.2)
 
 .y-work-box3>.y-box3-body>ul {
     width: 100%;
-    margin-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 .y-work-box3>.y-box3-body>ul>li {
@@ -1140,7 +1156,6 @@ transform: scale(1.2)
 .y-nong-box4>.y-nong-body4 {
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 50px;
 }
 
 .y-nong-box4>.y-nong-body4>ul {
@@ -1767,7 +1782,6 @@ transform: scale(1.2)
 .y-bar-box6>.y-bar-body6 {
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 60px;
 }
 
 .y-bar-box6>.y-bar-body6>ul {
