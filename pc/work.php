@@ -119,8 +119,9 @@
                     </div>
                     <div class="y-box3-contenr">
                         <h4>工作内容:</h4>
-                        <p>1.配合美工完成网页切图。</p>
-                        <p>2.配合美工完成网页切图。</p>
+                        <p>1.实现产品界面和功能。</p>
+                        <p>2.根据前端框架，实现与后端交互的js逻辑代码编写。</p>
+                        <p>3.后期项目页面修改。</p>
                     </div>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.3s;">
@@ -240,4 +241,3 @@
         <img src="<?php AssetsUrl ();?>/img/work/foot.png" alt="">
     </div>
     <?php require ("pc/foot.php");?>
-
