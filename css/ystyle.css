@@ -183,8 +183,9 @@
 .y-wu-box1>div>.y-wu-body1>ul>li {
     width: 330px;
     height: 330px;
-    background: url(../img/wu/tu4.png) no-repeat;
-    background-size: 100% 100%;
+    box-shadow: 0 0 5px rgb(163, 160, 160, .5);
+    background: #fff;
+    border-radius:10px;
     margin: 30px 35px;
     float: left;
     text-align: center;
@@ -192,8 +193,8 @@
 
 .y-wu-box1>div>.y-wu-body1>ul>li:hover {
     color: #fff;
-    background: url(../img/wu/tu3.png) no-repeat;
-    background-size: 100% 100%;
+    background-color: #21cefe;
+    background-image: linear-gradient(#21cefe, #4990ff);
 }
 
 .y-wu-box1>div>.y-wu-body1>ul>li:hover .y-wu-p2 {
@@ -272,7 +273,7 @@
 
 .y-wu-box2>.y-wu-body1>ul>li:hover {
     color: #fff;
-    background: url(../img/wu/tu2.png) no-repeat;
+    background: url(../img/wu/tu22.png) no-repeat;
     background-size: 100% 100%;
 }
 
@@ -295,8 +296,10 @@ transform: scale(1.2)
 }
 
 .y-wu-box2>.y-wu-body2 {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    background: #f4f8ff;
+    padding-bottom: 20px;
 }
 
 .y-wu-box2>.y-wu-body2>div {
@@ -319,6 +322,53 @@ transform: scale(1.2)
 
 .y-wu-box2>.y-wu-body2>div>img {
     width: 100%;
+}
+
+.y-wu-box2>.y-wu-body3{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.y-wu-box2>.y-wu-body3>div{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.y-wu-box2>.y-wu-body3>div>p{
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    padding: 50px 0px 10px 0px;
+}
+
+.y-wu-box2>.y-wu-body3>div>.iconfont{
+    font-size: 50px;
+}
+
+.y-wu-box2>.y-wu-body3>ul{
+    width:100%;
+    margin:0 auto;
+}
+
+.y-wu-box2>.y-wu-body3>ul>li{
+    width:33.3%;
+    float:left;
+}
+.y-wu-box2>.y-wu-body3>ul>li>.pic1{
+    display: block;
+    width:100%
+}
+.y-wu-box2>.y-wu-body3>ul>li>.pic2{
+    display: none;
+    width:94%;
+}
+.y-wu-box2>.y-wu-body3>ul>li:hover .pic1{
+    display: none;
+}
+.y-wu-box2>.y-wu-body3>ul>li:hover .pic2{
+    display: block;
 }
 
 .y-wu-box3 {

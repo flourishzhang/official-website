@@ -99,7 +99,11 @@ function SiteUrl () {
 
 function AssetsUrl () {
     $webmsg = WebsiteMsg ();
-    echo $webmsg["assetsurl"];
+    if($_SERVER['HTTP_HOST']=='localhost'){
+        echo 'localhost';
+    }else{
+        echo $webmsg["assetsurl"];
+    }
 }
 
 function RecommendName () {

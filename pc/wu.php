@@ -46,7 +46,7 @@
         <div class="block"></div>
     </div>
     <div class="y-wu-box2">
-        <img src="<?php AssetsUrl ();?>/img/wu/w3.png" alt="">
+        <img src="<?php AssetsUrl ();?>/img/wu/w11.png" alt="">
         <div class="y-wu-body1">
             <div class="fromTop">
                 <p>物联网解决方案</p>
@@ -92,11 +92,52 @@
             <div  class="fromTop">
                 <p>物联网模块解决方案架构图</p>
                 <span class="iconfont iconxiangxia"></span>
-                <img src="<?php AssetsUrl ();?>/img/wu/w2.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/wu/w4.png" alt="">
             </div>
         </div>
-    </div>
-    <div class="y-wu-box3 ">
-        <img src="<?php AssetsUrl ();?>/img/wu/foot1.png">
+        <div class="y-wu-body3">
+            <div  class="fromTop">
+                <p> 物联网解决方案案列</p>
+                <span class="iconfont iconxiangxia"></span>
+            </div>
+            <ul class="clearfix">
+                <li>
+                    <img src="../img/wu/an1.png" class="pic1">
+                    <img src="../img/wu/li1.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an2.png" class="pic1">
+                    <img src="../img/wu/li2.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an3.png" class="pic1">
+                    <img src="../img/wu/li3.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an4.png" class="pic1">
+                    <img src="../img/wu/li4.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an5.png" class="pic1">
+                    <img src="../img/wu/li5.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an6.png" class="pic1">
+                    <img src="../img/wu/li6.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an7.png" class="pic1">
+                    <img src="../img/wu/li7.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an8.png" class="pic1">
+                    <img src="../img/wu/li8.png" class="pic2">
+                </li>
+                <li>
+                    <img src="../img/wu/an9.png" class="pic1">
+                    <img src="../img/wu/li9.png" class="pic2">
+                </li>
+            </ul>
+        </div>
     </div>
     <?php require ("pc/foot.php");?>
