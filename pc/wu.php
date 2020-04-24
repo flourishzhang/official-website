@@ -10,32 +10,32 @@
                     <span class="iconfont iconxiangxia"></span>
                 </div>
                 <ul class="clearfix">
-                    <li  class="fromRight">
+                    <li  >
                         <img src="<?php AssetsUrl ();?>/img/wu/m1.png" alt="">
                         <p class="y-wu-p1">wifi模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
-                    <li class="fromTop">
+                    <li>
                         <img src="<?php AssetsUrl ();?>/img/wu/m2.png" alt="">
                         <p class="y-wu-p1">GPRS模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
-                    <li  class="fromLeft">
+                    <li  >
                         <img src="<?php AssetsUrl ();?>/img/wu/m3.png" alt="">
                         <p class="y-wu-p1">GPRS GPS 二合一模块</p>
                         <p class="y-wu-p2">GPRS无线通信 + GPS定位</p>
                     </li>
-                    <li  class="fromRight">
+                    <li  >
                         <img src="<?php AssetsUrl ();?>/img/wu/m4.png" alt="">
                         <p class="y-wu-p1">Lora模块</p>
                         <p class="y-wu-p2">Lora射频无线通信串口透传</p>
                     </li>
-                    <li  class="fromBottom">
+                    <li >
                         <img src="<?php AssetsUrl ();?>/img/wu/m5.png" alt="">
                         <p class="y-wu-p1">智能主控板</p>
                         <p class="y-wu-p2">特种机械/车辆信息网关</p>
                     </li>
-                    <li  class="fromLeft">
+                    <li  >
                         <img src="<?php AssetsUrl ();?>/img/wu/m6.png" alt="">
                         <p class="y-wu-p1"> 开发板评估板系列</p>
                         <p class="y-wu-p2">应用广泛的开发板</p>
@@ -70,19 +70,19 @@
                     <img src="<?php AssetsUrl ();?>/img/wu/i4.png" alt="">
                     <p>智能空气检测</p>
                 </li>
-                <li  class="fromRight">
+                <li  class="fromRight"  style="animation-delay:0.5s;animation-name:fromRight">
                     <img src="<?php AssetsUrl ();?>/img/wu/i5.png" alt="">
                     <p>智能旅游</p>
                 </li>
-                <li  class="fromRight">
+                <li  class="fromRight"  style="animation-delay:0.5s;animation-name:fromRight">
                     <img src="<?php AssetsUrl ();?>/img/wu/i6.png" alt="">
                     <p>智能物流</p>
                 </li>
-                <li  class="fromLeft">
+                <li  class="fromLeft"  style="animation-delay:0.5s;animation-name:fromLeft">
                     <img src="<?php AssetsUrl ();?>/img/wu/i7.png" alt="">
                     <p>智能仓储</p>
                 </li>
-                <li  class="fromLeft">
+                <li  class="fromLeft"  style="animation-delay:0.5s;animation-name:fromLeft">
                     <img src="<?php AssetsUrl ();?>/img/wu/i8.png" alt="">
                     <p>智能农业</p>
                 </li>

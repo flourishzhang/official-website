@@ -66,6 +66,8 @@
         opacity: 1;
     }
 }
+
+
 .fromBottom{
     opacity: 0;
     -webkit-animation: 1s ease forwards alternate;

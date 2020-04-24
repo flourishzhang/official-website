@@ -113,7 +113,6 @@
     font-size: 20px;
     color: #1133f2;
 }
-
 .y-fang-box3 {
     width: 100%;
     margin: 0 auto;
@@ -195,10 +194,21 @@
 
 .y-wu-box1>div>.y-wu-body1>ul>li:hover {
     color: #fff;
-    background-color: #21cefe;
-    background-image: linear-gradient(#21cefe, #4990ff);
+    background-image: linear-gradient(125deg,#E4FFCD,#21cefe, #4990ff,#E4FFCD);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
 }
-
+@keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0% 50%;
+    }
+  }
 .y-wu-box1>div>.y-wu-body1>ul>li:hover .y-wu-p2 {
     color: #fff;
 }
