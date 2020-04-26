@@ -1584,6 +1584,7 @@ nav:hover {
     height: 290px;
     border-radius: 10px;
     text-align: center;
+    background: #fff;
 }
 .w-ct-box3>ul>li>img{
     width: 80px;
