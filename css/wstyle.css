@@ -732,7 +732,7 @@ nav:hover {
 }
 
 .w-news-box2>ul>.active {
-    border-bottom: 3px solid #5966d1;
+    border-bottom: 3px solid #4990ff;
 }
 
 .w-news-box2>ul>.active>a {
@@ -751,7 +751,7 @@ nav:hover {
     height: 60px;
     background: #fff;
     padding: 0 15px;
-    border:1px solid #5966d1;
+    border:1px solid #21cefe;
 }
 
 .w-news-box3>.w-news-input>input {
@@ -766,7 +766,7 @@ nav:hover {
     width: 20%;
     height: 60px;
     float: left;
-    background: #5966d1;
+    background: -webkit-linear-gradient(left,#21cefe,#4990ff);
     color: #fff;
     text-align: center;
     line-height: 60px;
