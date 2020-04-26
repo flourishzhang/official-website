@@ -1346,7 +1346,7 @@ transform: scale(1.2)
     top: 0;
     right: 0;
     bottom: 0;
-    background: -webkit-linear-gradient(top,#ff8800,#ff5700);
+    background: -webkit-linear-gradient(top,#8ddad5,#00cdac);
     opacity: 0;
     transition: opacity 1s;
     z-index: -1;
@@ -1408,13 +1408,14 @@ transform: scale(1.2)
 .y-power-box4 {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 60px;
+    background: #f4f8ff;
 }
 
 .y-power-box4>.y-power-title4 {
     width: 1200px;
     height: 100px;
     margin: 0 auto;
+    margin-top:50px;
 }
 
 .y-power-box4>.y-power-title4>div {
@@ -1437,6 +1438,7 @@ transform: scale(1.2)
 .y-power-box4>ul {
     width: 1200px;
     margin: 0 auto;
+
 }
 
 .y-power-box4>ul>li {
@@ -1508,16 +1510,6 @@ transform: scale(1.2)
     color: #666666;
     line-height: 35px;
 }
-
-.y-power-box5 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.y-power-box5>img {
-    width: 100%;
-}
-
 
 /* 无人网吧 */
 
