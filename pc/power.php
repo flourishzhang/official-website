@@ -76,85 +76,85 @@
         <div class="y-power-title4 clearfix">
             <div class="fromTop">
                 功能明细
-                <img src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
             </div>
         </div>
         <ul>
             <li class="clearfix">
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromRight">
                     <h3>1.权限管理</h3>
                     <p>本权限管理系统是考虑到管理人员不可能只有一个人， 有的人是管理这个片区，另一部分人是管理其他片区。有的人负责管理用户缴费,有的人负责用户报修以及设备的维护。
                     </p>
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromLeft">
                     <img src="../img/power/p2.png" alt="">
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromRight">
                     <img src="../img/power/p3.png" alt="">
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromLeft">
                     <h3>2.用户管理系统</h3>
                     <p> 这里的用户指的并不是管理员,而是终端用户,如果针对的是智能电表,那这个终端用户指的就将是每一-户的居民,每个用户可以绑定多个智能电表,但是每个智能电表智能绑定-个用户。
                     </p>
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromRight">
                     <h3>3.设备远程控制系统</h3>
                     <p>
                         设备远程控制系统基于推送技术实现,利用目前先进的类似mqtt技术,利用目前已有的以太网为基础。
                     </p>
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromLeft">
                     <img src="../img/power/p4.png" alt="">
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromRight">
                     <img src="../img/power/p5.png" alt="">
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromLeft">
                     <h3>4.新闻资讯系统</h3>
                     <p> 设备远程控制系统基于推送技术实现,利用目前先进的类似mqtt技术,利用目前已有的以太网为基础。
                     </p>
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromRight">
                     <h3>5.App系统</h3>
                     <p> App系统主要有两个端, -个是维修师傅的那一端,用于在故障现场查看设备参数的。另一个是用户端,用于支付费用,接收报警信息等。
                     </p>
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-tu">
+                <div class="y-power-tu fromLeft">
                     <img src="../img/power/p6.png" alt="">
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromRight">
                     <img src="../img/power/p7.png" alt="">
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-zi">
+                <div class="y-power-zi fromLeft">
                     <h3>6.数据存储</h3>
                     <p>设备本身有存储功能,用于保证当无网络的情况下运行数据能被记录下来。同时服务端也需要有数据记录,方便统计以及查阅。
                     </p>
                 </div>
             </li>
             <li class="clearfix">
-                <div class="y-power-zi">
+                <div class="y-power-zi  fromRight">
                     <h3> 7.数据分析</h3>
                     <p> 设备本身有存储功能,用于保证当无网络的情况下运行数据能被记录下来。同时服务端也需要有数据记录,方便统计以及查阅。
                     </p>
                 </div>
                 <div class="y-block"></div>
-                <div class="y-power-tu">
+                <div class="y-power-tu  fromLeft">
                     <img src="../img/power/p8.png" alt="">
                 </div>
             </li>
