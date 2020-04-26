@@ -13,7 +13,7 @@
         <div class="y-power-title1  clearfix">
             <div class="title1 fromTop">
                 方案简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
+                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
             </div>
         </div>
         <div class="y-power-body  clearfix">
@@ -26,7 +26,7 @@
 
             </div>
             <div class="y-power-right  fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/power/p1.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/power/p2.png" alt="">
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="y-power-title2  clearfix">
             <div class="title2 fromTop">
                 系统简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t1.png" alt="">
+                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
             </div>
         </div>
         <div class="y-power-body2">

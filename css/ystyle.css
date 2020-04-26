@@ -1337,6 +1337,25 @@ transform: scale(1.2)
     position: relative;
     z-index: 0;
 }
+
+.y-power-box3>.y-power-body2>ul>li::before{
+    border-radius: 10px;
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-linear-gradient(top,#ff8800,#ff5700);
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: -1;
+}
+
+.y-power-box3>.y-power-body2>ul>li:hover::before{
+    opacity: 1;
+}
+
 .y-power-box3>.y-power-body2>ul>li:nth-child(1){
     background: url(../img/power/power_x1.png) no-repeat;
     background-position:center;
