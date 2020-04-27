@@ -1206,16 +1206,28 @@ transform: scale(1.2)
 }
 .y-nong-box5>.y-nong-body5>ul>li>div{
     float: left;
-    height: 400px;
+    height:760px;
 }
 .y-nong-box5>.y-nong-body5>ul>li>.y-nong-tu{
     width: 40%;
 }
 .y-nong-box5>.y-nong-body5>ul>li>.y-nong-tu>img{
-    width:100%;
+    width:80%;
 }
 .y-nong-box5>.y-nong-body5>ul>li>.y-nong-zi{
     width: 55%;
+}
+.y-nong-box5>.y-nong-body5>ul>li>.y-nong-zi>h3{
+    font-weight: bold;
+    font-size: 23px;
+    padding: 50px 20px 10px 20px;
+    line-height: 35px;
+}
+.y-nong-box5>.y-nong-body5>ul>li>.y-nong-zi>p{
+    font-size: 19px;
+    padding: 10px 20px;
+    color: #666666;
+    line-height: 35px;
 }
 .y-nong-box5>.y-nong-body5>ul>li>.y-block{
     width: 5%;
