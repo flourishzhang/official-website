@@ -76,24 +76,28 @@
         <div class="y-bar-body4">
             <ul class="clearfix">
                 <li class="fromBottom" style="animation-delay: 0.3s;">
+                    <img src="../img/bar/bar_t1.png" alt="">
                     <h3>1.用户认证</h3>
                     <p>
                         网吧所有用户都需要下载-个App。每个用户拥有数据自 己的数据资料,通过登录App实现身份认证。然后通过后 台提取用户资料，了解用户的消费情况,权限信息等资料。 所有相关的设备都需要添加控制模块,通过物联网技术, 如，实现用户认证操作。然后确定是否开放对应设备。
                     </p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.5s;">
+                    <img src="../img/bar/bar_t2.png" alt="">
                     <h3>2.设备互联</h3>
                     <p>
                         网吧采用中央管理服务器管理,通过内部局域网与设备互 联，对健身房内部的所有智能硬件实现集中管理,这台服 务器又与云服务器连接,实现用户可以远程控制当前机房 的目的。
                     </p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.3s;">
+                    <img src="../img/bar/bar_t3.png" alt="">
                     <h3>3.用户资料录入与资料获取</h3>
                     <p>
                         客户端App连接远程服务器,通过远程服务器端获取当前 用户的信息,实现App可以在任意地方访问的可以达到相 同的效果。并且可以在后台实时看到用户信息与消费情况。
                     </p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.5s;">
+                    <img src="../img/bar/bar_t4.png" alt="">
                     <h3>4.室内环境的闭环调整</h3>
                     <p>
                         通过各种传感器,获取获取健身房温度,湿度,汗味等信 息。然后根据相关的信息反馈,控制相应的设备,如温度 太低,启动暖气。温度太高,启动冷气。湿度/汗味浓度太 高,启动换气功能。室内光线太强,拉下窗帘。光线太弱, 拉上窗帘。
