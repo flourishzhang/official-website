@@ -1599,6 +1599,8 @@ transform: scale(1.2)
 .y-bar-box3 {
     width: 100%;
     margin: 0 auto;
+    background: #f4f8ff;
+    padding-bottom: 20px;
 }
 
 .y-bar-box3>.y-bar-title2 {
@@ -1751,6 +1753,8 @@ transform: scale(1.2)
     width: 1200px;
     height: 100px;
     margin: 0 auto;
+    background: #f4f8ff;
+    padding-bottom: 30px;
 }
 
 .y-bar-box5>.y-bar-title5>div {
@@ -1868,7 +1872,7 @@ transform: scale(1.2)
     top: 0;
     right: 0;
     bottom: 0;
-    background: -webkit-linear-gradient(top,#8ddad5,#00cdac);
+    background: -webkit-linear-gradient(top,#b224ef,#7873f5);
     opacity: 0;
     transition: opacity 1s;
     z-index: -1;
