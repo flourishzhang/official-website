@@ -118,22 +118,53 @@
             </div>
         </div>
         <div class="y-nong-body4">
+            <img src="../img/nong/nong_z1.png" alt="">
+        </div>
+    </div>
+    <div class="y-nong-box5">
+        <div class="y-nong-title5 clearfix">
+            <div class="fromTop">
+                用户APP端
+                <img src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+            </div>
+        </div>
+        <div class="y-nong-body5">
+            <p>用户端app以地图的方式对各个控制点进行控制以及查看各个传感器数据。地图可以自定义上传。</p>
             <ul class="clearfix">
-                <li class="fromBottom" style="animation-delay: 0.3s;">
-                    <h3>传感器</h3>
-                    <p>采集温室大棚内空气中以及土壤的温度、湿度、光照、PH、CO2浓度等环境参数</p>
+                <li>
+                    <div class="y-nong-tu  fromRight">
+                        <img src="../img/nong/nong_app1.png" alt="">
+                    </div>
+                    <div class="y-block"></div>
+                    <div class="y-nong-zi fromLeft">
+                        <h3>1、查看实时环境数据</h3>
+                        <p>可以实时查看棚内空气、土壤和水中的温度、湿度、二氧化碳浓度、光照、PH值等环境数据。也可以查询历史数据。便于对整体数据分析。</p>
+                        <h3>2、大棚管理</h3>
+                        <p>可新增大棚，也可删除废弃大棚信息。</p>
+                        <h3>3、地图显示</h3>
+                        <p>绿色代表设备正常，红色代表设备异常，灰色代表设备离线。</p>
+                    </div>
                 </li>
-                <li class="fromBottom" style="animation-delay: 0.5s;">
-                    <h3>控制器</h3>
-                    <p>可控制洒水、农药、温度等</p>
+                <li>
+                    <div class="y-nong-zi fromRight">
+                        <h3>1、摄像机显示</h3>
+                        <p>实时获取视频监控，随时查看棚内农作物情况，可以查询历史监控</p>
+                    </div>
+                    <div class="y-block"></div>
+                    <div class="y-nong-tu  fromLeft">
+                        <img src="../img/nong/nong_app2.png" alt="">
+                    </div>
                 </li>
-                <li class="fromBottom" style="animation-delay: 0.7s;">
-                    <h3>用户端App</h3>
-                    <p>可以查看环境参数、操作控制器等</p>
-                </li>
-                <li class="fromBottom" style="animation-delay: 0.9s;">
-                    <h3>后台</h3>
-                    <p>可设置权限、用户、设备、规则、数据等管理</p>
+                <li>
+                    <div class="y-nong-tu  ">
+                        <img src="../img/nong/nong_app3.png" alt="">
+                    </div>
+                    <div class="y-block"></div>
+                    <div class="y-nong-zi fromLeft">
+                        <h3>1、记录显示</h3>
+                        <p>显示记录采用轮播的方式，旧记录会显示在下方，新记录会显示在上方</p>
+
+                    </div>
                 </li>
             </ul>
         </div>
