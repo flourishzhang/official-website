@@ -26,7 +26,7 @@
 
             </div>
             <div class="y-power-right  fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/power/p2.png" alt="">
+                <img src="<?php AssetsUrl ();?>/img/power/p1.png" alt="">
             </div>
         </div>
     </div>

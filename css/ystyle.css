@@ -71,6 +71,7 @@
 .y-fang-box2>.y-body>ul>li>a {
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .y-fang-box2>.y-body>ul>li>a>img {
@@ -475,7 +476,7 @@ transform: scale(1.2)
 .y-detail-box2>.y-detail-body>.return>a {
     font-size: 22px;
     color: #298be2;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .y-detail-box2>.y-detail-body>.return>a>.iconfont {
@@ -1771,6 +1772,7 @@ transform: scale(1.2)
 .y-bar-box4 {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 .y-bar-box4>.y-bar-title4 {
@@ -1864,6 +1866,8 @@ transform: scale(1.2)
 .y-bar-box5 {
     width: 100%;
     margin: 0 auto;
+    background: #f4f8ff;
+    padding-bottom: 30px;
 }
 
 .y-bar-box5>.y-bar-title5 {
