@@ -1128,6 +1128,7 @@ transform: scale(1.2)
 .y-nong-box4 {
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 .y-nong-box4>.y-nong-title4 {
@@ -1165,6 +1166,7 @@ transform: scale(1.2)
 .y-nong-box5 {
     width: 100%;
     margin: 0 auto;
+    background: #f4f8ff;
 }
 .y-nong-box5>.y-nong-title5 {
     width: 1200px;
@@ -1230,6 +1232,68 @@ transform: scale(1.2)
     line-height: 35px;
 }
 .y-nong-box5>.y-nong-body5>ul>li>.y-block{
+    width: 5%;
+}
+.y-nong-box6 {
+    width: 100%;
+    margin: 0 auto;
+    background: #f4f8ff;
+}
+.y-nong-box6>.y-nong-title6 {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.y-nong-box6>.y-nong-title6>div {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 27px;
+    font-weight: bold;
+    position: relative;
+    color: #333333;
+}
+
+.y-nong-box6>.y-nong-title6>div>img {
+    position: absolute;
+    width: 35px;
+    left: 80px;
+    top: 36px;
+}
+
+.y-nong-box6>.y-nong-body6 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.y-nong-box6>.y-nong-body6>ul{
+    width:100%;
+    margin:0 auto;
+}
+.y-nong-box6>.y-nong-body6>ul>li{
+    width:100%;
+    width:450px;
+    margin:80px 0;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-nong-tu{
+    width:55%;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-nong-tu>img{
+    width:100%;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-nong-zi{
+    width: 40%;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-nong-zi>h3{
+    font-weight: bold;
+    font-size: 23px;
+    padding: 10px 20px 10px 20px;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-nong-zi>p{
+    font-size: 19px;
+    color: #666666;
+}
+.y-nong-box6>.y-nong-body6>ul>li>.y-block{
     width: 5%;
 }
 /* 电力远程控制 */

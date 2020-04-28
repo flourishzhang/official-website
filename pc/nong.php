@@ -169,4 +169,44 @@
             </ul>
         </div>
     </div>
+    <div  class="y-nong-box6">
+        <div class="y-nong-title6 clearfix">
+            <div class="fromTop">
+                后台
+                <img src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+            </div>
+        </div>
+        <div class="y-nong-body6">
+            <ul class="clearfix">
+                <li>
+                    <div class="y-nong-zi fromRight">
+                        <h3>1、权限管理</h3>
+                        <p>权限管理分为管理员管理、角色管理、管理员操作日志。可对管理员的权限进行编辑。记录管理员操作日志。</p>
+                        <h3>2、App用户管理</h3>
+                        <p>权限管理分为用户管理、用户组管理。可对用户进行分组以及权限管理。</p>
+                        <h3>3、设备管理</h3>
+                        <p>设备管理分为设备管理、设备分组管理、设备状态等等</p>
+                    </div>
+                    <div class="y-block"></div>
+                    <div class="y-nong-tu  fromLeft">
+                        <img src="../img/nong/nong_h1.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="y-nong-tu  ">
+                        <img src="../img/nong/nong_h2.png" alt="">
+                    </div>
+                    <div class="y-block"></div>
+                    <div class="y-nong-zi fromLeft">
+                        <h3>1、规则管理</h3>
+                        <p>可对控制器规则进行管理。</p>
+                        <h3>2、数据管理</h3>
+                        <p>管理ph值、光照、温度、湿度、二氧化碳进行;数据分析等等功能</p>
+                        <h3>3、控制器管理</h3>
+                        <p>编辑可控制内容，设定控制规则等等对控制器进行管理</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
     <?php require ("pc/foot.php");?>
