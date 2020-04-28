@@ -61,6 +61,7 @@
     height:520px;
     margin: 20px 18px;
     border-top: none;
+    overflow: hidden;
     box-shadow: 0px 0px 5px rgb(163, 160, 160, .5);
 }
 
