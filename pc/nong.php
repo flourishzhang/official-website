@@ -137,18 +137,22 @@
                     </div>
                     <div class="y-block"></div>
                     <div class="y-nong-zi fromLeft">
-                        <h3>1、查看实时环境数据</h3>
-                        <p>可以实时查看棚内空气、土壤和水中的温度、湿度、二氧化碳浓度、光照、PH值等环境数据。也可以查询历史数据。便于对整体数据分析。</p>
-                        <h3>2、大棚管理</h3>
-                        <p>可新增大棚，也可删除废弃大棚信息。</p>
-                        <h3>3、地图显示</h3>
-                        <p>绿色代表设备正常，红色代表设备异常，灰色代表设备离线。</p>
+                        <div class="app-zi one">
+                            <h3>1、查看实时环境数据</h3>
+                            <p>可以实时查看棚内空气、土壤和水中的温度、湿度、二氧化碳浓度、光照、PH值等环境数据。也可以查询历史数据。便于对整体数据分析。</p>
+                            <h3>2、大棚管理</h3>
+                            <p>可新增大棚，也可删除废弃大棚信息。</p>
+                            <h3>3、地图显示</h3>
+                            <p>绿色代表设备正常，红色代表设备异常，灰色代表设备离线。</p>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <div class="y-nong-zi fromRight">
-                        <h3>1、摄像机显示</h3>
-                        <p>实时获取视频监控，随时查看棚内农作物情况，可以查询历史监控</p>
+                       <div class="app-zi two">
+                            <h3>1、摄像机显示</h3>
+                            <p>实时获取视频监控，随时查看棚内农作物情况，可以查询历史监控</p>
+                       </div>
                     </div>
                     <div class="y-block"></div>
                     <div class="y-nong-tu  fromLeft">
@@ -156,14 +160,15 @@
                     </div>
                 </li>
                 <li>
-                    <div class="y-nong-tu  ">
+                    <div class="y-nong-tu fromRight ">
                         <img src="../img/nong/nong_app3.png" alt="">
                     </div>
                     <div class="y-block"></div>
                     <div class="y-nong-zi fromLeft">
-                        <h3>1、记录显示</h3>
-                        <p>显示记录采用轮播的方式，旧记录会显示在下方，新记录会显示在上方</p>
-
+                        <div class="app-zi three">
+                            <h3>1、记录显示</h3>
+                            <p>显示记录采用轮播的方式，旧记录会显示在下方，新记录会显示在上方</p>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -193,7 +198,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="y-nong-tu  ">
+                    <div class="y-nong-tu fromRight ">
                         <img src="../img/nong/nong_h2.png" alt="">
                     </div>
                     <div class="y-block"></div>
