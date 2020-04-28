@@ -1271,8 +1271,11 @@ transform: scale(1.2)
 }
 .y-nong-box6>.y-nong-body6>ul>li{
     width:100%;
-    height:450px;
     margin:80px 0;
+}
+.y-nong-box6>.y-nong-body6>ul>li>div{
+    height:450px;
+    float: left;
 }
 .y-nong-box6>.y-nong-body6>ul>li>.y-nong-tu{
     width:55%;
