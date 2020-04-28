@@ -1078,6 +1078,7 @@ transform: scale(1.2)
     height: 320px;
     float: left;
     margin: 25px 25px;
+    background: #fff;
     position: relative;
     box-shadow: 0 0 5px rgb(163, 160, 160, .5);
 }
