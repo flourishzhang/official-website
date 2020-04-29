@@ -5,7 +5,7 @@
     </div>
     <div class="y-bar-box2">
         <div class="y-bar-return">
-            <a href="<?php SiteUrl();?>/fang.html">
+            <a href="<?php SiteUrl();?>/solution.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>
