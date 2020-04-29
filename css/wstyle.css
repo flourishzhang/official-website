@@ -41,7 +41,8 @@ nav:hover {
 .navbar a {
     display: inline-block;
     height: 100%;
-    line-height: 4em;
+    font-size: 16px;
+    line-height: 53px;
     color: rgb(177, 177, 177);
     text-decoration: none;
 }
