@@ -36,7 +36,7 @@
         </div>
     </div>
     <div class="w-right-fixed">
-        <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php WebsiteQQ ();?>&site=qq&menu=yes">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php WebsiteQQ ();?>&site=qq&menu=yes" target="_blank">
             <div class="creafix">
                 <div class="tu"><img src="<?php AssetsUrl ();?>/img/qq.png"></div>
                 <div class="zi"><?php WebsiteQQ ();?></div>
