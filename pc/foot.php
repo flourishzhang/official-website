@@ -48,6 +48,10 @@
                 <div class="zi"><?php WebsiteMobile ();?></div>
             </div>
         </a>
+        <div class="creafix">
+            <div class="tu1"><img src="<?php AssetsUrl ();?>/img/top2.png"></div>
+            <div class="tu2" id="toptop"><img src="<?php AssetsUrl ();?>/img/top1.png"></div>
+        </div>
     </div>
 </body>
 <script>

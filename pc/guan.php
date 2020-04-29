@@ -1,7 +1,7 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-guan-box1">
-        <img src="<?php AssetsUrl ();?>/img/guan/banner1.png">
+        <img src="<?php AssetsUrl ();?>/img/guan/banner2.png">
     </div>
     <div class="y-guan-box2">
         <div class="y-box2-title">

@@ -1095,7 +1095,7 @@ transform: scale(1.2)
 
 .y-nong-box3>.y-nong-body2>ul>li>h3 {
     font-size: 25px;
-    padding: 20px 30px;
+    padding: 20px;
     font-weight: bold;
 }
 
@@ -1128,8 +1128,11 @@ transform: scale(1.2)
 
 .y-nong-box3>.y-nong-body2>ul>li>.y-nong-text>.y-text-right>img {
     width: 100%;
+    transition: all 1s;
 }
-
+.y-nong-box3>.y-nong-body2>ul>li:hover .y-nong-text>.y-text-right>img{
+    transform: rotateY(360deg);
+}
 .y-nong-box4 {
     width: 100%;
     margin: 0 auto;
@@ -1916,6 +1919,7 @@ transform: scale(1.2)
     float: left;
     text-align: center;
     transition: all 1s;
+    cursor: pointer;
 }
 
 .y-bar-box5>.y-bar-body5>ul>li:hover {

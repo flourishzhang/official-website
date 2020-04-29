@@ -40,23 +40,23 @@
 	        scrollAnimate(".fromBottom", "fromBottom", "none");
 	    });
 	    
-	    // $(function () {
-	    //     $('.rtTop').hide();
-	    //     $('.rtTop h4 img').hover(function () {
-	    //         $(this).stop().animate({ "top": "-43px" }, 200)
-	    //     }, function () {
-	    //         $(this).stop().animate({ "top": "0" }, 200)
-	    //     })
-	    //     $(window).scroll(function () {
-	    //         var st = $(document).scrollTop();
-	    //         if (st > 1000) {
-	    //             $('.rtTop').show();
-	    //         } else {
-	    //             $('.rtTop').hide();
-	    //         }
+	    $(function () {
+	        // $('.rtTop').hide();
+	        // $('.rtTop h4 img').hover(function () {
+	        //     $(this).stop().animate({ "top": "-43px" }, 200)
+	        // }, function () {
+	        //     $(this).stop().animate({ "top": "0" }, 200)
+	        // })
+	        // $(window).scroll(function () {
+	        //     var st = $(document).scrollTop();
+	        //     if (st > 1000) {
+	        //         $('.rtTop').show();
+	        //     } else {
+	        //         $('.rtTop').hide();
+	        //     }
 	
-	    //     })
-	    //     $('.rtTop h4').click(function () {
-	    //         $('html,body').animate({ 'scrollTop': 0 }, 500);
-	    //     })
-	    // });
+	        // })
+	        $('#toptop').click(function () {
+	            $('html,body').animate({ 'scrollTop': 0 }, 500);
+	        })
+	    });
