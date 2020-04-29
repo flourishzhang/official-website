@@ -227,6 +227,9 @@ nav:hover {
     font-size: 20px;
     cursor: pointer;
 }
+.w-index-box2>.w-index-content>.w-index-left>.w-index-btn:hover{
+    box-shadow: 0 0 10px rgb(163, 160, 160, .5);
+}
 .w-index-box2>.w-index-content>.w-index-left>.w-index-btn>a{
     display: block;
     width: 100%;
@@ -641,6 +644,9 @@ nav:hover {
     font-size: 20px;
     cursor: pointer;
 }
+.w-index-box5>.w-index-content>.w-index-more>.w-index-btn:hover{
+    box-shadow: 0 0 10px rgb(163, 160, 160, .5);
+}
 .w-index-box5>.w-index-content>.w-index-more>.w-index-btn>a{
     text-decoration: none;
     color: #fff;
@@ -772,6 +778,9 @@ nav:hover {
     line-height: 60px;
     font-size: 23px;
 }
+.w-news-box3>.w-news-btn:hover{
+    box-shadow: 0px 0px 10px rgb(163, 160, 160, .5);
+}
 .w-news-box3>.w-news-btn>a{
     display: block;
     width: 100%;
@@ -843,9 +852,8 @@ nav:hover {
 .w-news-box4>ul>li:hover {
     box-shadow: 0 0 10px rgba(163, 160, 160, .5);
 }
-
 .w-news-box4>ul>li:hover a>.new-right>p {
-    color: #5966d1!important;
+    color: #4990ff!important;
 }
 
 .w-news-box5>.new-page {
@@ -912,7 +920,6 @@ nav:hover {
 .w-wh-box2>.w-wh-return {
     font-size: 22px;
     color: #ff5700;
-    text-decoration: none;
 }
 
 .w-wh-box2>.w-wh-return>.iconfont {
@@ -1229,12 +1236,12 @@ nav:hover {
 .w-mv-box2 {
     width: 1200px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .w-mv-box2>.w-mv-return {
     font-size: 22px;
-    color: #298be2;
+    color: #ef81b2;
 }
 
 .w-mv-box2>.w-mv-return>.iconfont {
@@ -1331,9 +1338,23 @@ nav:hover {
     box-shadow: 0 0 5px rgb(163, 160, 160, .5);
     margin: 21px 0;
     height: 340px;
+    background: #fff;
     border-radius: 10px;
+    position: relative;z-index: 0;
 }
-
+.w-mv-box3>ul>li::before{
+    border-radius: 10px;
+    content:'';
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0; 
+    bottom: 0;
+    background: -webkit-linear-gradient(top,#ef81b2,#f74040);
+    opacity: 0; 
+    transition: opacity 1s;
+    z-index: -1;
+}
 .w-mv-box3>ul>li>h3 {
     font-weight: bold;
     font-size: 23px;
@@ -1348,8 +1369,8 @@ nav:hover {
     line-height: 35px;
 }
 
-.w-mv-box3>ul>li:hover {
-    background: #92d4ff;
+.w-mv-box3>ul>li:hover::before {
+    opacity: 1;
 }
 
 .w-mv-box3>ul>li:hover h3 {
@@ -1419,16 +1440,18 @@ nav:hover {
 }
 
 .w-mv-box4>ul>li:hover h3 {
-    color: #92d4ff;
+    color: #ef81b2;
 }
 
 .w-mv-box4>ul>li:hover p {
-    color: #92d4ff;
+    color: #ef81b2;
 }
 
 .w-mv-box5 {
     width: 1200px;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 .w-mv-box5>.w-mv-title {
     width: 100%;
@@ -1457,7 +1480,7 @@ nav:hover {
 .w-mv-box5>.w-mv-img>div{
     width: 31%;
     float: left;
-    box-shadow: 0 0 8px rgb(163, 160, 160, .5);
+    /* box-shadow: 0 0 1px rgb(163, 160, 160, .5); */
 }
 .w-mv-box5>.w-mv-img>div>img{
     width: 100%;
@@ -1487,7 +1510,6 @@ nav:hover {
 .w-ct-box2>.w-ct-return {
     font-size: 22px;
     color: #0ba360;
-    text-decoration: none
 }
 
 .w-ct-box2>.w-ct-return>.iconfont {
@@ -1589,6 +1611,7 @@ nav:hover {
 .w-ct-box3>ul>li>img{
     width: 80px;
     margin-top: 30px;
+    transition: all 1s;
 }
 .w-ct-box3>ul>li>h3 {
     font-weight: bold;
@@ -1610,7 +1633,9 @@ nav:hover {
 .w-ct-box3>ul>li:hover p {
     color: #0ba360;
 }
-
+.w-ct-box3>ul>li:hover img{
+    transform: rotateY(360deg);
+}
 
 .w-ct-box4 {
     width: 1200px;
