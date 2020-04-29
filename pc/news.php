@@ -37,7 +37,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`publishtime`",
         <ul class="clearfix">
         <?php foreach ($newsList as $news) { ?>
             <li>
-                <a  href="<?php SiteUrl ();?>/article-id-<?php echo $news["articleid"];?>.html">
+                <a  href="<?php SiteUrl ();?>/article-id-<?php echo $news["articleid"];?><?php if($type != null) echo '-type-'.$type;?>.html">
                     <div class="new-left">
                         <img src="<?php SiteUrl ();echo $news["thumbnail"];?>">
                     </div>

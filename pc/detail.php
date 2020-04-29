@@ -30,7 +30,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
         </div>
         <div class="y-detail-body">
             <div class="return">
-                <a  href="<?php SiteUrl();?>/news.html" class="p1">返回ALL+ 列表
+                <a  href="<?php SiteUrl();?>/news<?php if ($type != null) echo '-type-'.$type ?>.html" class="p1">返回上一页
                     <span class="iconfont iconxiangzuo"></span>
                 </a>
             </div>
