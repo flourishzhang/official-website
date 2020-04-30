@@ -7,6 +7,7 @@ $articleinfo = $info["articleinfo"];
 }
 ?>
 <html lang="en">
+<?php if($_SERVER['HTTP_HOST']=='www.officialwebsite.worldflying.cn'){ ?>
 <script>
     var _hmt = _hmt || [];
     (function() {
@@ -29,6 +30,7 @@ $articleinfo = $info["articleinfo"];
         s2.parentNode.insertBefore(bp, s2);
     })();
 </script>
+<?php } ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
