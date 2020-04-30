@@ -831,6 +831,7 @@ nav:hover {
 .w-news-box4>ul>li>a>.new-right>p:nth-child(1) {
     font-size: 23px;
     color: #444;
+    font-weight: bold;
     margin: 0 0 15px;
     text-overflow: ellipsis;
     white-space: nowrap;
