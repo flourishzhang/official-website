@@ -54,7 +54,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
                     <?php if ($nextArticleInfo["articleid"] != 0) { ?>
                     <li>
                         <span>下一篇：</span>
-                        <a href="<?php echo $webmsg["siteurl"];?>/article-id-<?php echo $nextArticleInfo["articleid"];?>.html">"<span><?php echo $nextArticleInfo["title"];?></span></a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/article-id-<?php echo $nextArticleInfo["articleid"];?>.html"><span><?php echo $nextArticleInfo["title"];?></span></a>
                     </li>
                     <?php } ?>
                 </ul>

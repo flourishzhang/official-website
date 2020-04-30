@@ -9,7 +9,7 @@
                         <p>邮箱：<?php echo $webmsg["address"];?></p>
                         <p>地点：<?php echo $webmsg["email"];?></p>
                         <p>
-                            <a href="http://www.beian.miit.gov.cn"><?php echo $webmsg["record"];?></a>
+                            <a href="http://www.beian.miit.gov.cn" rel="nofollow"><?php echo $webmsg["record"];?></a>
                         </p>
                     </div>
                 </div>

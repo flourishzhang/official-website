@@ -13,7 +13,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
     <div class="w-p-newsdet-box2">
         <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/phonenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
     </div>
-    <div class="w-p-newsdet-box3">
+    <div class="w-p-newsdet-box3" style="font-family: ''">
         <?php echo $articleinfo["content"];?>
     </div>
     <div class="w-p-newsdet-box4">
