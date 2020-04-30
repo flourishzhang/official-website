@@ -25,7 +25,7 @@
                     <div class="w-zi">
                         <p>沃航(武汉)科技股份有限公司版权所有</p>
                         <p>
-                            <a href="http://www.beian.miit.gov.cn">备案号:<?php WebsiteRecord ();?></a>
+                            <a href="http://www.beian.miit.gov.cn" rel="nofollow">备案号:<?php WebsiteRecord ();?></a>
                         </p>
                     </div>
                 </div>
