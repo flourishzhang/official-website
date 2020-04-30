@@ -1,0 +1,40 @@
+@import "../../bdparse/bdParse/bdParse.css";
+image{
+    width: 100%;
+}
+.main{
+    width: 95%;
+    margin: 0 auto;
+    overflow: auto;
+    padding-bottom: 2rem;
+    color: #8f8f94;
+    text-indent: 22px;
+    word-wrap:break-word;
+}
+.box2{
+    text-align: center;
+    padding: 2rem 0;
+}
+.box2>.title{
+    font-size: 1.1rem;
+    color: #444;
+}
+.box2>.time{
+    font-size: 0.8rem;
+    color: #8f8f94;
+}
+.box3{
+    padding-bottom: 2rem;
+}
+.box3>.p{
+    width: 90%;
+    margin: 0 auto;
+    color: #8f8f94;
+    font-size: 0.8rem;
+}
+.box3>.p>text{
+    color: #007aff;
+}
+view{
+    line-height: 1.3rem;
+}

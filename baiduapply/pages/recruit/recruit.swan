@@ -1,0 +1,185 @@
+<view>
+    
+    <view class="box1">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation-bg.png"></image>
+    </view>
+    
+    <view class="box2">
+        <view class="title1">职位招聘</view>
+        <view class="title2">Position recruitment</view>
+        <view class="content clearfix">
+
+            <view class="clearfix">
+                <view class="box2left"><image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation1.png"></image></view>
+                <view class="box2right">
+                    <view class="tu">
+                        <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation4.png"></image>
+                        <text>&lt;IDEA&lt;</text>
+                    </view>
+                    <view class="zi">
+                        <view class="title1">和聪明人一起做事</view>
+                        <view class="title2">崇尚创新、快速的互联网文化 正在寻找富有创意和想法的你</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="clearfix" style="padding-left: 5%">
+                <view class="box2right" style="margin-left: 0; margin-right: 4%;">
+                    <view class="tu">
+                        <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation4.png"></image>
+                        <text>&lt;IDEA&lt;</text>
+                    </view>
+                    <view class="zi">
+                        <view class="title1">做激动人心产品</view>
+                        <view class="title2">让未来的你喜欢现在的自己 加入我们，在行动中收获梦想</view>
+                    </view>
+                </view>
+                <view class="box2left"><image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation2.png"></view>
+            </view>
+        </view>
+    </view>
+
+    <view class="box3">
+        <view class="tu3">
+            <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/cooperation3.png"></image>
+        </view>
+        <view class="title1">工作大有不同</view>
+        <view class="title2">创业的氛围让每个人都为做出美好和事情而努力</view>
+    </view>
+
+    <view class="box4">
+        <view class="title1">人才招聘</view>
+        <view class="title2">Talent recruitment</view>
+
+        <view class="content">
+            <view class="title1">UI设计师</view>
+            <view class="title2 clearfix">
+                <view>薪资：3000-5000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、配合产品经理完成客户要求的app或网页美工图。</view>
+            <view class="title4">2、配合公司完成公司推广页面与相关图片。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">PHP工程师</view>
+            <view class="title2 clearfix">
+                <view>薪资：4000-6000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、根据客户需求完成程序开发</view>
+            <view class="title4">2、根据客户需求完成功能修改</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">WEB前端工程师</view>
+            <view class="title2 clearfix">
+                <view>薪资：4000-6000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、配合美工完成网页切图。</view>
+            <view class="title4">2、配合运营完成网站设计。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">JAVA工程师</view>
+            <view class="title2 clearfix">
+                <view>薪资：5000-8000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、根据客户需求完成程序开发。</view>
+            <view class="title4">2、根据公司需求完成程序设计。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">服务器运维人员</view>
+            <view class="title2 clearfix">
+                <view>薪资：3000-5000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、需要会linux下搭建php环境，java环境以及配置nginx。</view>
+            <view class="title4">2、根据用户提出的需求修改服务器相关配置。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">产品经理</view>
+            <view class="title2 clearfix">
+                <view>薪资：3000-5000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、听取并理解客户的需求。</view>
+            <view class="title4">2、根据客户的需求分析客户的痛点。</view>
+            <view class="title4">3、根据客户的痛点给予客户更专业的建议。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+        <view class="content">
+            <view class="title1">推广专员</view>
+            <view class="title2 clearfix">
+                <view>薪资：3000-5000</view>
+                <view>工作地点：武汉</view>
+            </view>
+            <view class="title2 clearfix">
+                <view>学历要求：不限</view>
+                <view>经验要求：不限</view>
+            </view>
+            <view class="title3">岗位内容</view>
+            <view class="title4">1、根据公司实际情况做出合理的推广方案。</view>
+            <view class="title4">2、操作百度竞价，百度知道推广。</view>
+            <view class="title4">3、根据推广方案与前端工程师配合优化公司官网。</view>
+            <view class="btn">
+                <button size="mini">MORE+</button>
+            </view>
+        </view>
+
+    </view>
+
+    <foot></foot>
+</view>

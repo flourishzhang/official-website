@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "仓库管理系统",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

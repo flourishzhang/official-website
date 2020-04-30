@@ -1,0 +1,87 @@
+.clearfix:after{content: "";height:0;line-height: 0;display:block;visibility: hidden;clear:both;}
+image{
+    width: 100%;
+}
+.box2>.h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.box2>.p{
+    font-size: 0.9rem;
+    text-align: center;
+    color: #8f8f94;
+}
+.box3{
+    width: 90%;
+    margin: 0 auto;
+}
+.box3>button{
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-right: 2.5%;
+    margin-bottom: 3%;
+}
+.box3>.active{
+    color: #fff;
+    background: #298be2;
+}
+.box4{
+    background: #efeff4;
+}
+.box4>.ul>.li{
+    padding: 5% 5%;
+    background: #fff;
+    margin: 10px 0;
+    position: relative;
+}
+.box4>.ul>.li>.title{
+    color: #2b8be2;
+    font-size: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+.box4>.ul>.li>.time{
+    color: gray;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+.box4>.ul>.li>.content{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+.box4>.ul>.li>.tu{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+.box4>.ul>.li>.tu>image{
+    width: 20px;
+    height: 20px;
+}
+.box4>.page{
+    height: 40px;
+    background: #fff;
+    margin: 10px 0;
+}
+.box4>.page>view{
+    float: left;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #8f8f94;
+}
+.box4>.page>.tu>image{
+    width: 20px;
+    height: 20px;
+}

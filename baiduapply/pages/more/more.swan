@@ -1,0 +1,20 @@
+<view>
+    <view class="main">
+        <view>
+            <text>物联网</text>
+        </view>
+        <image bindtap="tiao" data-url="/pages/iot/iot" src="https://www.worldflying.cn/imgs/lotdj/logistics.png"></image>
+    </view>
+    <view class="main">
+        <view>
+            <text>解决方案</text>
+        </view>
+        <image bindtap="tiao" data-url="/pages/solutio/solutio" src="https://www.worldflying.cn/imgs/phone/bg1.png"></image>
+    </view>
+    <view class="main">
+        <view>
+            <text>人才合作</text>
+        </view>
+        <image bindtap="tiao" data-url="/pages/recruit/recruit" src="https://www.worldflying.cn/imgs/wphone/cooperation-bg.png"></image>
+    </view>
+</view>

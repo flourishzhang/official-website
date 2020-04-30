@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "解决方案",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

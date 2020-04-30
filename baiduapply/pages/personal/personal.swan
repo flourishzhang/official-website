@@ -1,0 +1,71 @@
+<view>
+    <view class="box1">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about-bg.png"></image>
+    </view>
+
+    <view class="box2">
+        <view class="title">
+            <view class="title1">我们是谁</view>
+            <view class="title2">懂您所需，做您所想</view>
+        </view>
+        <view style="color: #6a6763;">沃航（武汉）科技股份有限公司是一家充满活力，极具创意，逐梦的年轻化团队，主要从事软件外包,技术解决方案的互联网科技公司，以精湛的技术、丰富的经验、优质的服务来为客户提供互联网一站式解决方案，公司总部位于由雷军李儒雄等人扶持创办的创业特区光谷SBI创业街。</view>
+        <view style="color: #6a6763;">客户都是各行各业的，例如教育、金融、社交网络、旅游、电力、商城、物流等，他们在众多家的软件外包公司当中抉择，为什么最终选择我们？必然是感受到了我们的诚意以及专业性，不论从与客户洽谈还是到后期服务，我们始终秉承“科技服务”理念，推动数字化，信息化进程，提供专业化的解决方案根据客户需求给出更为合理、专业、贴合实际、易被大众接受的解决方案。</view>
+    </view>
+
+    <view class="box3">
+        <view class="title1">我们的理念</view>
+        <view class="title2">懂您所需，做您所想</view>
+        <view class="box3-content">
+            <view class="content-left">
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about1.png"></image>
+            </view>
+            <view class="content-right">
+                <view class="content-p1">沃航特点</view>
+                <view class="content-p2">沃航科技的理念是推动数字化，信息化进程，提供专业的解决方案。</view>
+            </view>
+        </view>
+        <view class="box3-content">
+            <view class="content-right"  style="margin-left: 3%;margin-right: 5%;">
+                <view class="content-p1">沃航文化</view>
+                <view class="content-p2">用最专业的技术，最良好的态度服务客户，用质量铸就品牌。</view>
+            </view>
+            <view class="content-left">
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about2.png"></image>
+            </view>
+        </view>
+        <view class="box3-content">
+            <view class="content-left">
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about3.png"></image>
+            </view>
+            <view class="content-right">
+                <view class="content-p1">沃航使命</view>
+                <view class="content-p2">用技术推进发展，用专业改变世界</view>
+            </view>
+        </view>
+        <view class="box3-content">
+            <view class="content-right"  style="margin-left: 3%;margin-right: 5%;">
+                <view class="content-p1">沃航愿景</view>
+                <view class="content-p2">成为世界一流的技术解决方案服务提供商</view>
+            </view>
+            <view class="content-left">
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about4.png"></image>
+            </view>
+        </view>
+        <view class="box3-content">
+            <view class="content-left">
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about1.png"></image>
+            </view>
+            <view class="content-right">
+                <view class="content-p1">沃航精神</view>
+                <view class="content-p2">诚信自励，自主创新，协作进取，专业高效，精益求精</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="box3">
+        <view class="title1">我们的客户</view>
+        <view class="title2">Our customers</view>
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/wphone/about6.png"></image>
+    </view>
+    <foot></foot>
+</view>

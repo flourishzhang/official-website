@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "智慧农业",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

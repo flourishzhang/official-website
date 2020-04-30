@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "智慧小区",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

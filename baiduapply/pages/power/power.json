@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "电力远程控制",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

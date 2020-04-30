@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "人才合作",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

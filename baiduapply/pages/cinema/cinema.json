@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "影院平台",
+    "usingComponents": {
+        "foot": "/components/foot/foot"
+    }
+}

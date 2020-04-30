@@ -1,0 +1,35 @@
+<view>
+
+    <view class="box1"><image mode="widthFix" src="https://www.worldflying.cn/imgs/news-bg.png"></image></view>
+
+    <view class="box2">
+        <view class="h3">新闻动态</view>
+        <view class="p">News information</view>
+    </view>
+
+    <view class="box3">
+        <button size="mini" class="{{active==0?'active':''}}" data-index="0" bindtap="bian">ALL+</button>
+        <button size="mini" class="{{active==1?'active':''}}" data-index="1" bindtap="bian">公司动态</button>
+        <button size="mini" class="{{active==2?'active':''}}" data-index="2" bindtap="bian">媒体报道</button>
+        <button size="mini" class="{{active==3?'active':''}}" data-index="3" bindtap="bian">行业资讯</button>
+    </view>
+
+    <view class="box4">
+        <view class="ul">
+            <view class="li" s-for="list" data-id="{{item.articleid}}" bindtap="tiao">
+                <view class="title">{{item.title}}</view>
+                <view class="time">{{item.publishtime}}</view>
+                <view class="content">{{item.desc}}</view>
+                <view class="tu"><image src="https://www.worldflying.cn/imgs/jian.png"></image></view>
+            </view>
+        </view>
+        <view class="page clearfix">
+            <view class="tu" bindtap="getdata" data-index="1"><image src="https://www.worldflying.cn/imgs/first.png"></image></view>
+            <view class="tu" bindtap="getdata" data-index="2"><image src="https://www.worldflying.cn/imgs/left.png"></image></view>
+            <view class="zi">第{{page}}页</view>
+            <view class="tu" bindtap="getdata" data-index="3"><image src="https://www.worldflying.cn/imgs/right.png"></image></view>
+            <view class="tu" bindtap="getdata" data-index="4"><image src="https://www.worldflying.cn/imgs/last.png"></image></view>
+        </view>
+    </view>
+    <foot></foot>
+</view>

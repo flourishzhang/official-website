@@ -1,0 +1,22 @@
+<view>
+    <import src="../../bdparse/bdParse/bdParse.swan" />
+    <view box1>
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/news-bg.png"></image>
+    </view>
+    <view class="box2">
+        <view class="title">{{title}}</view>
+        <view class="time">{{time}}</view>
+    </view>
+    <view class="main">
+        <template is="bdParse" data="{{ {bdParseData:article.nodes} }}" />
+    </view>
+    <view class="box3">
+        <view class="p">
+            优秀解决方案推荐：
+            <text bindtap="tiaoindex">物联网</text>
+        </view>
+        <view class="p" s-if="nextArticle.articleid!=0">上一篇：<text data-id="{{nextArticle.articleid}}" bindtap="tiao">{{nextArticle.title}}</text></view>
+        <view class="p" s-if="previousArticle.articleid!=0">下一篇：<text data-id="{{previousArticle.articleid}}" bindtap="tiao">{{previousArticle.title}}</text></view>
+    </view>
+    <foot></foot>
+</view>

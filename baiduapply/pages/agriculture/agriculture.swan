@@ -1,0 +1,70 @@
+<view class="bg">
+    <view class="box1">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg9.png"></image>
+    </view>
+
+    <view class="box2">
+        <view class="top">
+            <view class="h3">方案简介</view>
+            <view class="p">智能农业温室大棚，可实时无线采集和传输温室大棚内空气中以及土壤的温度、湿度、光照、PH、CO2浓度等环境参数，通过PC电脑、移动手机和平板电脑以直观的图表和曲线的方式显示给用户，可根据种植作物的需求提供各种声光报警信息，并可以自定义规则控制洒水、农药以及温度。它主要由农业温室大棚、各种无线传感器、控制器及后台系统软件和用户端APP等组成。</view>
+        </view>
+        <view class="bottom">
+            <view class="h3">功能介绍</view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg10.png"></image></view>
+        </view>
+    </view>
+
+    <view class="box3">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg11.png"></image>
+    </view>
+
+    <view class="box4">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg12.png"></image>
+        <view class="h3">用户端app以地图的方式对各个控制点进行控制以及查看各个传感器数据。地图可以自定义上传。</view>
+        <view class="ul">
+            <view class="li clearfix">
+                <view class="left"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/wmap.png"></image></view>
+                <view class="right"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg21.png"></image></view>
+            </view>
+            <view class="li clearfix">
+                <view class="left"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/wgonglu.png"></image></view>
+                <view class="right"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg22.png"></image></view>
+            </view>
+            <view class="li clearfix">
+                <view class="left"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/wwendu.png"></image></view>
+                <view class="right"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg23.png"></image></view>
+            </view>
+        </view>
+        <view class="tu">
+            <view class="xiao"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/biaoqian.png"></image></view>
+            <view class="p">更多功能请咨询商务经理</view>
+        </view>
+    </view>
+
+    <view class="box5">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg13.png"></image>
+        <view class="tu1"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg14.png"></image></view>
+        <view class="zi1">
+            <view class="h3">1、权限管理 </view>
+            <view class="p">权限管理分为管理员管理、角色管理、管理员操作日志。可对管理员的权限进行编辑。记录管理员操作日志。</view>
+            <view class="h3">2、App用户管理 </view>
+            <view class="p">权限管理分为用户管理、用户组管理。可对用户进行分组以及权限管理。</view>
+            <view class="h3">3、设备管理 </view>
+            <view class="p">设备管理分为设备管理、设备分组管理、设备状态等等。</view>
+        </view>
+        <view class="tu1"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg15.png"></image></view>
+        <view class="zi1">
+            <view class="h3">1、规则管理  </view>
+            <view class="p">可对控制器规则进行管理。</view>
+            <view class="h3">2、数据管理 </view>
+            <view class="p">管理ph值、光照、温度、湿度、二氧化碳进行数据分析等等功能 </view>
+            <view class="h3">3、控制器管理 </view>
+            <view class="p">编辑可控制内容，设定控制规则等等对控制器进行管理</view>
+        </view>
+        <view class="tu2">
+            <view class="img"><image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/biaoqian.png"></image></view>
+            <view class="p">更多功能请咨询商务经理</view>
+        </view>
+    </view>
+    <foot></foot>
+</view>

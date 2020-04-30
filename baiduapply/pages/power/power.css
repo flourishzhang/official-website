@@ -1,0 +1,104 @@
+.clearfix:after{content: "";height:0;line-height: 0;display:block;visibility: hidden;clear:both;}
+image{
+    width: 100%;
+}
+.box1{
+    width: 100%;
+    position: relative;
+}
+.box1>.zi{
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background: rgba(113, 120, 120, 0.8);
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 6rem;
+}
+.box2{
+    width: 90%;
+    margin:0 auto;
+}
+.box2>.title{
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 0 0 0;
+}
+.box2>.content{
+    font-size: 0.9rem;
+    padding: 10px 0;
+    line-height: 1.3;
+}
+.box3{
+    position: relative;
+    height: 29rem;
+}
+.box3>.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    height: 29rem;
+}
+.box3>.bg>image{
+    height: 100%;
+}
+.box3>.ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.box3>.ul>.li{
+    float: left;
+    width: 33%;
+    border: 0.034rem solid #fff;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    height: 14.5rem;
+    overflow: hidden;
+}
+.box3>.ul>.li>.h3{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10%;
+}
+.box3>.ul>.li>.p{
+    font-size: 0.8rem;
+    padding: 0 5% 5% 5%;
+    line-height: 1.8;
+}
+.box4{
+    background: #dddfe1;
+}
+.box4>.title{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.box4>.content{
+    width: 90%;
+    padding: 10px 5%;
+    background: #fff;
+    margin: 10px 0;
+}
+.box4>.content>.h3{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.box4>.content>.p{
+    font-size: 0.8rem;
+    color: #666666;
+    line-height: 1.8;
+}
+.box4>.tu{
+    width: 90%;
+    padding: 20px 5%;
+}

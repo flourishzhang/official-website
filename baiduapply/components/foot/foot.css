@@ -1,0 +1,17 @@
+.footer-p1{
+    padding: 5%;
+    background: #2f3137;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top:-4px;
+}
+.phone{
+    float: left;
+}
+.qq{
+    float: right;
+}
+view{
+    padding: 2px 0;
+}
+.clearfix:after{content: "";height:0;line-height: 0;display:block;visibility: hidden;clear:both;}

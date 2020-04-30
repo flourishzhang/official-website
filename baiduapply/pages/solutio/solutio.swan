@@ -1,0 +1,56 @@
+<view style="background-color: #efeff4;">
+    <view class="box1">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/phone/bg1.png"></image>
+    </view>
+
+    <view class="box2">
+        <view class="title1">解决方案</view>
+        <view class="title2">solution</view>
+    </view>
+
+    <view class="box3">
+        <view class="clearfix" bindtap="tiao" data-url="/pages/wms/wms">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/smovie.png"></image></view>
+            <view class="zi" >
+                <view class="title1">仓储管理系统</view>
+                <view class="title2">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议，保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩充性很强。</view>
+            </view>
+        </view>
+        <view class="clearfix"  bindtap="tiao" data-url="/pages/agriculture/agriculture">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/sdian.png"></image></view>
+            <view class="zi">
+                <view class="title1">智慧农业</view>
+                <view class="title2">主要由农业温室大棚、各种无线传感器、控制器及后台系统软件和用户端APP等组成。</view>
+            </view>
+        </view>
+        <view class="clearfix" bindtap="tiao" data-url="/pages/power/power">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/sdas.png"></image></view>
+            <view class="zi">
+                <view class="title1">电力远程控制</view>
+                <view class="title2">是基于互联网的数据远程实时传输以及数据远程控制功能开发的。</view>
+            </view>
+        </view>
+        <view class="clearfix" bindtap="tiao" data-url="/pages/cinema/cinema">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/save.png"></image></view>
+            <view class="zi">
+                <view class="title1">影院服务平台</view>
+                <view class="title2">影院服务平台方案包含线上用户端小程序与影院后台两个部分，线下无纸化检票系统。</view>
+            </view>
+        </view>
+        <view class="clearfix" bindtap="tiao" data-url="/pages/cybercafe/cybercafe">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/smai.png"></image></view>
+            <view class="zi">
+                <view class="title1">无人网吧</view>
+                <view class="title2">利用app开门，支付宝/微信收费的方式实现无人化，24小时营业的无人网吧</view>
+            </view>
+        </view>
+        <view class="clearfix" bindtap="tiao" data-url="/pages/community/community">
+            <view class="tu"><image mode="widthFix" src="https://www.worldflying.cn/imgs/mobile/selec.png"></image></view>
+            <view class="zi">
+                <view class="title1">智慧小区</view>
+                <view class="title2">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议，保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩充性很强。</view>
+            </view>
+        </view>
+    </view>
+    <foot></foot>
+</view>

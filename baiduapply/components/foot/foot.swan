@@ -1,0 +1,9 @@
+<view class="footer-p1">
+    <view class="clearfix">
+        <text class="phone">手机：{{resdata.mobile}}</text>
+        <text class="qq">QQ：{{resdata.QQ}}</text>
+    </view>
+    <view>邮箱：{{resdata.email}}</view>
+    <view>地点：{{resdata.address}}</view>
+    <view>鄂ICP备16014230号-1</view>
+</view>

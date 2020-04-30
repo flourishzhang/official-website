@@ -1,0 +1,91 @@
+<view>
+
+    <view class="box1">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/logistics.png"></image>
+    </view>
+
+    <view class="box2">
+        <view class="title1">物联网模块</view>
+        <view class="title2">全系产品内置协议先，免开发</view>
+        <view class="ul clearfix">
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img1.png"></image></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img2.png"></image></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img3.png"></image></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img4.png"></image></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img5.png"></image></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/img6.png"></image></view>
+        </view>
+    </view>
+
+    <view class="box3">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg1.png"></image>
+    </view>
+
+    <view class="box4">
+        <view class="title1">物联网解决方案</view>
+        <view class="title2">从消费级到工业级物理网，满足你所需</view>
+        <view class="ul clearfix">
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg2.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg3.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg4.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg5.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg6.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg7.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg8.png"></view>
+            <view><image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/bg9.png"></view>
+        </view>
+    </view>
+
+    <view class="box5">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/banner1.png"></image>
+    </view>
+
+    <view class="box6">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/box1.png"></image>
+    </view>
+
+    <view class="box7">
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/banner2.png"></image>
+    </view>
+
+    <view class="box8">
+        <view class="title">业务案例</view>
+        <view class="ul clearfix">
+            <view>
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/hotel1.png"></image>
+                <view class="clearfix">
+                    <view class="btn1">在线浏览</view>
+                    <view class="btn2">查看更多</view>
+                </view>
+            </view>
+            <view>
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/hotel2.png"></image>
+                <view class="clearfix">
+                    <view class="btn1">在线浏览</view>
+                    <view class="btn2">查看更多</view>
+                </view>
+            </view>
+            <view>
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/hotel3.png"></image>
+                <view class="clearfix">
+                    <view class="btn1">在线浏览</view>
+                    <view class="btn2">查看更多</view>
+                </view>
+            </view>
+            <view>
+                <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/hotel4.png"></image>
+                <view class="clearfix">
+                    <view class="btn1">在线浏览</view>
+                    <view class="btn2">查看更多</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="box9">
+        <view class="title">服务机构</view>
+        <image mode="widthFix" src="https://www.worldflying.cn/imgs/lotdj/hotel5.png"></image>
+    </view>
+
+    <foot></foot>
+</view>

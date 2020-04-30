@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/new/new",
+        "pages/personal/personal",
+        "pages/more/more",
+        "pages/iot/iot",
+        "pages/solutio/solutio",
+        "pages/recruit/recruit",
+        "pages/wms/wms",
+        "pages/agriculture/agriculture",
+        "pages/power/power",
+        "pages/cybercafe/cybercafe",
+        "pages/community/community",
+        "pages/cinema/cinema",
+        "pages/newdet/newdet"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "color": "#a2a2a2",
+        "selectedColor": "#3388ff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/home1.png",
+                "selectedIconPath": "images/home1.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/new/new",
+                "iconPath": "images/new1.png",
+                "selectedIconPath": "images/new2.png",
+                "text": "新闻"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "iconPath": "images/personal1.png",
+                "selectedIconPath": "images/personal2.png",
+                "text": "关于我们"
+            },
+            {
+                "pagePath": "pages/more/more",
+                "iconPath": "images/more1.png",
+                "selectedIconPath": "images/more2.png",
+                "text": "更多"
+            }
+        ]
+    }
+}

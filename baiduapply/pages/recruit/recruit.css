@@ -1,0 +1,123 @@
+.clearfix:after{content: "";height:0;line-height: 0;display:block;visibility: hidden;clear:both;}
+.box1{
+    width: 100%;
+}
+image{
+    width: 100%;
+}
+.box2>.title1{
+    font-size: 17px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+    margin-right: 6%;
+}
+.box2>.title2{
+    text-align: center;
+    font-size: 10px;
+    margin-right: 6%;
+}
+.box2>.content>view{
+    margin: 5% 0;
+    padding: 5% 0;
+    background: #fff;
+}
+.box2left{
+    float: left;
+    width: 50%;
+}
+.box2right{
+    float: left;
+    width: 40%;
+    margin-left: 4%;
+}
+.box2right>.tu{
+    text-indent: 0;
+    margin-left: -13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.box2right>.tu>image{
+    width: 30px;
+}
+.box2right>.tu>text{
+    line-height: 30px;
+}
+.box2right>.zi{
+    text-indent: 0;
+    color: #6a6763;
+    padding-left: 10%;
+    border-left: 1px solid #ddd;
+    padding-top: 10%;
+}
+.box2right>.zi>.title1{
+    color: #2b8be2;
+    font-size: 15px;
+}
+.box2right>.zi>.title2{
+    font-size: 13px;
+}
+.box3>.tu3{
+    width: 90%;
+    margin: 0 auto;
+}
+.box3>.title1{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+}
+.box3>.title2{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #8f8f94;
+}
+.box4>.title1{
+    font-size: 17px;
+    color: #444;
+    margin: 0;
+    text-align: center;
+    margin-right: 6%;
+}
+.box4>.title2{
+    text-align: center;
+    font-size: 10px;
+    margin-right: 6%;
+}
+.box4>.content{
+    padding: 5%;
+    margin-bottom: 20px;
+    background: #fff;
+}
+.box4>.content>.title1{
+    font-size: 16px;
+    color: #2b8be2;
+}
+.box4>.content>.title2>view{
+    float: left;
+    width: 50%;
+    color: #717171;
+    font-size: 14px;
+}
+.box4>.content>.title3{
+    font-size: 16px;
+    color: #8f8f94;
+}
+.box4>.content>.title4{
+    margin-bottom: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #8f8f94;
+    font-size: 14px;
+}
+.box4>.content>.btn>button{
+    border-radius: 0;
+    padding: 4px 15px;
+    color: #fff;
+    background: #2b8be2;
+    margin-top: 4%;
+    border: 1px solid #2b8be2;
+}
