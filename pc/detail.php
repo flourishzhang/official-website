@@ -35,8 +35,8 @@ $nextArticleInfo = $info["nextArticleInfo"];
                 </a>
             </div>
             <div class="body-title">
-                <h3><?php echo $articleinfo["title"];?></h3>
-                <p><?php echo $articleinfo["publishtime"];?></p>
+                <h3 style="text-align:center;font-szie:50px;paddng-top:30px;"><?php echo $articleinfo["title"];?></h3>
+                <p style="font-size: 16px;color: #444;text-align: center;"><?php echo $articleinfo["publishtime"];?></p>
                 <div class="body-text"><?php echo $articleinfo["content"];?></div>
             </div>
             <div class="body-foot">
