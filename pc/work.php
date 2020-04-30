@@ -1,13 +1,13 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-work-box1">
-        <img src="<?php AssetsUrl ();?>/img/work/banner2.png">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/banner2.png">
     </div>
     <div class="y-work-box2">
         <div class="y-box2-body1  clearfix">
             <div class="y-body1-left fromRight">
                 <div class="tu">
-                    <img src="<?php AssetsUrl ();?>/img/work/h1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/work/h1.png" alt="">
                 </div>
                 <div class="zi">
                     <h4>和聪明的人一起共事</h4>
@@ -15,16 +15,16 @@
                 </div>
             </div>
             <div class="y-body1-right fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/work/h2.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/work/h2.png" alt="">
             </div>
         </div>
         <div class="y-box2-body2  clearfix">
             <div class="y-body2-left fromRight">
-                <img src="<?php AssetsUrl ();?>/img/work/h3.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/work/h3.png" alt="">
             </div>
             <div class="y-body2-right fromLeft">
                 <div class="tu">
-                    <img src="<?php AssetsUrl ();?>/img/work/h4.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/work/h4.png" alt="">
                 </div>
                 <div class="zi">
                     <h4>做激动人心的产品</h4>
@@ -36,15 +36,15 @@
     <div class="y-work-box3">
         <div class="y-box3-title">
             <div class="title">
-                <img class="y-left" src="<?php AssetsUrl ();?>/img/guan/titleleft.png"> 人才招聘
-                <img class="y-right" src="<?php AssetsUrl ();?>/img/guan/titleright.png">
+                <img class="y-left" src="<?php echo $webmsg["assetsurl"];?>/img/guan/titleleft.png"> 人才招聘
+                <img class="y-right" src="<?php echo $webmsg["assetsurl"];?>/img/guan/titleright.png">
             </div>
         </div>
         <div class="y-box3-body">
             <ul class="clearfix">
                 <li class="fromBottom" style="animation-delay: 0.3s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r1.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r1.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>UI设计师</h4>
@@ -71,7 +71,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.5s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r2.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r2.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>PHP工程师</h4>
@@ -98,7 +98,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.7s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r3.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r3.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>Web前端工程师</h4>
@@ -126,7 +126,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.3s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r4.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r4.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>JAVA工程师</h4>
@@ -153,7 +153,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.5s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r5.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r5.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>服务器运维人员</h4>
@@ -180,7 +180,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.7s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r6.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r6.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>产品经理</h4>
@@ -208,7 +208,7 @@
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.3s;">
                     <div class="y-box3-tu">
-                        <img src="<?php AssetsUrl ();?>/img/work/r7.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/work/r7.png" alt="">
                     </div>
                     <div class="y-box3-zhi">
                         <h4>推广专员</h4>

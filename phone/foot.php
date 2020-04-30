@@ -1,15 +1,15 @@
 
-            
+
                 <div class="w-p-foot">
                     <div>
                         <div class="clearfix">
-                            <p>手机：<?php WebsiteMobile ();?></p>
-                            <p>QQ：<?php WebsiteQQ ();?></p>
+                            <p>手机：<?php echo $webmsg["mobile"];?></p>
+                            <p>QQ：<?php echo $webmsg["QQ"];?></p>
                         </div>
-                        <p>邮箱：<?php WebsiteAddress ();?></p>
-                        <p>地点：<?php WebsiteEmail ();?></p>
+                        <p>邮箱：<?php echo $webmsg["address"];?></p>
+                        <p>地点：<?php echo $webmsg["email"];?></p>
                         <p>
-                            <a href="http://www.beian.miit.gov.cn"><?php WebsiteRecord ();?></a>    
+                            <a href="http://www.beian.miit.gov.cn"><?php echo $webmsg["record"];?></a>
                         </p>
                     </div>
                 </div>

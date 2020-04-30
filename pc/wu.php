@@ -1,17 +1,17 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-wu-box1">
-        <img src="<?php AssetsUrl ();?>/img/wu/background3.png">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/background3.png">
         <div>
             <div class="y-wu-dong">
-                <div class="animate-wang-top" style="top:150px;left:210px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong1.png" alt=""></div>
-                <div class="animate-wang-bottom" style="top:80px;left:500px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong2.png" alt=""></div>
-                <div class="animate-wang-top" style="top:100px;left:700px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong3.png" alt=""></div>
-                <div class="animate-wang-top" style="top:120px;left:950px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong4.png" alt=""></div>
-                <div class="animate-wang-bottom" style="top:350px;left:200px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong5.png" alt=""></div>
-                <div class="animate-wang-top" style="top:380px;left:400px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong6.png" alt=""></div>
-                <div class="animate-wang-bottom" style="top:350px;left:700px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong7.png" alt=""></div>
-                <div class="animate-wang-top" style="top:310px;left:880px;"><img src="<?php AssetsUrl ();?>/img/wu/w_wu_dong8.png" alt=""></div>
+                <div class="animate-wang-top" style="top:150px;left:210px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong1.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:80px;left:500px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong2.png" alt=""></div>
+                <div class="animate-wang-top" style="top:100px;left:700px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong3.png" alt=""></div>
+                <div class="animate-wang-top" style="top:120px;left:950px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong4.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:350px;left:200px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong5.png" alt=""></div>
+                <div class="animate-wang-top" style="top:380px;left:400px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong6.png" alt=""></div>
+                <div class="animate-wang-bottom" style="top:350px;left:700px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong7.png" alt=""></div>
+                <div class="animate-wang-top" style="top:310px;left:880px;"><img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w_wu_dong8.png" alt=""></div>
             </div>
             <div class="y-wu-body1">
                 <div class="y-wu-title fromTop">
@@ -21,32 +21,32 @@
                 </div>
                 <ul class="clearfix">
                     <li  class="fromRight">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m1.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m1.png" alt="">
                         <p class="y-wu-p1">wifi模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
                     <li class="fromTop">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m2.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m2.png" alt="">
                         <p class="y-wu-p1">GPRS模块</p>
                         <p class="y-wu-p2">工业级无线通信串口透传</p>
                     </li>
                     <li  class="fromLeft">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m3.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m3.png" alt="">
                         <p class="y-wu-p1">GPRS GPS 二合一模块</p>
                         <p class="y-wu-p2">GPRS无线通信 + GPS定位</p>
                     </li>
                     <li  class="fromRight">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m4.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m4.png" alt="">
                         <p class="y-wu-p1">Lora模块</p>
                         <p class="y-wu-p2">Lora射频无线通信串口透传</p>
                     </li>
                     <li class="fromBottom">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m5.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m5.png" alt="">
                         <p class="y-wu-p1">智能主控板</p>
                         <p class="y-wu-p2">特种机械/车辆信息网关</p>
                     </li>
                     <li  class="fromLeft">
-                        <img src="<?php AssetsUrl ();?>/img/wu/m6.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/m6.png" alt="">
                         <p class="y-wu-p1"> 开发板评估板系列</p>
                         <p class="y-wu-p2">应用广泛的开发板</p>
                     </li>
@@ -56,7 +56,7 @@
         <div class="block"></div>
     </div>
     <div class="y-wu-box2">
-        <img src="<?php AssetsUrl ();?>/img/wu/w11.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w11.png" alt="">
         <div class="y-wu-body1">
             <div class="fromTop">
                 <p>物联网解决方案</p>
@@ -65,35 +65,35 @@
             </div>
             <ul class="clearfix">
                 <li  class="fromRight"  style="animation-delay:1s;animation-name:fromRight">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i1.png" alt="">
                     <p>共享汽车</p>
                 </li>
                 <li  class="fromRight"  style="animation-delay:0.5s;animation-name:fromRight">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i2.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i2.png" alt="">
                     <p>共享单车</p>
                 </li>
                 <li  class="fromLeft"  style="animation-delay:0.5s;animation-name:fromLeft">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i3.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i3.png" alt="">
                     <p>智能鱼缸</p>
                 </li>
                 <li  class="fromLeft"  style="animation-delay:1s;animation-name:fromLeft">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i4.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i4.png" alt="">
                     <p>智能空气检测</p>
                 </li>
                 <li  class="fromRight"  style="animation-delay:0.5s;animation-name:fromRight">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i5.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i5.png" alt="">
                     <p>智能旅游</p>
                 </li>
                 <li  class="fromRight"  style="animation-delay:0.5s;animation-name:fromRight">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i6.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i6.png" alt="">
                     <p>智能物流</p>
                 </li>
                 <li  class="fromLeft"  style="animation-delay:0.5s;animation-name:fromLeft">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i7.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i7.png" alt="">
                     <p>智能仓储</p>
                 </li>
                 <li  class="fromLeft"  style="animation-delay:0.5s;animation-name:fromLeft">
-                    <img src="<?php AssetsUrl ();?>/img/wu/i8.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/i8.png" alt="">
                     <p>智能农业</p>
                 </li>
             </ul>
@@ -102,7 +102,7 @@
             <div  class="fromTop">
                 <p>物联网模块解决方案架构图</p>
                 <span class="iconfont iconxiangxia"></span>
-                <img src="<?php AssetsUrl ();?>/img/wu/w4.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/wu/w4.png" alt="">
             </div>
         </div>
         <div class="y-wu-body3">

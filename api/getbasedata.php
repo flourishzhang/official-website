@@ -1,5 +1,4 @@
 <?php
-$webmsg = WebsiteMsg ();
 $config = array (
     "title" => $webmsg["title"],
     "keywords" => $webmsg["keywords"],

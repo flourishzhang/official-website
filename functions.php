@@ -1,6 +1,6 @@
 <?php
 require_once("config.php");
-$webmsg = WebsiteMsg();
+
 function ExecuteSql ($sql, $params=array()) {
     global $config;
     $db = new PDO("mysql:host=".$config["dbhost"].";port=".$config["dbport"].";dbname=".$config["dbname"].";charset=utf8", $config["dbuser"], $config["dbpass"], array(PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => false));
@@ -24,117 +24,20 @@ function IsMobile() {
     return $found_mobile;
 }
 
-function WebsiteMsg () {
-    static $webmsg = null;
-    if ($webmsg === null) {
-        $webmsg = array();
-        $stmt = ExecuteSql ("SELECT `ckey`,`cvalue` FROM `wf_config`");
-        $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $count = count ($arr);
-        for ($i = 0 ; $i < $count ; $i++) {
-            $webmsg[$arr[$i]["ckey"]] = $arr[$i]["cvalue"];
-        }
+function GetWebsiteMsg () {
+    $webmsg = array();
+    $stmt = ExecuteSql ("SELECT `ckey`,`cvalue` FROM `wf_config`");
+    $arr = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $count = count ($arr);
+    for ($i = 0 ; $i < $count ; $i++) {
+        $webmsg[$arr[$i]["ckey"]] = $arr[$i]["cvalue"];
+    }
+    if($_SERVER['HTTP_HOST']=='localhost'){
+        $webmsg["assetsurl"] = '';
     }
     return $webmsg;
 }
-
-function WebsiteTitle () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["title"];
-}
-
-function WebsiteKeyWords () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["keywords"];
-}
-
-function WebsiteDescription () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["description"];
-}
-
-function WebsiteAddress () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["address"];
-}
-
-function WebsiteQQ () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["QQ"];
-}
-
-function WebsiteTelephone () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["telephone"];
-}
-
-function WebsiteMobile () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["mobile"];
-}
-
-function WebsiteEmail () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["email"];
-}
-
-function WebsiteRecord () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["record"];
-}
-
-function WebsiteImportantWord () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["importantword"];
-}
-
-function GetSiteUrl () {
-    $webmsg = WebsiteMsg ();
-    return $webmsg["siteurl"];
-}
-
-function SiteUrl () {
-    echo GetSiteUrl ();
-}
-
-function AssetsUrl () {
-    $webmsg = WebsiteMsg ();
-    if($_SERVER['HTTP_HOST']=='localhost'){
-        echo '..';
-    }else{
-        echo $webmsg["assetsurl"];
-    }
-}
-
-function RecommendName () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["recommendname"];
-}
-
-function RecommendPcUrl () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["recommendpcurl"];
-}
-
-function RecommendMobileUrl () {
-    $webmsg = WebsiteMsg ();
-    echo $webmsg["recommendmobileurl"];
-}
-
-function GetBaiduPushToken () {
-    $webmsg = WebsiteMsg ();
-    return $webmsg["baidupushtoken"];
-}
-
-function GetBaiduAppId () {
-    $webmsg = WebsiteMsg ();
-    return $webmsg["baiduappid"];
-}
-
-function GetBaiduAppToken () {
-    $webmsg = WebsiteMsg ();
-    return $webmsg["baiduapptoken"];
-}
+$webmsg = GetWebsiteMsg();
 
 function GetNewsList ($column, $status, $type, $keyword, $order, $page, $size, $now) {
     static $newsList = null;

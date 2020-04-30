@@ -1,60 +1,60 @@
 <?php require ("phone/head.php");?>
     <div class="w-p-movie-box1">
-        <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box1.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box1.png" alt="">
     </div>
     <div class="w-p-movie-box2">
-        <a class="w-ct-return" href="<?php SiteUrl();?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介
-                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
-        <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box2.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box2.png" alt="">
     </div>
     <div class="w-p-movie-box3">
         <div class="w-wh-title">
             <div>
                 功能简介
-                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <div class="clearfix w-tu">
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_1.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_1.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_2.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_2.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_3.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_3.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_4.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_4.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_5.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_5.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_6.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_6.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_7.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_7.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_8.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_8.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_9.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_9.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_10.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_10.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_11.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_11.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box3_12.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box3_12.png">
             </div>
         </div>
     </div>
@@ -62,18 +62,18 @@
         <div class="w-wh-title">
             <div>
                 方案三点
-                <img src="<?php AssetsUrl ();?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
             </div>
         </div>
         <div class="clearfix w-tu">
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box4_1.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box4_1.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box4_2.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box4_2.png">
             </div>
             <div>
-                <img src="<?php AssetsUrl ();?>/img/phone_movie/movie_box4_3.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box4_3.png">
             </div>
         </div>
     </div>

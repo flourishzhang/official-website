@@ -33,23 +33,23 @@ $articleinfo = $info["articleinfo"];
 <?php } ?>
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="<?php WebsiteKeyWords ();?>">
+    <meta name="keywords" content="<?php echo $webmsg["keywords"];?>">
     <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/mui.min.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/init.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/ystyle.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/iconfont.css">
-    <script src="<?php AssetsUrl ();?>/js/jquery-2.0.3.min.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/mui.min.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/banner.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/bootstrap.min.js"></script>
+    <title><?php echo $webmsg["title"];?><?php echo isset($title)?$title:"_首页";?></title>
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/mui.min.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/init.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/wstyle.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont.css">
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery-2.0.3.min.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/mui.min.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/banner.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- 侧滑导航根容器 -->
@@ -61,22 +61,22 @@ $articleinfo = $info["articleinfo"];
                 <div  style="margin: 35px 15px 10px;color: #333; ">官网导航</div>
                 <ul style="background: #fff;color: #333;" class="mui-table-view">
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/index.html">首页</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/index.html">首页</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/mobileiot.html">物联网</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/mobileiot.html">物联网</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/mobilesolution.html">解决方案</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">解决方案</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/mobilenews.html">新闻资讯</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/mobilenews.html">新闻资讯</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/mobilerecruit.html">人才合作</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/mobilerecruit.html">人才合作</a>
                     </li>
                     <li class="mui-table-view-cell">
-                        <a href="<?php SiteUrl();?>/mobileabout.html">关于我们</a>
+                        <a href="<?php echo $webmsg["siteurl"];?>/mobileabout.html">关于我们</a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +91,7 @@ $articleinfo = $info["articleinfo"];
         <!-- 主页面标题 -->
         <header class="mui-bar mui-bar-nav" style="background: #fff;">
             <div class="nav_logo clearfix">
-                <img src="<?php AssetsUrl ();?>/img/phone_logo.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_logo.png">
             </div>
             <a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
         </header>

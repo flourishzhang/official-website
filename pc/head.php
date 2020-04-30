@@ -34,48 +34,48 @@ $articleinfo = $info["articleinfo"];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="<?php WebsiteKeyWords ();?>">
+    <meta name="keywords" content="<?php echo $webmsg["keywords"];?>">
     <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
-    <title><?php WebsiteTitle ();?><?php echo isset($title)?$title:"_首页";?></title>
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/init.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/ystyle.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/wstyle.css">
+    <title><?php echo $webmsg["title"];?><?php echo isset($title)?$title:"_首页";?></title>
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/init.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/wstyle.css">
     <!-- <link rel="stylesheet" href="../css/wstyle.css"> -->
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/iconfont.css">
-    <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/animation.css">
-    <!-- <link rel="stylesheet" href="<?php AssetsUrl ();?>/css/mui.min.css"> -->
-    <script src="<?php AssetsUrl ();?>/js/jquery-2.0.3.min.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/jquery.SuperSlide.2.1.1.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/banner.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/animation.js"></script>
-    <script src="<?php AssetsUrl ();?>/js/bootstrap.min.js"></script>
-    <!-- <script src="<?php AssetsUrl ();?>/js/mui.min.js"></script> -->
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/animation.css">
+    <!-- <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/mui.min.css"> -->
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery-2.0.3.min.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/banner.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/animation.js"></script>
+    <script src="<?php echo $webmsg["assetsurl"];?>/js/bootstrap.min.js"></script>
+    <!-- <script src="<?php echo $webmsg["assetsurl"];?>/js/mui.min.js"></script> -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
 </head>
 
 <body>
     <nav>
         <div class="nav-center">
-            <div class="logo"><img src="<?php AssetsUrl ();?>/img/head/logo.png"></div>
+            <div class="logo"><img src="<?php echo $webmsg["assetsurl"];?>/img/head/logo.png"></div>
             <ul class="navbar">
                 <li>
-                    <a href="<?php SiteUrl();?>/index.html"<?php if($active==1) echo "style=\"color: #000\"";?>>首页</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/index.html"<?php if($active==1) echo "style=\"color: #000\"";?>>首页</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/iot.html" <?php if($active==2) echo "style=\"color: #000\"";?>>物联网</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/iot.html" <?php if($active==2) echo "style=\"color: #000\"";?>>物联网</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/solution.html" <?php if($active==3) echo "style=\"color: #000\"";?>>解决方案</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/solution.html" <?php if($active==3) echo "style=\"color: #000\"";?>>解决方案</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/news.html" <?php if($active==4) echo "style=\"color: #000\"";?>>新闻资讯</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/news.html" <?php if($active==4) echo "style=\"color: #000\"";?>>新闻资讯</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/about.html" <?php if($active==5) echo "style=\"color: #000\"";?>>关于我们</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/about.html" <?php if($active==5) echo "style=\"color: #000\"";?>>关于我们</a>
                 </li>
                 <li>
-                    <a href="<?php SiteUrl();?>/recruit.html" <?php if($active==6) echo "style=\"color: #000\"";?>>人才合作</a>
+                    <a href="<?php echo $webmsg["siteurl"];?>/recruit.html" <?php if($active==6) echo "style=\"color: #000\"";?>>人才合作</a>
                 </li>
             </ul>
         </div>

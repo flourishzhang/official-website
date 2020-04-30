@@ -8,10 +8,10 @@ $nextArticleInfo = $info["nextArticleInfo"];
 ?>
 <?php require ("phone/head.php");?>
     <div class="w-p-news-box1">
-        <img src="<?php AssetsUrl ();?>/img/phone_news/new_box1.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-newsdet-box2">
-        <a class="w-ct-return" href="<?php SiteUrl();?>/phonenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/phonenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
     </div>
     <div class="w-p-newsdet-box3">
         <?php echo $articleinfo["content"];?>
@@ -19,20 +19,16 @@ $nextArticleInfo = $info["nextArticleInfo"];
     <div class="w-p-newsdet-box4">
         <ul class="clearfix">
             <li>
-                <span>文章来源：</span>
-                <a href="<?php SiteUrl();?><?php RecommendMobileUrl ();?>"><?php RecommendName ();?></a>
-            </li>
-            <li>
                 <span>优秀解决方案推荐：</span>
-                <a href="<?php SiteUrl();?><?php RecommendMobileUrl ();?>"><?php RecommendName ();?></a>
+                <a href="<?php echo $webmsg["siteurl"].$webmsg["recommendmobileurl"];?>"><?php echo $webmsg["recommendname"];?></a>
             </li>
             <li>
                 <span>上一篇：</span>
-                <a href="<?php SiteUrl();?>/mobilearticle-id-<?php echo $previousArticleInfo["articleid"];?>.html"><?php echo $previousArticleInfo["title"];?></a>
+                <a href="<?php echo $webmsg["siteurl"];?>/mobilearticle-id-<?php echo $previousArticleInfo["articleid"];?>.html"><?php echo $previousArticleInfo["title"];?></a>
             </li>
             <li>
                 <span>下一篇：</span>
-                <a href="<?php SiteUrl();?>/mobilearticle-id-<?php echo $nextArticleInfo["articleid"];?>.html"><?php echo $nextArticleInfo["title"];?></a>
+                <a href="<?php echo $webmsg["siteurl"];?>/mobilearticle-id-<?php echo $nextArticleInfo["articleid"];?>.html"><?php echo $nextArticleInfo["title"];?></a>
             </li>
         </ul>
     </div>

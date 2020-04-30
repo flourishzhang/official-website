@@ -1,11 +1,11 @@
 
     <?php require ("pc/head.php");?>
     <div class="y-bar-box1">
-        <img src="<?php AssetsUrl ();?>/img/bar/banner.png">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/banner.png">
     </div>
     <div class="y-bar-box2">
         <div class="y-bar-return">
-            <a href="<?php SiteUrl();?>/solution.html">
+            <a href="<?php echo $webmsg["siteurl"];?>/solution.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>
@@ -13,7 +13,7 @@
         <div class="y-bar-title1  clearfix">
             <div class="title1 fromTop">
                 方案简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/bar/t1.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/bar/t1.png" alt="">
             </div>
         </div>
         <div class="y-bar-body  clearfix">
@@ -27,7 +27,7 @@
 
             </div>
             <div class="y-bar-right  fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/bar/b1.png">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/b1.png">
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
         <div class="y-bar-title2  clearfix">
             <div class="title2 fromTop">
                 实施目的
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/bar/t1.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/bar/t1.png" alt="">
             </div>
         </div>
         <div class="y-bar-body2">
@@ -49,7 +49,7 @@
                     </p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.7s;">
-                    <img src="<?php AssetsUrl ();?>/img/bar/b2.png">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/b2.png">
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.3s;">
                     <p>3、安防系统接入,通过全自动的安防系统- -体化管理 ,提高网吧的安防水平。
@@ -70,7 +70,7 @@
         <div class="y-bar-title4 clearfix fromTop">
             <div>
                 方案特点
-                <img src="<?php AssetsUrl ();?>/img/bar/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/t1.png" alt="">
             </div>
         </div>
         <div class="y-bar-body4">
@@ -110,7 +110,7 @@
         <div class="y-bar-title5 clearfix fromTop">
             <div>
                 功能特点
-                <img src="<?php AssetsUrl ();?>/img/bar/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/t1.png" alt="">
             </div>
         </div>
         <div class="y-bar-body5">
@@ -146,7 +146,7 @@
         <div class="y-bar-title6 clearfix fromTop">
             <div>
                 设计原则
-                <img src="<?php AssetsUrl ();?>/img/bar/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/bar/t1.png" alt="">
             </div>
         </div>
         <div class="y-bar-body6">

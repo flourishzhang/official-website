@@ -2,55 +2,55 @@
     <div class="w-foot">
         <div class="w-foot-title fromTop">
             <div class="title">
-                <img class="w-left" src="<?php AssetsUrl ();?>/img/titleleft.png"> 联系我们
-                <img class="w-right" src="<?php AssetsUrl ();?>/img/titleright.png">
+                <img class="w-left" src="<?php echo $webmsg["assetsurl"];?>/img/titleleft.png"> 联系我们
+                <img class="w-right" src="<?php echo $webmsg["assetsurl"];?>/img/titleright.png">
             </div>
         </div>
         <div class="w-foot-adress clearfix">
             <div class="w-foot-map fromRight" id="container"></div>
             <div class="w-foot-text fromLeft">
-                <div>地址:<?php WebsiteAddress ();?></div>
-                <div>QQ: <?php WebsiteQQ ();?></div>
-                <div>电话:<?php WebsiteTelephone ();?></div>
-                <div>手机:<?php WebsiteMobile ();?></div>
-                <div>邮箱:<?php WebsiteEmail ();?></div>
+                <div>地址:<?php echo $webmsg["address"];?></div>
+                <div>QQ: <?php echo $webmsg["QQ"];?></div>
+                <div>电话:<?php echo $webmsg["telephone"];?></div>
+                <div>手机:<?php echo $webmsg["mobile"];?></div>
+                <div>邮箱:<?php echo $webmsg["email"];?></div>
             </div>
         </div>
         <div class="w-foot-name">
             <div class="clearfix">
                 <div class="w-left clearfix">
                     <div class="w-tu">
-                        <img src="<?php AssetsUrl ();?>/img/logo3.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/logo3.png" alt="">
                     </div>
                     <div class="w-zi">
                         <p>沃航(武汉)科技股份有限公司版权所有</p>
                         <p>
-                            <a href="http://www.beian.miit.gov.cn" rel="nofollow">备案号:<?php WebsiteRecord ();?></a>
+                            <a href="http://www.beian.miit.gov.cn" rel="nofollow">备案号:<?php echo $webmsg["record"];?></a>
                         </p>
                     </div>
                 </div>
                 <div class="w-right">
-                    <img src="<?php AssetsUrl ();?>/img/logo4.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/logo4.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="w-right-fixed">
-        <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php WebsiteQQ ();?>&site=qq&menu=yes" target="_blank">
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $webmsg["QQ"];?>&site=qq&menu=yes" target="_blank">
             <div class="creafix">
-                <div class="tu"><img src="<?php AssetsUrl ();?>/img/qq.png"></div>
-                <div class="zi"><?php WebsiteQQ ();?></div>
+                <div class="tu"><img src="<?php echo $webmsg["assetsurl"];?>/img/qq.png"></div>
+                <div class="zi"><?php echo $webmsg["QQ"];?></div>
             </div>
         </a>
         <a>
             <div class="creafix">
-                <div class="tu"><img src="<?php AssetsUrl ();?>/img/phone.png"></div>
-                <div class="zi"><?php WebsiteMobile ();?></div>
+                <div class="tu"><img src="<?php echo $webmsg["assetsurl"];?>/img/phone.png"></div>
+                <div class="zi"><?php echo $webmsg["mobile"];?></div>
             </div>
         </a>
         <div class="creafix">
-            <div class="tu1"><img src="<?php AssetsUrl ();?>/img/top2.png"></div>
-            <div class="tu2" id="toptop"><img src="<?php AssetsUrl ();?>/img/top1.png"></div>
+            <div class="tu1"><img src="<?php echo $webmsg["assetsurl"];?>/img/top2.png"></div>
+            <div class="tu2" id="toptop"><img src="<?php echo $webmsg["assetsurl"];?>/img/top1.png"></div>
         </div>
     </div>
 </body>

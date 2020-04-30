@@ -1,11 +1,11 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-nong-box1">
-        <img src="<?php AssetsUrl ();?>/img/nong/banner.png">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/banner.png">
     </div>
     <div class="y-nong-box2">
         <div class="y-nong-return">
-            <a href="<?php SiteUrl();?>/solution.html">
+            <a href="<?php echo $webmsg["siteurl"];?>/solution.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>
@@ -13,7 +13,7 @@
         <div class="y-nong-title1  clearfix">
             <div class="title1 fromTop">
                 方案简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body  clearfix">
@@ -22,7 +22,7 @@
                     智能农业温室大棚，可实时无线采集和传输温室大棚内 空气中以及土壤的温度、湿度、光照、PH、 CO2浓度等 环境参数,通过PC电脑、移动手机和平板电脑以直观的 图表和曲线的方式显示给用户,可根据种植作物的需求 提供各种声光报警信息,并可以自定义规则控制洒水、 农药以及温度。它主要由农业温室大棚、各种无线传感 话、控制器及后台系统软件和用户端APP等组成。</p>
             </div>
             <div class="y-nong-right fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/nong/A1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/A1.png" alt="">
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
         <div class="y-nong-title2  clearfix">
             <div class="title2 fromTop">
                 功能介绍
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body2">
@@ -43,7 +43,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n1.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n1.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -55,7 +55,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n2.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n2.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -67,7 +67,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n3.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n3.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -79,7 +79,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n4.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n4.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -91,7 +91,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n5.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n5.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -103,7 +103,7 @@
                             </p>
                         </div>
                         <div class="y-text-right">
-                            <img src="<?php AssetsUrl ();?>/img/nong/n6.png" alt="">
+                            <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/n6.png" alt="">
                         </div>
                     </div>
                 </li>
@@ -114,7 +114,7 @@
         <div class="y-nong-title4 clearfix">
             <div class="fromTop">
                 方案的组成
-                <img src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body4">
@@ -125,7 +125,7 @@
         <div class="y-nong-title5 clearfix">
             <div class="fromTop">
                 用户APP端
-                <img src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body5">
@@ -178,7 +178,7 @@
         <div class="y-nong-title6 clearfix">
             <div class="fromTop">
                 后台
-                <img src="<?php AssetsUrl ();?>/img/nong/t1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/nong/t1.png" alt="">
             </div>
         </div>
         <div class="y-nong-body6">

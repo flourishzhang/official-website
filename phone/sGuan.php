@@ -1,41 +1,41 @@
 <?php require ("phone/head.php");?>
     <div class="y-ph-guan-box1">
-        <img src="<?php AssetsUrl ();?>/img/s-guan/banner.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/banner.png" alt="">
     </div>
     <div class="y-ph-guan-box2">
         <div class="y-ph-guan-title">
             <div>
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleleft.png" style="margin-right:0.5em">公司简介
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleright.png" style="margin-left:0.5em">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleleft.png" style="margin-right:0.5em">公司简介
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleright.png" style="margin-left:0.5em">
             </div>
         </div>
         <div class="y-ph-guan-body2">
-            <img src="<?php AssetsUrl ();?>/img/s-guan/jian.png" alt="">
+            <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/jian.png" alt="">
         </div>
     </div>
     <div class="y-ph-guan-box3">
         <div class="y-ph-guan-title3">
             <div>
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleleft.png" style="margin-right:0.5em">我们的理念
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleright.png" style="margin-left:0.5em">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleleft.png" style="margin-right:0.5em">我们的理念
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleright.png" style="margin-left:0.5em">
             </div>
         </div>
         <div class="y-ph-guan-body3 ">
             <ul  class="clearfix">
                 <li>
-                    <img src="<?php AssetsUrl ();?>/img/s-guan/g1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g1.png" alt="">
                 </li>
                 <li>
-                    <img src="<?php AssetsUrl ();?>/img/s-guan/g2.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g2.png" alt="">
                 </li>
                 <li>
-                    <img src="<?php AssetsUrl ();?>/img/s-guan/g3.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g3.png" alt="">
                 </li>
                 <li>
-                    <img src="<?php AssetsUrl ();?>/img/s-guan/g4.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g4.png" alt="">
                 </li>
                 <li>
-                    <img src="<?php AssetsUrl ();?>/img/s-guan/g5.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g5.png" alt="">
                 </li>
             </ul>
         </div>
@@ -43,12 +43,12 @@
     <div class="y-ph-guan-box4">
         <div class="y-ph-guan-title4">
             <div>
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleleft.png" style="margin-right:0.5em">合作理念
-                <img src="<?php AssetsUrl ();?>/img/s-guan/titleright.png" style="margin-left:0.5em">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleleft.png" style="margin-right:0.5em">合作理念
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/titleright.png" style="margin-left:0.5em">
             </div>
         </div>
         <div class="y-ph-guan-body4">
-            <img src="<?php AssetsUrl ();?>/img/s-guan/g6.png" alt="">
+            <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g6.png" alt="">
         </div>
 
     </div>

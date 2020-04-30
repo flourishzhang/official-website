@@ -15,10 +15,10 @@ if ($info == false) {
 } else {
     $urls = array();
     $count = count($obj["ids"]);
-    $siteurl = GetSiteUrl ();
-    $baidupushtoken = GetBaiduPushToken ();
-    $baiduappid = GetBaiduAppId ();
-    $baiduapptoken = GetBaiduAppToken ();
+    $siteurl = $webmsg["siteurl"];
+    $baidupushtoken = $webmsg["baidupushtoken"];
+    $baiduappid = $webmsg["baiduappid"];
+    $baiduapptoken = $webmsg["baiduapptoken"];
     for ($i = 0 ; $i < $count ; $i++) {
         array_push($urls,
             $siteurl."/article-id-".$obj["ids"][$i].".html",

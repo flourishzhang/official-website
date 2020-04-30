@@ -1,11 +1,11 @@
 
 <?php require ("pc/head.php");?>
     <div class="y-power-box1">
-        <img src="<?php AssetsUrl ();?>/img/power/banner2.png">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/power/banner2.png">
     </div>
     <div class="y-power-box2">
         <div class="y-power-return">
-            <a href="<?php SiteUrl();?>/solution.html">
+            <a href="<?php echo $webmsg["siteurl"];?>/solution.html">
                 返回解决方案列表
                 <span class="iconfont iconxiangzuo"></span>
             </a>
@@ -13,7 +13,7 @@
         <div class="y-power-title1  clearfix">
             <div class="title1 fromTop">
                 方案简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/power/t2.png" alt="">
             </div>
         </div>
         <div class="y-power-body  clearfix">
@@ -26,7 +26,7 @@
 
             </div>
             <div class="y-power-right  fromLeft">
-                <img src="<?php AssetsUrl ();?>/img/power/p1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/power/p1.png" alt="">
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="y-power-title2  clearfix">
             <div class="title2 fromTop">
                 系统简介
-                <img class="y-tu" src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
+                <img class="y-tu" src="<?php echo $webmsg["assetsurl"];?>/img/power/t2.png" alt="">
             </div>
         </div>
         <div class="y-power-body2">
@@ -76,7 +76,7 @@
         <div class="y-power-title4 clearfix">
             <div class="fromTop">
                 功能明细
-                <img src="<?php AssetsUrl ();?>/img/power/t2.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/power/t2.png" alt="">
             </div>
         </div>
         <ul>

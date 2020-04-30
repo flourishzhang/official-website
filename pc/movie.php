@@ -1,14 +1,14 @@
 
 <?php require ("pc/head.php");?>
     <div class="w-mv-box1">
-        <img src="<?php AssetsUrl ();?>/img/movie/moive_box1.png" alt="">
+        <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_box1.png" alt="">
     </div>
     <div class="w-mv-box2">
-        <a class="w-mv-return" href="<?php SiteUrl();?>/solution.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-mv-return" href="<?php echo $webmsg["siteurl"];?>/solution.html">返回解决方案列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-mv-title fromTop">
             <div>
                 方案简介
-                <img src="<?php AssetsUrl ();?>/img/movie/moive_title1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_title1.png" alt="">
             </div>
         </div>
         <div class="clearfix w-mv-div">
@@ -24,7 +24,7 @@
                 台三个部分,线下无纸化检票系统。无纸化检票接入门
                 禁系统，减少用户取票过程。更加环保,用户体验更佳。
             </div>
-            <div class="w-mv-img fromLeft"><img src="<?php AssetsUrl ();?>/img/movie/moive_box2.png" alt=""></div>
+            <div class="w-mv-img fromLeft"><img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_box2.png" alt=""></div>
         </div>
     </div>
     <div style="background: #f4f8ff;">
@@ -32,7 +32,7 @@
             <div class="w-mv-title fromTop">
                 <div>
                     功能简介
-                    <img src="<?php AssetsUrl ();?>/img/movie/moive_title1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_title1.png" alt="">
                 </div>
             </div>
             <ul class="clearfix">
@@ -148,12 +148,12 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="w-mv-box4">
         <div class="w-mv-title fromTop">
             <div>
                 方案特点
-                <img src="<?php AssetsUrl ();?>/img/movie/moive_title1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_title1.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -199,25 +199,25 @@
             </li>
         </ul>
     </div>
-   
-    
+
+
     <div style="background: #f4f8ff;">
         <div class="w-mv-box5 clearfix">
             <div class="w-mv-title fromTop">
                 <div>
                     方案三点
-                    <img src="<?php AssetsUrl ();?>/img/movie/moive_title1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_title1.png" alt="">
                 </div>
             </div>
-            <div class="w-mv-img clearfix">   
+            <div class="w-mv-img clearfix">
                 <div class="fromBottom" style="animation-delay: 0.3s;">
-                    <img src="<?php AssetsUrl ();?>/img/movie/moive_box5_1.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_box5_1.png" alt="">
                 </div>
                 <div class="fromBottom" style="animation-delay: 0.5s;margin: 0 36px;">
-                    <img src="<?php AssetsUrl ();?>/img/movie/moive_box5_2.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_box5_2.png" alt="">
                 </div>
                 <div class="fromBottom" style="animation-delay: 0.7s;">
-                    <img src="<?php AssetsUrl ();?>/img/movie/moive_box5_3.png" alt="">
+                    <img src="<?php echo $webmsg["assetsurl"];?>/img/movie/moive_box5_3.png" alt="">
                 </div>
             </div>
         </div>
