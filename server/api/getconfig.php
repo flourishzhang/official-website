@@ -16,16 +16,16 @@ if ($info == false) {
     $ret = array(
         "errcode" => 0,
         "data" => array(
-            "title" => GetWebsiteTitle (),
-            "keywords" => GetWebsiteKeyWords (),
-            "description" => GetWebsiteDescription (),
-            "address" => GetWebsiteAddress (),
-            "QQ" => GetWebsiteQQ (),
-            "telephone" => GetWebsiteTelephone (),
-            "mobile" => GetWebsiteMobile (),
-            "email" => GetWebsiteEmail (),
-            "importantword" => GetWebsiteImportantWord (),
-            "record" => GetWebsiteRecord ()
+            "title" => $webmsg["title"],
+            "keywords" => $webmsg["keywords"],
+            "description" => $webmsg["description"],
+            "address" => $webmsg["address"],
+            "QQ" => $webmsg["QQ"],
+            "telephone" => $webmsg["telephone"],
+            "mobile" => $webmsg["mobile"],
+            "email" => $webmsg["email"],
+            "importantword" => $webmsg["importantword"],
+            "record" => $webmsg["record"]
         )
     );
 }
