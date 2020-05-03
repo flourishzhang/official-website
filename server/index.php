@@ -43,6 +43,14 @@ switch ($do) {
     case "apigetuserinfo": require("api/getuserinfo.php");break;
     case "apilogin": require("api/login.php");break;
     case "apipushbaidu": require("api/pushbaidu.php");break;
+    case "apigetwxtoken":require("api/getwxtoken.php");break;
+    case "apigetprivatewxtoken":require("api/getprivatewxtoken.php");break;
+    case "apisendadminmsgbyprivatewx":require("api/sendadminmsgbyprivatewx.php");break;
+    case "apigetwxusermsg":require("api/getwxusermsg.php");break;
+    case "apigetuselessimgs":require("api/getuselessimgs.php");break;
+    case "apigetconfig":require("api/getconfig.php");break;
+    case "apisetconfig":require("api/setconfig.php");break;
+    case "sitemap":require("view/sitemap.php");break;
     case "sitemap":require("pc/sitemap.php");break;
     default:
         echo "This is a 404 page.";
