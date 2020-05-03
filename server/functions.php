@@ -1,11 +1,17 @@
 <?php
 require_once("config.php");
 
-function ExecuteSql ($sql, $params=array()) {
+function ExecuteSql ($sql, $params=array(), $returnlastInsertId = false) {
     global $config;
     $db = new PDO("mysql:host=".$config["dbhost"].";port=".$config["dbport"].";dbname=".$config["dbname"].";charset=utf8", $config["dbuser"], $config["dbpass"], array(PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => false));
     $stmt = $db->prepare($sql);
+    $db->beginTransaction();
     $stmt->execute($params);
+    $lastInsertId = $db->lastInsertId();
+    $db->commit();
+    if ($returnlastInsertId) {
+        return array("lastInsertId" => $lastInsertId, "stmt" => $stmt);
+    }
     return $stmt;
 }
 
@@ -113,7 +119,7 @@ function SetWxUser ($json) {
     $obj = json_decode($json, true);
     $sql = "INSERT INTO `".$config["prefix"]."wxuser` (`openid`, `usermsg`) VALUES (?, ?) ON DUPLICATE KEY UPDATE `usermsg` = VALUES(`usermsg`)";
     $params = array($obj["openid"], $json);
-	ExecuteSql ($sql, $params);
+    ExecuteSql ($sql, $params);
 }
 
 function GetNewsList ($column, $status, $type, $keyword, $order, $page, $size, $now) {
@@ -304,17 +310,63 @@ function GetUserInfo ($token) {
     return $info[0];
 }
 
+function ClearBaiduCdnCache ($params) {
+    global $webmsg;
+    $url = "cdn.baidubce.com";
+    $ak = $webmsg["baiduyunaccesskey"];
+    $sk = $webmsg["baiduyunsecretkey"];
+    $time = gmdate("Y-m-d\TH:i:s\Z");
+    $expire = 300;
+    $authstringprefix = "bce-auth-v1/".$ak."/".$time."/".$expire;
+    $canonicaluri = "/v2/cache/purge";
+    $canonicalquerystring = "";
+    $canonicalheaders = "host:".$url;
+    $canonicalrequest = "POST\n".$canonicaluri."\n".$canonicalquerystring."\n".$canonicalheaders;
+    $signedheaders = "host";
+    $signingkey = hash_hmac("sha256", $authstringprefix, $sk);
+    $signature = hash_hmac("sha256", $canonicalrequest, $signingkey);
+    $headers = array("Authorization: bce-auth-v1/".$ak."/".$time."/".$expire."/".$signedheaders."/".$signature);
+    $ch = curl_init();
+    $needclearurls = array();
+    foreach($params as $val) {
+        array_push($needclearurls, array("url" => $webmsg["siteurl"].$val));
+    }
+    $postdata = json_encode(array("tasks" => $needclearurls), JSON_UNESCAPED_SLASHES);
+    curl_setopt($ch, CURLOPT_URL, "http://".$url.$canonicaluri);
+    curl_setopt($ch, CURLOPT_HEADER, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_exec($ch);
+    curl_close($ch);
+}
+
 function CreateArticle ($title, $desc, $content, $type, $userid, $publishtime, $status, $file) {
     global $config;
     $timestamp = time();
     $path = "/uploads/article/".date("Y/m/d", $timestamp);
     $filepath = $path."/".$timestamp.RandomStr (4).".png";
-    if (!is_dir($path)) {
+    if (!is_dir(getcwd().$path)) {
         mkdir (getcwd().$path, 0777, true);
     }
     move_uploaded_file($file["tmp_name"], getcwd().$filepath);
-    $stmt = ExecuteSql ("INSERT `".$config["prefix"]."news` (`title`, `desc`, `content`, `thumbnail`, `articletype`, `userid`, `createtime`, `modifytime`, `publishtime`, `articlestatus`) VALUES (?,?,?,?,?,?,NOW(),NOW(),?,?) ",
-                array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status));
+    $ret = ExecuteSql ("INSERT `".$config["prefix"]."news` (`title`, `desc`, `content`, `thumbnail`, `articletype`, `userid`, `createtime`, `modifytime`, `publishtime`, `articlestatus`) VALUES (?,?,?,?,?,?,NOW(),NOW(),?,?) ",
+                array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status), true);
+    $articleid = $ret["lastInsertId"];
+    $stmt = $ret["stmt"];
+    $urls = array(
+        "/sitemap.txt",
+        "/index.html",
+        "/article-id-".($articleid-1).".html",
+        "/mobilearticle-id-".($articleid-1).".html",
+        "/news.html",
+        "/mobilenews.html"
+    );
+    for ($i = 2 ; $i <= 48 ; $i++) { // 最多一次刷新1000个页面
+        array_push($urls, "/news-page-".$i.".html", "/mobilenews-page-".$i.".html");
+    }
+    ClearBaiduCdnCache($urls);
     return $stmt->rowCount();
 }
 
@@ -338,6 +390,10 @@ function EditArticle ($articleid, $title, $desc, $content, $type, $userid, $publ
         $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `articletype` = ?, `userid` = ?, `modifytime` = NOW(), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
                     array($title, $desc, $content, $type, $userid, $publishtime, $status, $articleid));
     }
+    ClearBaiduCdnCache(array(
+        "/article-id-".$articleid.".html",
+        "/mobilearticle-id-".$articleid.".html"
+    ));
     return $stmt->rowCount();
 }
 
