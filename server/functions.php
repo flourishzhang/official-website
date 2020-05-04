@@ -357,13 +357,15 @@ function CreateArticle ($title, $desc, $content, $type, $userid, $publishtime, $
     $stmt = $ret["stmt"];
     $urls = array(
         "/sitemap.txt",
+        "/",
         "/index.html",
         "/article-id-".($articleid-1).".html",
         "/mobilearticle-id-".($articleid-1).".html",
         "/news.html",
         "/mobilenews.html"
     );
-    for ($i = 2 ; $i <= 48 ; $i++) { // 最多一次刷新1000个页面
+    $urlconut = count($urls) + 2;
+    for ($i = 2 ; $urlconut < 100 ; $i++, $urlconut += 2) { // 最多一次刷新100个页面
         array_push($urls, "/news-page-".$i.".html", "/mobilenews-page-".$i.".html");
     }
     ClearBaiduCdnCache($urls);
