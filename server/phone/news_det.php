@@ -22,14 +22,18 @@ $nextArticleInfo = $info["nextArticleInfo"];
                 <span>优秀解决方案推荐：</span>
                 <a href="<?php echo $webmsg["siteurl"].$webmsg["recommendmobileurl"];?>"><?php echo $webmsg["recommendname"];?></a>
             </li>
+            <?php if ($previousArticleInfo["articleid"] != 0) { ?>
             <li>
                 <span>上一篇：</span>
                 <a href="<?php echo $webmsg["siteurl"];?>/mobilearticle-id-<?php echo $previousArticleInfo["articleid"];?>.html"><?php echo $previousArticleInfo["title"];?></a>
             </li>
+            <?php } ?>
+            <?php if ($nextArticleInfo["articleid"] != 0) { ?>
             <li>
                 <span>下一篇：</span>
                 <a href="<?php echo $webmsg["siteurl"];?>/mobilearticle-id-<?php echo $nextArticleInfo["articleid"];?>.html"><?php echo $nextArticleInfo["title"];?></a>
             </li>
+            <?php } ?>
         </ul>
     </div>
 <?php require ("phone/foot.php");?>
