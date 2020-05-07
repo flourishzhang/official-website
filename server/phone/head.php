@@ -7,30 +7,6 @@ $articleinfo = $info["articleinfo"];
 }
 ?>
 <html lang="zh-CN">
-<?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
-<script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm,s,src,bp,s2,curProtocol;
-        hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?2efac3d09a135e88e39c98a3388123df";
-        s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-        src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884":"https://jspassport.ssl.qhimg.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884";
-        document.write('<script src="' + src + '" id="sozz"><\/script>');
-        bp = document.createElement('script');
-        curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        }
-        else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        s2 = document.getElementsByTagName("script")[0];
-        s2.parentNode.insertBefore(bp, s2);
-    })();
-</script>
-<?php } ?>
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="<?php echo $webmsg["keywords"];?>">
@@ -45,6 +21,30 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/wstyle.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont.css">
+<?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm,s,src,bp,s2,curProtocol;
+            hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?2efac3d09a135e88e39c98a3388123df";
+            s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+            src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884":"https://jspassport.ssl.qhimg.com/11.0.1.js?4b100c5a70f6caf5d080a7f72b529884";
+            document.write('<script src="' + src + '" id="sozz"><\/script>');
+            bp = document.createElement('script');
+            curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            s2 = document.getElementsByTagName("script")[0];
+            s2.parentNode.insertBefore(bp, s2);
+        })();
+    </script>
+<?php } ?>
     <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery-2.0.3.min.js"></script>
     <script src="<?php echo $webmsg["assetsurl"];?>/js/mui.min.js"></script>
     <script src="<?php echo $webmsg["assetsurl"];?>/js/jquery.SuperSlide.2.1.1.js"></script>
