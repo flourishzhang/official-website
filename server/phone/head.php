@@ -6,8 +6,8 @@ $info = GetArticleInfo ($articleid, true);
 $articleinfo = $info["articleinfo"];
 }
 ?>
-<html lang="en">
-<?php if($_SERVER['HTTP_HOST']=='www.officialwebsite.worldflying.cn'){ ?>
+<html lang="zh-CN">
+<?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
 <script>
     var _hmt = _hmt || [];
     (function() {
