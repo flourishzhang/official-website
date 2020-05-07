@@ -8,3 +8,5 @@ server文件夹是控制渲染与逻辑的，admin是后台操作页面，支持
 另外，程序对伪静态十分友好，如果做企业官网或是产品展示，建议使用。
 
 baiduapply是百度小程序的代码，不属于cms的一部分，如要参考，请不要参考这部分。
+
+百度统计链接为https://tongji.baidu.com/web/welcome/ico?s=2efac3d09a135e88e39c98a3388123df
