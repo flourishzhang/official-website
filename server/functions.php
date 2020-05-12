@@ -460,10 +460,16 @@ function SpiderLog() {
     $useragent = $_SERVER['HTTP_USER_AGENT'];
     foreach ($bots as $k => $v) {
         if(stristr($useragent, $k) != null) {
-            ExecuteSql ("INSERT `".$config["prefix"]."spiderlog` (`name`, `target`, `IP`, `time`) VALUES (?,?,?,NOW())",
+            ExecuteSql ("INSERT `".$config["prefix"]."spiderlog` (`name`, `target`, `IP`) VALUES (?,?,?)",
                 array($v, $_SERVER["REQUEST_URI"], $_SERVER["REMOTE_ADDR"]));
             ExecuteSql ("DELETE FROM `".$config["prefix"]."spiderlog` WHERE `spiderlogId` NOT IN (SELECT `spiderlogId` FROM ( SELECT `spiderlogId` FROM `".$config["prefix"]."spiderlog` ORDER BY `spiderlogId` DESC LIMIT 1000) AS tb)", array());
             break;
         }
     }
+}
+
+function ClientLog() {
+    global $config;
+    ExecuteSql ("INSERT `".$config["prefix"]."clientlog` (`remoteip`, `requesturl`, `httphost`) VALUES (?,?,?)",
+                array($_SERVER["REMOTE_ADDR"], $_SERVER["REQUEST_URI"], $_SERVER["HTTP_HOST"]));
 }

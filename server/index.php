@@ -56,4 +56,5 @@ switch ($do) {
         break;
 }
 
+ClientLog();
 // SpiderLog();
