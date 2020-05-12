@@ -12,7 +12,7 @@ $articleinfo = $info["articleinfo"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="<?php echo $webmsg["keywords"];?>">
     <meta name="description" content="<?php echo isset($articleinfo)?$articleinfo['desc']:$webmsg["description"];?>">
-    <title><?php echo $webmsg["title"];?><?php echo isset($title)?$title:"_首页";?></title>
+    <title><?php echo isset($articleinfo)?$articleinfo['title'].'_沃航科技':($webmsg['title'].(isset($title)?$title:"_首页"));?></title>
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/init.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">

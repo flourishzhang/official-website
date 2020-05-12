@@ -14,7 +14,7 @@ $articleinfo = $info["articleinfo"];
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title><?php echo $webmsg["title"];?><?php echo isset($title)?$title:"_首页";?></title>
+    <title><?php echo isset($articleinfo)?$articleinfo['title'].'_沃航科技':($webmsg['title'].(isset($title)?$title:"_首页"));?></title>
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/mui.min.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/init.css">
