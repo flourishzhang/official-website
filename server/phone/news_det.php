@@ -11,7 +11,7 @@ $nextArticleInfo = $info["nextArticleInfo"];
         <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_news/new_box1.png" alt="">
     </div>
     <div class="w-p-newsdet-box2">
-        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/phonenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilenews.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
     </div>
     <div class="w-p-newsdet-box3" style="font-family: ''">
         <?php echo $articleinfo["content"];?>
