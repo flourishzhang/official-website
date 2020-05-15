@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require_once("functions.php");
 $do = isset($_GET["do"]) ? $_GET["do"] : "index";
 
@@ -58,3 +59,6 @@ switch ($do) {
 
 ClientLog();
 // SpiderLog();
+
+header("Content-length: ".ob_get_length());
+ob_end_flush();
