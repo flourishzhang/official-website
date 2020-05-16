@@ -26,5 +26,5 @@ if ( isset($_GET["rm"]) && $_GET["rm"] == 1 ) {
     }
 }
 header("Content-Type: text/plain; charset=UTF-8");
-echo "如果想直接删除，请直接在网页链接添加\$rm=1\n\n";
+echo "如果想直接删除，请直接在网页链接添加&rm=1\n\n";
 echo json_encode ($wasteimages, JSON_UNESCAPED_UNICODE);
