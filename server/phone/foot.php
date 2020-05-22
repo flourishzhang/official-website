@@ -6,8 +6,8 @@
                             <p>手机：<?php echo $webmsg["mobile"];?></p>
                             <p>QQ：<?php echo $webmsg["QQ"];?></p>
                         </div>
-                        <p>邮箱：<?php echo $webmsg["address"];?></p>
-                        <p>地点：<?php echo $webmsg["email"];?></p>
+                        <p>邮箱：<?php echo $webmsg["email"];?></p>
+                        <p>地点：<?php echo $webmsg["address"];?></p>
                         <p>
                             <a href="http://www.beian.miit.gov.cn" rel="nofollow"><?php echo $webmsg["record"];?></a>
                         </p>

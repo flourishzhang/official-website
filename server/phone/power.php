@@ -3,11 +3,11 @@
         <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box1.png" alt="">
     </div>
     <div class="w-p-power-box2">
-        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">返回解决方案列表列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/title.png" alt="">
             </div>
         </div>
         <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box2.png" alt="">
@@ -17,7 +17,7 @@
         <div class="w-wh-title">
             <div>
                 系统简介
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/title.png" alt="">
             </div>
         </div>
         <ul class="clearfix">
@@ -46,7 +46,7 @@
         <div class="w-wh-title">
             <div>
                 功能明细
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/warehouse/wh_title.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/title.png" alt="">
             </div>
         </div>
         <div class="w-contant clearfix">
@@ -59,7 +59,7 @@
                     </p>
             </div>
             <div class="w-tu">
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box4_1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box4_4.png" alt="">
             </div>
         </div>
         <div class="w-contant">

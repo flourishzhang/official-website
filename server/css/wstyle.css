@@ -1862,7 +1862,8 @@ nav:hover {
 
 .w-p-index-box2 {
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding: 1em 0;
 }
 
 .w-p-index-box2>.w-index-title {
@@ -1892,7 +1893,8 @@ nav:hover {
 .w-p-index-box2>.w-index-btn{
     width: 100px;
     height: 30px;
-    background: #60c0ff;
+    /* background: #60c0ff; */
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
     text-align: center;
     line-height: 30px;
@@ -1911,7 +1913,8 @@ nav:hover {
 
 .w-p-index-box3 {
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding: 1em 0
 }
 
 .w-p-index-box3>.w-index-title {
@@ -1946,7 +1949,8 @@ nav:hover {
 
 .w-p-index-box4 {
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding: .5em 0
 }
 
 .w-p-index-box4>.w-index-title {
@@ -1987,7 +1991,8 @@ nav:hover {
     border-left: 1px solid rgba(167, 164, 164, 0.4);
 }
 .w-p-index-box4>.w-index-contant>.w-index-left>.active1{
-    background: #298be2;
+    /* background: #298be2; */
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
 }
 
@@ -2008,7 +2013,8 @@ nav:hover {
 
 .w-p-index-box5 {
     width: 90%;
-    margin: 1em auto;
+    margin: 0 auto;
+    padding: 1em 0
 }
 
 .w-p-index-box5>.w-index-title {
@@ -2033,6 +2039,7 @@ nav:hover {
     width: 100%;
     border: 1px solid rgba(167, 164, 164, 0.4);
     padding-bottom: 10px;
+    background: #fff;
 }
 .w-p-index-box5>.w-index-contant>.w-index-li{
     width: 96%;
@@ -2072,7 +2079,8 @@ nav:hover {
 .w-p-index-box5>.w-index-contant>.w-index-btn{
     width: 80px;
     height: 25px;
-    background: #60c0ff;
+    /* background: #60c0ff; */
+    background: -webkit-linear-gradient(left,#4990ff,#21cefe);
     color: #fff;
     text-align: center;
     line-height: 25px;
@@ -2284,7 +2292,7 @@ nav:hover {
 }
 .w-p-power-box2>.w-ct-return {
     font-size: 13px;
-    color: #298be2;
+    color: #00cdac;
 }
 
 .w-p-power-box2>.w-ct-return>.iconfont {
@@ -2400,9 +2408,11 @@ nav:hover {
 .w-p-power-box4>.w-contant>.w-tu{
     width: 50%;
     float: left;
+    padding: 10px 0;
 }
 .w-p-power-box4>.w-contant>.w-tu>img{
-    width: 100%;
+    width: 95%;
+    margin-left: 5%;
 }
 .w-p-power-box4>.w-zi{
     padding: 5px 0;
