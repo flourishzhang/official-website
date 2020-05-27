@@ -2909,7 +2909,7 @@ nav:hover {
     padding: 10px 0;
 }
 .w-p-farming-box6>.w-contant>.w-zi{
-    width: 50%;
+    width: 40%;
     float: left;
     padding: 10px 0;
 }
@@ -2922,10 +2922,13 @@ nav:hover {
 .w-p-farming-box6>.w-contant>.w-zi>p{
     font-size: 12px;
     color: #666666;
+    line-height: 1.2;
+    letter-spacing:0;
 }
 .w-p-farming-box6>.w-contant>.w-tu{
-    width: 50%;
+    width: 56%;
     float: left;
+    padding: 20px 0;
 }
 .w-p-farming-box6>.w-contant>.w-tu>img{
     width: 100%;

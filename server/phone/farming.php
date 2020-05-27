@@ -120,13 +120,13 @@
                 <h3>2、App用户管理</h3>
                 <p>权限管理分为用户管理、用户组管理。可对用户进行分组以及权限管理。</p>
             </div>
-            <div class="w-tu">
+            <div class="w-tu" style="margin-left:4%;">
                 <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box6_1.png" alt="">
             </div>
         </div>
 
         <div class="w-contant clearfix">
-            <div class="w-tu">
+            <div class="w-tu" style="margin-right:4%;">
                 <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box6_2.png" alt="">
             </div>
             <div class="w-zi">
@@ -134,8 +134,6 @@
                 <p>可对控制器规则进行管理。</p>
                 <h3>2、数据管理</h3>
                 <p>管理ph值、光照、温度、湿度、二氧化碳进行数据分析等等功能</p>
-                <h3>3、控制器管理.</h3>
-                <p>编辑可控制内容，设定控制规则等等对控制器进行管理</p>
             </div>
         </div>
 
