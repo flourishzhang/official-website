@@ -27,19 +27,24 @@
         <div class="y-ph-guan-body3 ">
             <ul  class="clearfix">
                 <li>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g1.png" alt="">
+                    <h5>沃航特点</h5>
+                    <p  class="p1">知识是点，技术是面，我们面面俱到。沃航科技持续秉承 “科技服务”的理念，推动数字化，信息化进程，提供专业的解决方案。</p>
                 </li>
                 <li>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g2.png" alt="">
+                    <h5>沃航文化</h5>
+                    <p>用最专业的技术，最良好的态度服:务客户，用质量铸就品牌。</p>
                 </li>
                 <li>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g3.png" alt="">
+                    <h5>沃航使命</h5>
+                    <p>用技术推进发展，用专业改变世界。</p>
                 </li>
                 <li>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g4.png" alt="">
+                    <h5>沃航愿景</h5>
+                    <p>成为世界一流的技术解决方案服务提供商。</p>
                 </li>
                 <li>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/s-guan/g5.png" alt="">
+                    <h5>沃航精神</h5>
+                    <p>诚信自励，自主创新，协作进取，专业高效，精益求精。</p>
                 </li>
             </ul>
         </div>

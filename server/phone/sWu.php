@@ -12,27 +12,39 @@
                 </div>
                 <ul class="clearfix">
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m1.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m1.png" alt="">
+                        <p  class="y-ph-wu-p1">wifi模块</p>
+                        <p  class="y-ph-wu-p2">工业级无线通信串口透传</p>
                     </li>
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m2.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m2.png" alt="">
+                        <p  class="y-ph-wu-p1">GPRS模块</p>
+                        <p class="y-ph-wu-p2">工业级无线通信串口透传</p>
                     </li>
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m3.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m3.png" alt="">
+                        <p  class="y-ph-wu-p1">GPRS GPS 二合一模块</p>
+                        <p class="y-ph-wu-p2">GPRS无线通信 + GPS定位</p>
                     </li>
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m4.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m4.png" alt="">
+                        <p  class="y-ph-wu-p1">Lora模块</p>
+                        <p  class="y-ph-wu-p2">Lora射频无线通信串口透传</p>
                     </li>
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m5.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m5.png" alt="">
+                        <p  class="y-ph-wu-p1">智能主控板</p>
+                        <p  class="y-ph-wu-p2">特种机械/车辆信息网关</p>
                     </li>
                     <li>
-                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/m6.png" alt="">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-m6.png" alt="">
+                        <p class="y-ph-wu-p1">开发板评估板系列</p>
+                        <p  class="y-ph-wu-p2">应用广泛的开发板</p>
                     </li>
                 </ul>
             </div>
             <div class="y-ph-wu-body2">
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/y1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/background2.png" alt="">
             </div>
         </div>
     </div>
