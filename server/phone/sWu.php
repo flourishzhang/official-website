@@ -58,28 +58,36 @@
         </div>
         <ul class=" clearfix">
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f1.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f1.png" alt="">
+                <p>共享汽车</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f2.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f2.png" alt="">
+                <p>共享单车</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f3.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f3.png" alt="">
+                <p>智能鱼缸</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f4.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f4.png" alt="">
+                <p>智能空气检测</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f5.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f5.png" alt="">
+                <p>智能旅游</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f6.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f6.png" alt="">
+                <p>智能物流</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f7.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f7.png" alt="">
+                <p>智能仓储</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/f8.png" alt="">
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-f8.png" alt="">
+                <p>智能农业</p>
             </li>
         </ul>
     </div>
@@ -94,5 +102,34 @@
         <div class="y-ph-wu-jia">
             <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/ja1.png" alt="">
         </div>
+    </div>
+    <div class="y-ph-wu-box4">
+        <div class="y-ph-wu-title">
+            <p>物联网解决方案
+            </p>
+            <div>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/next.png" alt="">
+            </div>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-1.png" alt="">
+            </li>
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-2.png" alt="">
+            </li>
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-3.png" alt="">
+            </li>
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-4.png" alt="">
+            </li>
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-5.png" alt="">
+            </li>
+            <li>
+                <img src="<?php echo $webmsg["assetsurl"];?>/img/s-wu/wu-6.png" alt="">
+            </li>
+        </ul>
     </div>
 <?php require ("phone/foot.php");?>
