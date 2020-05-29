@@ -12,7 +12,7 @@
         </div>
         <div class="w-index-contant">
             <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box2.png" alt="">
-            <p style="margin-top:10px;">该系统是基于互联网的数据远程实时传输以及数据远程控制功
+            <p style="margin-top:10px;font-size:13px;   ">该系统是基于互联网的数据远程实时传输以及数据远程控制功
                 能开发的。通过网络监控各个设备结点，以分散监控，集中管
                 理的方式有效解决用电单位电气线路老旧、小微企业无专业电
                 工、肉眼无法直观系统即时排查电气隐患、隐蔽工程隐患检查
