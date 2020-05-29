@@ -13,8 +13,8 @@
         </div>
         <div class="w-index-contant">
             <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_index/index_box2.png" alt="">
-            <p style="margin-top:10px;">沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。, 以精湛的技 术、丰富的经验、优质的服务来为客户提供互联网- -站式解 决方案。</p>
-            <p>经营范围为:系统集成;信息技术咨询服务;数据处理;软 件开发;设计服务;商标代理服务;知识产权代理服务;广告 设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务; 工业设计;服务器搬迁维护等。</p>
+            <p style="margin-top:10px;">沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。以精湛的技术、丰富的经验、优质的服务来为客户提供互联网一站式解决方案。</p>
+            <p>经营范围为:系统集成;信息技术咨询服务;数据处理;软 件开发;设计服务;商标代理服务;知识产权代理服务;广告设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务; 工业设计;服务器搬迁维护等。</p>
         </div>
         <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/mobileabout.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
     </div>

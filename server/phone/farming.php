@@ -10,7 +10,17 @@
                 <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/title.png" alt="">
             </div>
         </div>
-        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box2.png" alt="">
+        <!-- <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box2.png" alt=""> -->
+        <div class="w-index-contant">
+            <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box2.png" alt="">
+            <p style="margin-top:10px;">智能农业温室大棚，可实时无线采集和传输温室大棚内空中
+以及土壤的温度、湿度、光照、PH、C02浓度等环境参数通
+过PC电脑、移动手机和平板电脑以直观的图表和曲线的方式
+显示给用户，可根据种植作物的需求提供各种声光报警信息
+并可以自定义规则控制酒水、农药以及温度。它主要由
+农业温室大棚、各种无线传感器，控制器及后台系统软件和
+用户端AP等组成。</p>
+        </div>
     </div>
 
     <div style="background:#f4f8ff;">   

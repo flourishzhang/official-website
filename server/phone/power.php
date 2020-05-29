@@ -10,7 +10,14 @@
                 <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/title.png" alt="">
             </div>
         </div>
-        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box2.png" alt="">
+        <div class="w-index-contant">
+            <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box2.png" alt="">
+            <p style="margin-top:10px;">该系统是基于互联网的数据远程实时传输以及数据远程控制功
+                能开发的。通过网络监控各个设备结点，以分散监控，集中管
+                理的方式有效解决用电单位电气线路老旧、小微企业无专业电
+                工、肉眼无法直观系统即时排查电气隐患、隐蔽工程隐患检查
+                难查难等难题。</p>
+        </div>
     </div>
 
     <div class="w-p-power-box3">
@@ -84,7 +91,7 @@
             <div class="w-contant clearfix">
                 <div class="w-zi">
                     <h3>3.设备远程控制系统</h3>
-                    <p>设备远程控制系统基于推送技术实现，利用目前先进的类似mqtt 技术，利用目前
+                    <p>设备远程控制系统基于推送技术实现，利用目前先进的类似mqtt技术，利用目前
                     已有的以太网为基础。</p>
                 </div>
                 <div class="w-tu1">
@@ -105,7 +112,7 @@
             <div class="w-contant clearfix">
                 <div class="w-zi">
                     <h3>5.App系统</h3>
-                    <p>App 系统主要有两个端，一个是维修师傅的那一端，用于在故障现场查看设备参数的。 另一个是用户端，用于支付费用，接收报警信息等。</p>
+                    <p>App 系统主要有两个端，一个是维修师傅的那一端，用于在故障现场查看设备参数的。另一个是用户端，用于支付费用，接收报警信息等。</p>
                 </div>
                 <div class="w-tu1">
                     <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box4_5.png" alt="">

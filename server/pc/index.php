@@ -15,9 +15,9 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
         </div>
         <div class="w-index-content clearfix">
             <div class="w-index-left fromRight">
-                <p style="padding-bottom:10px;">沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。, 以精湛的技 术、丰富的经验、优质的服务来为客户提供互联网- -站式解 决方案。
+                <p style="padding-bottom:10px;">沃航(武汉)科技有限公司成立于2016年7月,是一家从事 软件外包,技术解决方案的互联网科技公司。以精湛的技术、丰富的经验、优质的服务来为客户提供互联一网站式解决方案。
                 </p>
-                <p style="padding-top:10px;">经营范围为:系统集成;信息技术咨询服务;数据处理;软 件开发;设计服务;商标代理服务;知识产权代理服务;广告 设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务; 工业设计;服务器搬迁维护等。
+                <p style="padding-top:10px;">经营范围为:系统集成;信息技术咨询服务;数据处理;软件开发;设计服务;商标代理服务;知识产权代理服务;广告设计;会议及展览服务;动漫游戏软件在应用开发;翻译服务;工业设计;服务器搬迁维护等。
                 </p>
                 <div class="w-index-btn">
                     <a href="<?php echo $webmsg["siteurl"];?>/about.html"> 查看更多<span class="iconfont iconxiangyou"></span></a>
@@ -42,7 +42,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont icontubiaozhizuomoban"></span>
                     </div>
                     <h3>仓储管理系统</h3>
-                    <p>系统采用业界主流的硬件平台、操 作系统平台、数据库平台以及标准 的协议,保证系统的开放性。采用 分散控制、集中管理的结构,使得 系统可扩充性很强。</p>
+                    <p>系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议,保证系统的开放性。采用分散控制、集中管理的结构,使得系统可扩充性很强。</p>
                     <div class="w-index-btn">
                         <a href="<?php echo $webmsg["siteurl"];?>/gym.html">查看更多<span class="iconfont iconxiangyou"></span></a>
                     </div>
@@ -52,7 +52,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont iconhaofangtuo400iconfont2xiaoqu"></span>
                     </div>
                     <h3>智慧小区</h3>
-                    <p>利用传感网、互联网、移动互联网 及4G网络和相关终端,将建筑小区 以物业管理系统为基础,把小区内 各类公共信息应用系统和业主家居 应用系统等系统进行集成。
+                    <p>利用传感网、互联网、移动互联网及4G网络和相关终端,将建筑小区 以物业管理系统为基础,把小区内各类公共信息应用系统和业主家居应用系统等系统进行集成。
                     </p>
                     <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/community.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
                 </div>
@@ -61,7 +61,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont iconkongzhi"></span>
                     </div>
                     <h3>电力远程控制</h3>
-                    <p>通过网络监控各个设备结点。以分 散监控集中管理的方式有效解决用 电单位电气线路老旧、小微企业无 专业电工、肉眼无法直观系统即时 排查电气隐患、隐蔽工程隐患检查 难等难题。
+                    <p>通过网络监控各个设备结点。以分散监控集中管理的方式有效解决用电单位电气线路老旧、小微企业无专业电工、肉眼无法直观系统即时排查电气隐患、隐蔽工程隐患检查难等难题。
                     </p>
                     <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/powerful.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
                 </div>
@@ -70,7 +70,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont iconnongye"></span>
                     </div>
                     <h3>智慧农业</h3>
-                    <p>主要由农业温室大棚、各种无线传 感器、控制器及后台系统软件和用 户端APP等组成。
+                    <p>主要由农业温室大棚、各种无线传感器、控制器及后台系统软件和用户端APP等组成。
 
                     </p>
                     <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/agriculture.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
@@ -80,7 +80,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont icondianyingyuan"></span>
                     </div>
                     <h3>影院服务平台</h3>
-                    <p>影院服务平台方案包含线上用户端 小程序与影院后台两个部分，线下 无纸化检票系统。
+                    <p>影院服务平台方案包含线上用户端小程序与影院后台两个部分，线下 无纸化检票系统。
                     </p>
                     <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/cinema.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
                 </div>
@@ -89,7 +89,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                         <span class="iconfont iconshubiao"></span>
                     </div>
                     <h3>无人网吧</h3>
-                    <p>利用app开J，支付宝/微信收费的 方式实现无人化, 24小时营业的无 人网吧。
+                    <p>利用app开J，支付宝/微信收费的方式实现无人化, 24小时营业的无 人网吧。
                     </p>
                     <div class="w-index-btn"><a href="<?php echo $webmsg["siteurl"];?>/cybercafe.html">查看更多<span class="iconfont iconxiangyou"></span></a></div>
                 </div>
@@ -110,7 +110,7 @@ $newsList = GetNewsList ("`articleid`,`title`,`thumbnail`,`desc`,`createtime`,`p
                 <li>
                     <img src="<?php echo $webmsg["assetsurl"];?>/img/index/index_banner1.png" alt="">
                     <h3>自助服务终端</h3>
-                    <p>本项目是一个政务类软硬件相结合的系统集成类项目，不动产自助打印终端是以现有窗口登记业务流程为依据，进行简化和优化，将业务流程电子化、自助化办理的创新成果，不仅能大大提升办事效率，减少排队；同时，该设备可实现社区化部署，市民任何时间均可就近自助办理，是落实“简政放权”的切实工作体现，节省时间、人员成本。<br/> 产品的主要功能有：电子表单、指纹采集、高清摄像、电子签名、身份验证、资料扫描、人脸识别。 这是国内首台不动产预受理系统，做到真正的全自助办理、无纸化绿色政务，身份证的的调档做到高效率，高准确性，并具有防破坏报警，社区化部署等特点。
+                    <p>本项目是一个政务类软硬件相结合的系统集成类项目，不动产自助打印终端是以现有窗口登记业务流程为依据，进行简化和优化，将业务流程电子化、自助化办理的创新成果，不仅能大大提升办事效率，减少排队；同时，该设备可实现社区化部署，市民任何时间均可就近自助办理，是落实“简政放权”的切实工作体现，节省时间、人员成本。<br/> 产品的主要功能有：电子表单、指纹采集、高清摄像、电子签名、身份验证、资料扫描、人脸识别。这是国内首台不动产预受理系统，做到真正的全自助办理、无纸化绿色政务，身份证的的调档做到高效率，高准确性，并具有防破坏报警，社区化部署等特点。
                     </p>
                 </li>
                 <li>

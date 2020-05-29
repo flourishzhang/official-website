@@ -2323,6 +2323,13 @@ nav:hover {
     width: 100%;
 }
 
+.w-p-power-box2>.w-index-contant{
+    width: 100%;
+}
+.w-p-power-box2>.w-index-contant>img{
+    width: 100%;
+}
+
 
 .w-p-power-box3{
     width: 90%;
@@ -2745,6 +2752,13 @@ nav:hover {
     margin-left: 2px;
 }
 .w-p-farming-box2>img{
+    width: 100%;
+}
+
+.w-p-farming-box2>.w-index-contant{
+    width: 100%;
+}
+.w-p-farming-box2>.w-index-contant>img{
     width: 100%;
 }
 
