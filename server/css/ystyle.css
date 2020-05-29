@@ -2177,12 +2177,11 @@ transform: scale(1.2)
 .y-ph-wu-box2 {
     width: 100%;
     margin: 0 auto;
-    margin-top: -15%;
+    margin-top: 12%;
 }
 
 .y-ph-wu-box2>.y-ph-wu-title {
     text-align: center;
-    margin-top: -20px;
 }
 
 .y-ph-wu-box2>.y-ph-wu-title>div {
