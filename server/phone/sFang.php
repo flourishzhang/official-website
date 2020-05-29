@@ -60,7 +60,7 @@
                 <li>
                     <a href="<?php echo $webmsg["siteurl"];?>/mobilecybercafe.html">
                         <img src="<?php echo $webmsg["assetsurl"];?>/img/s-fang/fang-index6.png">
-                        <h4>仓储管理系统</h4>
+                        <h4>无人网吧</h4>
                         <p>
                         利用app开门,支付宝/微信收费的方式实现无人化，24小时营业的无人网吧。
                         </p>
