@@ -14,7 +14,10 @@
             </div>
         </div>
         <div class="y-ph-qu-body2">
-            <img src="<?php echo $webmsg["assetsurl"];?>/img/s-qu/z1.png" alt="">
+            <img src="<?php echo $webmsg["assetsurl"];?>/img/s-qu/banner2.png" alt="">
+            <p>利用传感网、互联网、移动互联网及4G网络和相关终端，将建筑小区以物业管理系统为基础,把小区内各类公共
+            信息应用系统和业主家居应用系统等系统进行集成,将传感器获取的信息通过云计算技术反馈到用户的手机、
+            PC和电视屏上,实现在任何时间、任何地点、以任何主体、向任何对象、传播任何信息的应用系统。</p>
         </div>
     </div>
     <div class="y-ph-qu-box3">
