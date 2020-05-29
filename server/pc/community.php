@@ -12,12 +12,7 @@
             </div>
         </div>
         <div class="clearfix w-ct-div">
-            <div class="w-ct-contant fromRight">利用传感网、互联网、移动互联网及4G网络和相关终端，
-                将建筑小区以物业管理系统为基础,把小区内各类公共
-                信息应用系统和业主家居应用系统等系统进行集成,将
-                传感器获取的信息通过云计算技术反馈到用户的手机、
-                PC和电视屏上,实现在任何时间、任何地点、以任何主
-                体、向任何对象、传播任何信息的应用系统。
+            <div class="w-ct-contant fromRight">利用传感网、互联网、移动互联网及4G网络和相关终端，将建筑小区以物业管理系统为基础,把小区内各类公共信息应用系统和业主家居应用系统等系统进行集成,将传感器获取的信息通过云计算技术反馈到用户的手机、PC和电视屏上,实现在任何时间、任何地点、以任何主体、向任何对象、传播任何信息的应用系统。
             </div>
             <div class="w-ct-img fromLeft"><img src="<?php echo $webmsg["assetsurl"];?>/img/community/community_box2.png" alt=""></div>
         </div>
@@ -34,16 +29,12 @@
                 <li class="fromBottom" style="animation-delay: 0.3s;">
                     <img src="<?php echo $webmsg["assetsurl"];?>/img/community/community_box3_1.png" alt="">
                     <h3>物业服务</h3>
-                    <p>在线报修,维修记录查询,社区公告，
-                        便民电话,投书建议等功能。
-                        </p>
+                    <p>在线报修,维修记录查询,社区公告，便民电话,投书建议等功能。</p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.5s; margin: 21px 42px;">
                     <img src="<?php echo $webmsg["assetsurl"];?>/img/community/community_box3_2.png" alt="">
                     <h3>安防服务</h3>
-                    <p>视频监控、一卡通身份识别制度、楼宇
-                        对讲、进出口管理等功能。
-                        </p>
+                    <p>视频监控、一卡通身份识别制度、楼宇对讲、进出口管理等功能。</p>
                 </li>
                 <li class="fromBottom" style="animation-delay: 0.7s;">
                     <img src="<?php echo $webmsg["assetsurl"];?>/img/community/community_box3_3.png" alt="">
@@ -156,5 +147,4 @@
         </div>
     </div>
 
-
-    <?php require ("pc/foot.php");?>
+<?php require ("pc/foot.php");?>
