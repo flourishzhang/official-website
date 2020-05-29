@@ -17,7 +17,7 @@
                     <a href="<?php echo $webmsg["siteurl"];?>/gym.html">
                         <img src="<?php echo $webmsg["assetsurl"];?>/img/fang/f1.png">
                         <h3>仓库管理系统</h3>
-                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议， 保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
+                        <p class="y-text1">系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议，保证系统的开放性。采用分散控制、集中管理的结构，使得系统可扩性很强。
                         </p>
                         <p class="y-more1">查看更多
                             <span class="iconfont iconxiangyou"></span>
