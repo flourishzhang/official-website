@@ -315,12 +315,12 @@ nav:hover {
     border-radius: 10px;
     content:'';
     position: absolute;
-    left: 0; 
-    top: 0; 
-    right: 0; 
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: 0;
     background: -webkit-linear-gradient(top,#4990ff,#21cefe);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s;
     z-index: -1;
 }
@@ -978,12 +978,12 @@ nav:hover {
     border-radius: 10px;
     content:'';
     position: absolute;
-    left: 0; 
-    top: 0; 
-    right: 0; 
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: 0;
     background: -webkit-linear-gradient(top,#ff8800,#ff5700);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s;
     z-index: -1;
 }
@@ -1159,12 +1159,12 @@ nav:hover {
 .w-wh-box4>ul>li::before{
     content:'';
     position: absolute;
-    left: 0; 
-    top: 0; 
-    right: 0; 
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: 0;
     background: -webkit-linear-gradient(top,#ff8800,#ff5700);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s;
     z-index: -1;
 }
@@ -1356,12 +1356,12 @@ nav:hover {
     border-radius: 10px;
     content:'';
     position: absolute;
-    left: 0; 
-    top: 0; 
-    right: 0; 
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: 0;
     background: -webkit-linear-gradient(top,#ef81b2,#f74040);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s;
     z-index: -1;
 }
@@ -1693,12 +1693,12 @@ nav:hover {
     border-radius: 10px;
     content:'';
     position: absolute;
-    left: 0; 
-    top: 0; 
-    right: 0; 
+    left: 0;
+    top: 0;
+    right: 0;
     bottom: 0;
     background: -webkit-linear-gradient(top,#43e97b,#0ba360);
-    opacity: 0; 
+    opacity: 0;
     transition: opacity 1s;
     z-index: -1;
 }
