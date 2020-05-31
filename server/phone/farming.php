@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div style="background:#f4f8ff;">   
+    <div style="background:#f4f8ff;">
         <div class="w-p-farming-box3">
             <div class="w-wh-title">
                 <div>
@@ -67,7 +67,7 @@
     </div>
 
     <div style="background:#f4f8ff;">
-    
+
         <div class="w-p-farming-box5">
             <div class="w-wh-title">
                 <div>
