@@ -3,7 +3,7 @@
         <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_movie/movie_box1.png" alt="">
     </div>
     <div class="w-p-movie-box2">
-        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">返回ALL+列表<span class="iconfont iconxiangzuo"></span></a>
+        <a class="w-ct-return" href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">返回解决方案列表列表<span class="iconfont iconxiangzuo"></span></a>
         <div class="w-wh-title">
             <div>
                 方案简介

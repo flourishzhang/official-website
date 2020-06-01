@@ -12,7 +12,7 @@
         </div>
         <div class="w-index-contant">
             <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box2.png" alt="">
-            <p style="margin-top:10px;font-size:13px;   ">该系统是基于互联网的数据远程实时传输以及数据远程控制功
+            <p style="margin-top:10px;font-size:13px;color: #666666;">该系统是基于互联网的数据远程实时传输以及数据远程控制功
                 能开发的。通过网络监控各个设备结点，以分散监控，集中管
                 理的方式有效解决用电单位电气线路老旧、小微企业无专业电
                 工、肉眼无法直观系统即时排查电气隐患、隐蔽工程隐患检查
@@ -29,22 +29,28 @@
         </div>
         <ul class="clearfix">
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_1.png" alt="">
+                <h3>1.先进性</h3>
+                <p>系统的起点要高，采用的软件平台要尽可能是目前世界上公认较先进的技术平台。在此基础上，采用先进的模块化程序设计和先进的设计思想，最终使系统在技术上达到国内领先水平</p>
             </li>
             <li style="margin: 5px 0.5%;">
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_2.png" alt="">
+                <h3>2.良好的开放性</h3>
+                <p>系统采用业界主流的硬件平台、操作系统平台、数据库平台以及标准的协议，保证系统的开放性。</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_3.png" alt="">
+                <h3>3.高可靠性</h3>
+                <p>系统运行要建立在坚实的软件、硬件基础上，这是系统稳定可靠运行的前提。在此基础上，中心系统管理软件与操作系统及其他应用软件应有比较明确的接口规范。应用系统要经过反复测试，有较强的容错能力，确保可靠运行</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_4.png" alt="">
+                <h3>4.实用性</h3>
+                <p>软件依据仓储管理的实际需求具体内容，必须达到相关功能、性能等需求;</p>
             </li>
             <li  style="margin: 5px 0.5%;">
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_5.png" alt="">
+                <h3>5.易维护性</h3>
+                <p>系统硬件可以很方便的实现远程管理及维护;系统软件均采用模块化的设计，并提供友好的人机接口，确保系统的易维护性。</p>
             </li>
             <li>
-                <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_power/power_box3_6.png" alt="">
+                <h3>6.灵活的扩展性</h3>
+                <p>软件系统架构充分利用网络的扩展性强的特点，采用分散控制、集中管理的结构，使得系统可扩充性很强，有足够的扩展升级的余地。</p>
             </li>
         </ul>
     </div>

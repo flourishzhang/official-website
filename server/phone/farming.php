@@ -10,10 +10,9 @@
                 <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/title.png" alt="">
             </div>
         </div>
-        <!-- <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box2.png" alt=""> -->
         <div class="w-index-contant">
             <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box2.png" alt="">
-            <p style="margin-top:10px;font-size:13px;">智能农业温室大棚，可实时无线采集和传输温室大棚内空中
+            <p style="margin-top:5px;font-size:12px;">智能农业温室大棚，可实时无线采集和传输温室大棚内空中
 以及土壤的温度、湿度、光照、PH、C02浓度等环境参数通
 过PC电脑、移动手机和平板电脑以直观的图表和曲线的方式
 显示给用户，可根据种植作物的需求提供各种声光报警信息
@@ -32,23 +31,59 @@
                 </div>
             </div>
             <div class="clearfix w-tu">
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_1.png" alt="">
+                <div class="clearfix left">
+                    <div class="zi">
+                        <h3>温室环境实时监控</h3>
+                        <p>远程查看棚内的实时环境数据，包括空气温度、空气湿度、土壤温度、土壤湿度、光照度、二氧化碳浓度、氧气浓度、ph等。</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_1.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_2.png" alt="">
+                <div class="clearfix right">
+                    <div class="zi">
+                        <h3>智能报警系统</h3>
+                        <p>报警提醒内容可根据模板灵活设置，根据不同客户需求可以设置不同的提醒内容，最大程度满足客户个性化需求视频</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_2.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_3.png" alt="">
+                <div class="clearfix left">
+                    <div class="zi">
+                        <h3>视频监控</h3>
+                        <p>兼容市面上所谓的支持rtsp协议的ip摄像头，有线接入大棚，大棚内转Wi-Fi</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_3.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_4.png" alt="">
+                <div class="clearfix right">
+                    <div class="zi">
+                        <h3>远程自动控制</h3>
+                        <p>可以自定义规则，让整个温室设备随环境参数变化自动控制，比如当土壤湿度过低时，温室灌溉系统自动开始浇水</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_4.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_5.png" alt="">
+                <div class="clearfix left">
+                    <div class="zi">
+                        <h3>数据分析</h3>
+                        <p>系统可以通过不同条件组合查询和对比历史环境数据</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_5.png">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_6.png" alt="">
+                <div class="clearfix right">
+                    <div class="zi">
+                        <h3>可定制更多功能</h3>
+                        <p>可根据客户需求定制更多可实行功能</p>
+                    </div>
+                    <div class="tu">
+                        <img src="<?php echo $webmsg["assetsurl"];?>/img/phone_farming/farming_box3_6.png">
+                    </div>
                 </div>
             </div>
         </div>
