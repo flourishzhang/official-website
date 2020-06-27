@@ -126,7 +126,7 @@ function GetNewsList ($column, $status, $type, $keyword, $order, $page, $size, $
     global $config;
     static $newsList = null;
     if ($newsList === null) {
-        $sql = "SELECT ".$column." FROM `".$config["prefix"]."news` INNER JOIN `".$config["prefix"]."user` ON `".$config["prefix"]."news`.`userid` = `".$config["prefix"]."user`.`userid`";
+        $sql = "SELECT ".$column." FROM `".$config["prefix"]."news` INNER JOIN `".$config["prefix"]."user` ON `".$config["prefix"]."news`.`userid` = `".$config["prefix"]."user`.`userid` WHERE 1";
         $params = array();
         if ($status !== null) {
             $sql .= " AND `articlestatus` = ?";
