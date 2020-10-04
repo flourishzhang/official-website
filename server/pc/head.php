@@ -17,10 +17,10 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/init.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/wstyle.css">
-    <!-- <link rel="stylesheet" href="../css/wstyle.css"> -->
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont2.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/animation.css">
-    <!-- <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/mui.min.css"> -->
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/newy.css">
 <?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
     <script>
         var _hmt = _hmt || [];
@@ -50,7 +50,6 @@ $articleinfo = $info["articleinfo"];
     <script src="<?php echo $webmsg["assetsurl"];?>/js/banner.js"></script>
     <script src="<?php echo $webmsg["assetsurl"];?>/js/animation.js"></script>
     <script src="<?php echo $webmsg["assetsurl"];?>/js/bootstrap.min.js"></script>
-    <!-- <script src="<?php echo $webmsg["assetsurl"];?>/js/mui.min.js"></script> -->
     <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=8L5Ultg8kSYTkM3zc75pVvIAp7Z5VV1c"></script>
 </head>
 
@@ -64,6 +63,17 @@ $articleinfo = $info["articleinfo"];
                 </li>
                 <li>
                     <a href="<?php echo $webmsg["siteurl"];?>/iot.html" <?php if($active==2) echo "style=\"color: #000\"";?>>物联网</a>
+                </li>
+                <li class="w-hover" style="position:relative;">
+                    <a href="#" <?php if($active==7) echo "style=\"color: #000\"";?>>产品中心</a>
+                    <ul class="w-nva">
+                        <li style="padding-top:10px;">
+                            <a href="<?php echo $webmsg["siteurl"];?>/wifi485.html">wifi转RS232/485</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $webmsg["siteurl"];?>/wifiswitch.html">wifi开关</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="<?php echo $webmsg["siteurl"];?>/solution.html" <?php if($active==3) echo "style=\"color: #000\"";?>>解决方案</a>

@@ -1,5 +1,3 @@
-
-
                 <div class="w-p-foot">
                     <div>
                         <div class="clearfix">

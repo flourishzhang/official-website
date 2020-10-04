@@ -24,6 +24,8 @@ switch ($do) {
     case "gym":$title="_仓库管理系统";$active=3;require("pc/warehouse.php");break;
     case "recruit":$title="_人才招聘";$active=6;require("pc/work.php");break;
     case "iot":$title="_物联网";$active=2;require("pc/wu.php");break;
+    case "wifi485":$active=7;require("pc/products/wifi485/index.php");break;
+    case "wifiswitch":$active=7;require("pc/products/wifiswitch/index.php");break;
     case "mobileagriculture":$title="_智慧农业";require("phone/farming.php");break;
     case "mobilecybercafe":$title="_无人网吧";require("phone/Internet.php");break;
     case "mobilecinema":$title="_影院服务平台";require("phone/movie.php");break;
@@ -36,6 +38,8 @@ switch ($do) {
     case "mobilecommunity":$title="_智慧小区";require("phone/sQu.php");break;
     case "mobilerecruit":$title="_人才招聘";require("phone/sWork.php");break;
     case "mobileiot":$title="_物联网";require("phone/sWu.php");break;
+    case "mobilewifi485":$active=7;require("phone/products/wifi485/index.php");break;
+    case "mobilewifiswitch":$active=7;require("phone/products/wifiswitch/index.php");break;
     case "apieditarticle": require("api/editarticle.php");break;
     case "apigetarticledesc": require("api/getarticledesc.php");break;
     case "apigetarticlelist": require("api/getarticlelist.php");break;

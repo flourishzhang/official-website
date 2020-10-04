@@ -38,9 +38,11 @@ function GetWebsiteMsg () {
     for ($i = 0 ; $i < $count ; $i++) {
         $webmsg[$arr[$i]["ckey"]] = $arr[$i]["cvalue"];
     }
+/*
     if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') {
         $webmsg["assetsurl"] = '';
     }
+*/
     return $webmsg;
 }
 $webmsg = GetWebsiteMsg();

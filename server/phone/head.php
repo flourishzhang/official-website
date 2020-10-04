@@ -21,6 +21,8 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/wstyle.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/ystyle.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont2.css">
+    <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/newy.css">
 <?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
     <script>
         var _hmt = _hmt || [];
@@ -65,6 +67,17 @@ $articleinfo = $info["articleinfo"];
                     </li>
                     <li class="mui-table-view-cell">
                         <a href="<?php echo $webmsg["siteurl"];?>/mobileiot.html">物联网</a>
+                    </li>
+                    <li class="mui-table-view-cell  mui-collapse ">
+                        <a class="mui-navigate-right" href="#">产品中心</a>
+                        <ul  class="mui-table-view  mui-table-view-chevron">
+                            <li class="mui-table-view-cell">
+                                <a href="<?php echo $webmsg["siteurl"];?>/mobilewifi485.html">wifi转RS485/232</a>
+                            </li>
+                            <li class="mui-table-view-cell">
+                                <a href="<?php echo $webmsg["siteurl"];?>/mobilewifiswitch.html">wifi开关</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="mui-table-view-cell">
                         <a href="<?php echo $webmsg["siteurl"];?>/mobilesolution.html">解决方案</a>

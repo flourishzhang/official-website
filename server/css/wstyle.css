@@ -3149,3 +3149,22 @@ nav:hover {
 .w-right-fixed>div:hover .tu2{
     display: block;
 }
+
+.w-nva{
+    position:absolute;
+    top:50px;
+    left:-30px;
+    display:none;
+    background: #fff;
+}
+.w-nva>li{
+    margin: 0;
+    width: 120px;
+    text-align: center;
+}
+.w-nva>li>a{
+    font-size:15px
+}
+.w-hover:hover ul{
+    display:block;
+}
