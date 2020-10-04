@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 $webmsg = WebsiteMsg ();
 $postdata = '{"touser":"'.$webmsg["wxprivateadminopenid"].'","template_id":"'.$webmsg["wxprivatetemplateid"].'","data":{"body":{"value":"'.file_get_contents("php://input").'","color":"#173177"}}}';
-$accesstoken = GetPrivateWxToken ();
+$accesstoken = GetWxToken("wxprivateappid", "wxprivateappsecret", "wxprivateaccesstoken", "wxprivatetokentime", "wxprivatetokenexpirein");
 $url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=".$accesstoken["access_token"];
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
