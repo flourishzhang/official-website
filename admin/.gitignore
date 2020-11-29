@@ -22,4 +22,5 @@ yarn-error.log*
 *.sln
 *.sw*
 package-lock.json
-vue.config.js
+admin/vue.config.js
+public/ueditor/ueditor.config.js
