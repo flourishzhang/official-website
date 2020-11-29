@@ -2,7 +2,8 @@ const webpack = require('webpack')
 
 module.exports = {
     baseUrl: './',
-    productionSourceMap: true,
+    assetsDir:'static',
+    productionSourceMap: false,
     devServer: {
         proxy: {
             '/api':{
