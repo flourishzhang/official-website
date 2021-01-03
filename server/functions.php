@@ -462,6 +462,6 @@ function SpiderLog() {
 
 function ClientLog() {
     global $config;
-    ExecuteSql ("INSERT `".$config["prefix"]."clientlog` (`remoteip`, `requesturl`, `httphost`) VALUES (?,?,?)",
+    ExecuteSql ("INSERT INTO `".$config["prefix"]."clientlog` (`remoteip`, `requesturl`, `httphost`) VALUES (?,?,?)",
                 array($_SERVER["REMOTE_ADDR"], $_SERVER["REQUEST_URI"], $_SERVER["HTTP_HOST"]));
 }
