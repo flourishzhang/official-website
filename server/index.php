@@ -55,6 +55,7 @@ switch ($do) {
     case "apigetuselessimgs":require("api/getuselessimgs.php");break;
     case "apigetconfig":require("api/getconfig.php");break;
     case "apisetconfig":require("api/setconfig.php");break;
+    case "ddns":require("api/setconfig.php");break;
     case "sitemap":require("pc/sitemap.php");break;
     default:
         echo "This is a 404 page.";

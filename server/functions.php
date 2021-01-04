@@ -465,3 +465,9 @@ function ClientLog() {
     ExecuteSql ("INSERT INTO `".$config["prefix"]."clientlog` (`remoteip`, `requesturl`, `httphost`) VALUES (?,?,?)",
                 array($_SERVER["REMOTE_ADDR"], $_SERVER["REQUEST_URI"], $_SERVER["HTTP_HOST"]));
 }
+
+function SetDdnsLog($newip, $ischanged) {
+    global $config;
+    ExecuteSql ("INSERT INTO `".$config["prefix"]."ddnslog` (`newip`, `ischanged`) VALUES (?,?)",
+                array($newip, $ischanged));
+}
