@@ -21,7 +21,7 @@ $articleinfo = $info["articleinfo"];
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/iconfont2.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/animation.css">
     <link rel="stylesheet" href="<?php echo $webmsg["assetsurl"];?>/css/newy.css">
-<?php if($_SERVER['HTTP_HOST']=='www.worldflying.cn'){ ?>
+<?php if($_SERVER['HTTP_HOST'] == $webmsg["domain"]){ ?>
     <script>
         var _hmt = _hmt || [];
         (function() {

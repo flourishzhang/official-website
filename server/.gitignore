@@ -1,4 +1,4 @@
 phpinfo.php
 .vscode
 .idea
-old
+*.db

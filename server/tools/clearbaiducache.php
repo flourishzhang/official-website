@@ -10,6 +10,7 @@ $NY = $argv[4];
 $NM = $argv[5];
 $ND = $argv[6];
 
+require_once("../functions.php");
 $url = "cdn.baidubce.com";
 $params = array(
     "/uploads/article/".$YY."/".$YM."/".$YD."/",
@@ -17,12 +18,11 @@ $params = array(
     "/uploads/ueditor/imgs/".$YY.$YM.$YD."/",
     "/uploads/ueditor/imgs/".$NY.$NM.$ND."/"
 );
-$siteurl = "https://www.worldflying.cn";
+$siteurl = $webmsg["siteurl"];
 $needclearurls = array();
 foreach($params as $val) {
     array_push($needclearurls, array("url" => $siteurl.$val, "type" => "directory"));
 }
-require_once("functions.php");
 $stmt = ExecuteSql("SELECT `requesturl` FROM `".$config["prefix"]."clientlog` WHERE `httphost` = 'www.worldflying.cn' AND `isclear` = 0 GROUP BY `requesturl` LIMIT 196");
 $params = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $offset = 196;
