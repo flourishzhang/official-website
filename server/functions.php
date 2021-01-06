@@ -109,7 +109,7 @@ function GetWxToken ($wxappid, $wxappsecret, $wxaccesstoken, $wxtokentime, $wxto
 function SetWxUser ($json) {
     global $config;
     $obj = json_decode($json, true);
-    $sql = "INSERT INTO `".$config["prefix"]."wxuser` (`openid`, `usermsg`) VALUES (?, ?) ON DUPLICATE KEY UPDATE `usermsg` = VALUES(`usermsg`)";
+    $sql = "INSERT INTO `".$config["prefix"]."wxuser` (`openid`, `usermsg`) VALUES (?, ?) ON CONFLICT(`openid`) DO UPDATE SET `usermsg` = excluded.`usermsg`";
     $params = array($obj["openid"], $json);
     ExecuteSql ($sql, $params);
 }
