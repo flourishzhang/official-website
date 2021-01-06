@@ -284,7 +284,7 @@ function ImgUse ($filepath) {
 function Login ($username, $password) {
     global $config;
     $token = microtime(true)."-".RandomStr (32);
-    $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."user` SET `token` = ?, `lastlogin` = datetime('now') WHERE `user` = ? AND `pass` = MD5(?)", array($token, $username, $password));
+    $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."user` SET `token` = ?, `lastlogin` = datetime('now') WHERE `user` = ? AND `pass` = ?", array($token, $username, md5($password)));
     if ($stmt->rowCount() == 0) {
         return false;
     } else {
