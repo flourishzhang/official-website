@@ -6,7 +6,8 @@ error_reporting(E_ERROR);
 header("Content-Type: text/html; charset=utf-8");
 header("Access-Control-Allow-Origin: *");
 
-$CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents("config.php")), true);
+require_once("../functions.php");
+$CONFIG = json_decode(str_replace(ASSETSURL, $webmsg["assetsurl"], preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents("config.json"))), true);
 $action = $_GET['action'];
 
 switch ($action) {

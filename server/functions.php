@@ -1,9 +1,10 @@
 <?php
 require_once("config.php");
+date_default_timezone_set("Asia/Shanghai");
 
 function ExecuteSql ($sql, $params=array(), $returnlastInsertId = false) {
     global $config;
-    $db = new PDO("sqlite:../db/data.db", $config["dbuser"], $config["dbpass"], array(PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => false));
+    $db = new PDO("sqlite:".$config["dbhost"], $config["dbuser"], $config["dbpass"], array(PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => false));
     $stmt = $db->prepare($sql);
     foreach ($params as $k => $v) {
         $stmt->bindValue($k+1, $v);
@@ -133,7 +134,7 @@ function GetNewsList ($column, $status, $type, $keyword, $order, $page, $size, $
             array_push ($params, "%".$keyword."%", "%".$keyword."%");
         }
         if ($now) {
-            $sql .= " AND `publishtime` < datetime('now')";
+            $sql .= " AND `publishtime` < datetime('now', 'localtime')";
         }
         if ($order) {
             $sql .= " ORDER BY `publishtime` DESC";
@@ -177,7 +178,7 @@ function GetNewsTotalCount ($status, $type, $keyword, $now) {
             array_push ($params, "%".$keyword."%");
         }
         if ($now) {
-            $sql .= " AND `publishtime` < datetime('now')";
+            $sql .= " AND `publishtime` < datetime('now', 'localtime')";
         }
 /*
         print_r(array(
@@ -196,7 +197,7 @@ function GetPreviousArticleInfo ($publishtime) {
     global $config;
     static $info = null;
     if ($info === null) {
-        $stmt = ExecuteSql ("SELECT `articleid`,`title` FROM `".$config["prefix"]."news` WHERE `publishtime`<? AND `publishtime` < datetime('now') AND `articlestatus`=1 ORDER BY `publishtime` DESC LIMIT 1",
+        $stmt = ExecuteSql ("SELECT `articleid`,`title` FROM `".$config["prefix"]."news` WHERE `publishtime`<? AND `publishtime` < datetime('now', 'localtime') AND `articlestatus`=1 ORDER BY `publishtime` DESC LIMIT 1",
                     array ($publishtime));
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (count($res) != 0) {
@@ -215,7 +216,7 @@ function GetNextArticleInfo ($publishtime) {
     global $config;
     static $info = null;
     if ($info === null) {
-        $stmt = ExecuteSql ("SELECT `articleid`,`title` FROM `".$config["prefix"]."news` WHERE `publishtime`>? AND `publishtime` < datetime('now') AND `articlestatus`=1 ORDER BY `publishtime` ASC LIMIT 1",
+        $stmt = ExecuteSql ("SELECT `articleid`,`title` FROM `".$config["prefix"]."news` WHERE `publishtime`>? AND `publishtime` < datetime('now', 'localtime') AND `articlestatus`=1 ORDER BY `publishtime` ASC LIMIT 1",
                     array ($publishtime));
         $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
         if (count($res) != 0) {
@@ -236,7 +237,7 @@ function GetArticleInfo ($articleid, $opt) {
     if ($info === null) {
         $sql = "SELECT `title`,`desc`,`publishtime`,`content`,`thumbnail`,`articletype`,`articlestatus` FROM `".$config["prefix"]."news` WHERE `articleid`=?";
         if ($opt) {
-            $sql .=  " AND `publishtime` < datetime('now') AND `articlestatus`=1";
+            $sql .=  " AND `publishtime` < datetime('now', 'localtime') AND `articlestatus`=1";
         }
         $stmt = ExecuteSql ($sql,
                     array ($articleid));
@@ -284,7 +285,7 @@ function ImgUse ($filepath) {
 function Login ($username, $password) {
     global $config;
     $token = microtime(true)."-".RandomStr (32);
-    $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."user` SET `token` = ?, `lastlogin` = datetime('now') WHERE `user` = ? AND `pass` = ?", array($token, $username, md5($password)));
+    $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."user` SET `token` = ?, `lastlogin` = datetime('now', 'localtime') WHERE `user` = ? AND `pass` = ?", array($token, $username, md5($password)));
     if ($stmt->rowCount() == 0) {
         return false;
     } else {
@@ -294,7 +295,7 @@ function Login ($username, $password) {
 
 function GetUserInfo ($token) {
     global $config;
-    $stmt1 = ExecuteSql ("SELECT `u`.`ID`, `u`.`nickname`, `u`.`lastlogin`, `g`.* FROM `".$config["prefix"]."user` AS u LEFT OUTER JOIN `".$config["prefix"]."group` AS g ON `u`.`groupid` = `g`.`ID` WHERE `u`.`token` = ?", array($token));
+    $stmt1 = ExecuteSql ("SELECT `u`.`ID` AS userid, `u`.`nickname`, `u`.`lastlogin`, `g`.* FROM `".$config["prefix"]."user` AS u LEFT OUTER JOIN `".$config["prefix"]."group` AS g ON `u`.`groupid` = `g`.`ID` WHERE `u`.`token` = ?", array($token));
     $info = $stmt1->fetchAll(PDO::FETCH_ASSOC);
     if (count($info) === 0) {
         return false;
@@ -343,7 +344,7 @@ function CreateArticle ($title, $desc, $content, $type, $userid, $publishtime, $
         mkdir (getcwd().$path, 0777, true);
     }
     move_uploaded_file($file["tmp_name"], getcwd().$filepath);
-    $ret = ExecuteSql ("INSERT `".$config["prefix"]."news` (`title`, `desc`, `content`, `thumbnail`, `articletype`, `userid`, `createtime`, `modifytime`, `publishtime`, `articlestatus`) VALUES (?,?,?,?,?,?,datetime('now'),datetime('now'),?,?) ",
+    $ret = ExecuteSql ("INSERT INTO `".$config["prefix"]."news` (`title`, `desc`, `content`, `thumbnail`, `articletype`, `userid`, `createtime`, `modifytime`, `publishtime`, `articlestatus`) VALUES (?,?,?,?,?,?,datetime('now', 'localtime'),datetime('now', 'localtime'),?,?) ",
                 array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status), true);
     $articleid = $ret["lastInsertId"];
     $stmt = $ret["stmt"];
@@ -378,10 +379,10 @@ function EditArticle ($articleid, $title, $desc, $content, $type, $userid, $publ
             mkdir (getcwd().$path, 0777, true);
         }
         move_uploaded_file($file["tmp_name"], getcwd().$filepath);
-        $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `thumbnail` = ?, `articletype` = ?, `userid` = ?, `modifytime` = datetime('now'), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
+        $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `thumbnail` = ?, `articletype` = ?, `userid` = ?, `modifytime` = datetime('now', 'localtime'), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
                     array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status, $articleid));
     } else {
-        $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `articletype` = ?, `userid` = ?, `modifytime` = datetime('now'), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
+        $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `articletype` = ?, `userid` = ?, `modifytime` = datetime('now', 'localtime'), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
                     array($title, $desc, $content, $type, $userid, $publishtime, $status, $articleid));
     }
     ClearBaiduCdnCache(array(
@@ -452,7 +453,7 @@ function SpiderLog() {
     $useragent = $_SERVER['HTTP_USER_AGENT'];
     foreach ($bots as $k => $v) {
         if(stristr($useragent, $k) != null) {
-            ExecuteSql ("INSERT `".$config["prefix"]."spiderlog` (`name`, `target`, `IP`) VALUES (?,?,?)",
+            ExecuteSql ("INSERT INTO `".$config["prefix"]."spiderlog` (`name`, `target`, `IP`) VALUES (?,?,?)",
                 array($v, $_SERVER["REQUEST_URI"], $_SERVER["REMOTE_ADDR"]));
             ExecuteSql ("DELETE FROM `".$config["prefix"]."spiderlog` WHERE `ID` NOT IN (SELECT `ID` FROM ( SELECT `ID` FROM `".$config["prefix"]."spiderlog` ORDER BY `ID` DESC LIMIT 1000) AS tb)", array());
             break;
