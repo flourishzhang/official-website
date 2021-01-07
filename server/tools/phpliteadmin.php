@@ -1,73 +1,16 @@
 <?php
 require_once("../functions.php");
 if ($_SERVER['REMOTE_ADDR'] !== $webmsg["serverip"]) {
-	echo 'password check error.';
-	exit;
+    echo 'password check error.';
+    exit;
 }
-//
-//	Project: phpLiteAdmin (https://www.phpliteadmin.org/)
-//	Version: 1.9.8.2
-//	Summary: PHP-based admin tool to manage SQLite2 and SQLite3 databases on the web
-//	Last updated: 2019-09-05
-//	Developers:
-//	   Dane Iracleous (daneiracleous@gmail.com)
-//	   Ian Aldrighetti (ian.aldrighetti@gmail.com)
-//	   George Flanagin & Digital Gaslight, Inc (george@digitalgaslight.com)
-//	   Christopher Kramer (crazy4chrissi@gmail.com, http://en.christosoft.de)
-//	   Ayman Teryaki (http://havalite.com)
-//	   Dreadnaut (dreadnaut@gmail.com, http://dreadnaut.altervista.org)
-//
-//
-//	Copyright (C) 2019, phpLiteAdmin
-//
-//	This program is free software: you can redistribute it and/or modify
-//	it under the terms of the GNU General Public License as published by
-//	the Free Software Foundation, either version 3 of the License, or
-//	(at your option) any later version.
-//
-//	This program is distributed in the hope that it will be useful,
-//	but WITHOUT ANY WARRANTY; without even the implied warranty of
-//	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//	GNU General Public License for more details.
-//
-//	You should have received a copy of the GNU General Public License
-//	along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
-//	////////////////////////////////////////////////////////////////////////
-//
-//	Please report any bugs you may encounter to our issue tracker here:
-//		https://bitbucket.org/phpliteadmin/public/issues?status=new&status=open
-
-//
-// This is sample configuration file
-//
-// You can configure phpliteadmin in one of 2 ways:
-// 1. Rename phpliteadmin.config.sample.php to phpliteadmin.config.php and change parameters in there.
-//    You can set only your custom settings in phpliteadmin.config.php. All other settings will be set to defaults.
-// 2. Change parameters directly in main phpliteadmin.php file
-//
-// Please see https://bitbucket.org/phpliteadmin/public/wiki/Configuration for more details
-
-//password to gain access
 $password = $webmsg["sqlitepass"];
-
-//directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = $webmsg["sqlitedir"];
-
-//whether or not to scan the subdirectories of the above directory infinitely deep
-$subdirectories = false;
-
-//if the above $directory variable is set to false, you must specify the databases manually in an array as the next variable
-//if any of the databases do not exist as they are referenced by their path, they will be created automatically
+$directory = false;
 $databases = array(
-	array(
-		'path'=> 'database1.sqlite',
-		'name'=> 'Database 1'
-	),
-	array(
-		'path'=> 'database2.sqlite',
-		'name'=> 'Database 2'
-	),
+    array(
+        'path'=> $config["dbhost"],
+        'name'=> 'data'
+    )
 );
 
 
