@@ -1,5 +1,6 @@
 <?php
-if ($_SERVER['REMOTE_ADDR'] !== "localhost") {
+require_once("../functions.php");
+if ($_SERVER['REMOTE_ADDR'] !== $webmsg["serverip"]) {
 	echo 'password check error.';
 	exit;
 }
@@ -48,10 +49,10 @@ if ($_SERVER['REMOTE_ADDR'] !== "localhost") {
 // Please see https://bitbucket.org/phpliteadmin/public/wiki/Configuration for more details
 
 //password to gain access
-$password = 'admin';
+$password = $webmsg["sqlitepass"];
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = '/var/www/db/';
+$directory = $webmsg["sqlitedir"];
 
 //whether or not to scan the subdirectories of the above directory infinitely deep
 $subdirectories = false;

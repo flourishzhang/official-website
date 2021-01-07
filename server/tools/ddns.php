@@ -1,6 +1,5 @@
 <?php
 require_once("../functions.php");
-
 if ($_GET["ddnskey"] !== $webmsg["ddnskey"]) {
 	echo "ddnskey check error.";
 	exit;

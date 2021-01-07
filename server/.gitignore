@@ -2,3 +2,6 @@ phpinfo.php
 .vscode
 .idea
 *.db
+wf-admin
+uploads
+config.php
