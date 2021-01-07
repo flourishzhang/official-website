@@ -467,8 +467,8 @@ function ClientLog() {
                 array($_SERVER["REMOTE_ADDR"], $_SERVER["REQUEST_URI"], $_SERVER["HTTP_HOST"]));
 }
 
-function SetDdnsLog($newip, $ischanged) {
+function SetDdnsLog($newip, $ischanged, $ret) {
     global $config;
-    ExecuteSql ("INSERT INTO `".$config["prefix"]."ddnslog` (`newip`, `ischanged`) VALUES (?,?)",
-                array($newip, $ischanged));
+    ExecuteSql ("INSERT INTO `".$config["prefix"]."ddnslog` (`newip`, `ischanged`, `ret`) VALUES (?,?,?)",
+                array($newip, $ischanged, $ret));
 }
