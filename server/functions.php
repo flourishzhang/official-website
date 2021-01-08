@@ -6,11 +6,8 @@ function ExecuteSql ($sql, $params=array(), $returnlastInsertId = false) {
     global $config;
     $db = new PDO("sqlite:".$config["dbhost"], $config["dbuser"], $config["dbpass"], array(PDO::ATTR_PERSISTENT => true, PDO::ATTR_EMULATE_PREPARES => false));
     $stmt = $db->prepare($sql);
-    foreach ($params as $k => $v) {
-        $stmt->bindValue($k+1, $v);
-    }
     $db->beginTransaction();
-    $stmt->execute();
+    $stmt->execute($params);
     $lastInsertId = $db->lastInsertId();
     $db->commit();
     if ($returnlastInsertId) {
