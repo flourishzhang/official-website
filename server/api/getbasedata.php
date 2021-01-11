@@ -1,5 +1,5 @@
 <?php
-$config = array (
+$c = array (
     "title" => $webmsg["title"],
     "keywords" => $webmsg["keywords"],
     "description" => $webmsg["description"],
@@ -10,4 +10,4 @@ $config = array (
     "email" => $webmsg["email"]
 );
 header('Access-Control-Allow-Origin:*');
-echo json_encode($config, JSON_UNESCAPED_UNICODE);
+echo json_encode($c, JSON_UNESCAPED_UNICODE);

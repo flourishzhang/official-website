@@ -469,3 +469,9 @@ function SetDdnsLog($newip, $ischanged, $ret) {
     ExecuteSql ("INSERT INTO `".$config["prefix"]."ddnslog` (`newip`, `ischanged`, `ret`) VALUES (?,?,?)",
                 array($newip, $ischanged, $ret));
 }
+
+function AddNewsImg($imgurl) {
+    global $config;
+    ExecuteSql ("INSERT INTO `".$config["prefix"]."newsimgs` (`imgurl`) VALUES (?)",
+                array($imgurl));
+}

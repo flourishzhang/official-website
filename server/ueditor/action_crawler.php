@@ -9,13 +9,13 @@ set_time_limit(0);
 include("Uploader.class.php");
 
 /* 上传配置 */
-$config = array(
-    "pathFormat" => $CONFIG['catcherPathFormat'],
-    "maxSize" => $CONFIG['catcherMaxSize'],
-    "allowFiles" => $CONFIG['catcherAllowFiles'],
+$c = array(
+    "pathFormat" => $ueditor_config['catcherPathFormat'],
+    "maxSize" => $ueditor_config['catcherMaxSize'],
+    "allowFiles" => $ueditor_config['catcherAllowFiles'],
     "oriName" => "remote.png"
 );
-$fieldName = $CONFIG['catcherFieldName'];
+$fieldName = $ueditor_config['catcherFieldName'];
 
 /* 抓取远程图片 */
 $list = array();
@@ -25,7 +25,7 @@ if (isset($_POST[$fieldName])) {
     $source = $_GET[$fieldName];
 }
 foreach ($source as $imgUrl) {
-    $item = new Uploader($imgUrl, $config, "remote");
+    $item = new Uploader($imgUrl, $c, "remote");
     $info = $item->getFileInfo();
     array_push($list, array(
         "state" => $info["state"],

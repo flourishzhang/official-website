@@ -11,44 +11,44 @@ include "Uploader.class.php";
 $base64 = "upload";
 switch (htmlspecialchars($_GET['action'])) {
     case 'uploadimage':
-        $config = array(
-            "pathFormat" => $CONFIG['imagePathFormat'],
-            "maxSize" => $CONFIG['imageMaxSize'],
-            "allowFiles" => $CONFIG['imageAllowFiles']
+        $c = array(
+            "pathFormat" => $ueditor_config['imagePathFormat'],
+            "maxSize" => $ueditor_config['imageMaxSize'],
+            "allowFiles" => $ueditor_config['imageAllowFiles']
         );
-        $fieldName = $CONFIG['imageFieldName'];
+        $fieldName = $ueditor_config['imageFieldName'];
         break;
     case 'uploadscrawl':
-        $config = array(
-            "pathFormat" => $CONFIG['scrawlPathFormat'],
-            "maxSize" => $CONFIG['scrawlMaxSize'],
-            "allowFiles" => $CONFIG['scrawlAllowFiles'],
+        $c = array(
+            "pathFormat" => $ueditor_config['scrawlPathFormat'],
+            "maxSize" => $ueditor_config['scrawlMaxSize'],
+            "allowFiles" => $ueditor_config['scrawlAllowFiles'],
             "oriName" => "scrawl.png"
         );
-        $fieldName = $CONFIG['scrawlFieldName'];
+        $fieldName = $ueditor_config['scrawlFieldName'];
         $base64 = "base64";
         break;
     case 'uploadvideo':
-        $config = array(
-            "pathFormat" => $CONFIG['videoPathFormat'],
-            "maxSize" => $CONFIG['videoMaxSize'],
-            "allowFiles" => $CONFIG['videoAllowFiles']
+        $c = array(
+            "pathFormat" => $ueditor_config['videoPathFormat'],
+            "maxSize" => $ueditor_config['videoMaxSize'],
+            "allowFiles" => $ueditor_config['videoAllowFiles']
         );
-        $fieldName = $CONFIG['videoFieldName'];
+        $fieldName = $ueditor_config['videoFieldName'];
         break;
     case 'uploadfile':
     default:
-        $config = array(
-            "pathFormat" => $CONFIG['filePathFormat'],
-            "maxSize" => $CONFIG['fileMaxSize'],
-            "allowFiles" => $CONFIG['fileAllowFiles']
+        $c = array(
+            "pathFormat" => $ueditor_config['filePathFormat'],
+            "maxSize" => $ueditor_config['fileMaxSize'],
+            "allowFiles" => $ueditor_config['fileAllowFiles']
         );
-        $fieldName = $CONFIG['fileFieldName'];
+        $fieldName = $ueditor_config['fileFieldName'];
         break;
 }
 
 /* 生成上传实例对象并完成上传 */
-$up = new Uploader($fieldName, $config, $base64);
+$up = new Uploader($fieldName, $c, $base64);
 
 /**
  * 得到上传文件所对应的各个参数,数组结构

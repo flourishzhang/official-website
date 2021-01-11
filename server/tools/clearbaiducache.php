@@ -1,4 +1,5 @@
 <?php
+
 if (!isset($argc) || $argc != 7) {
     echo "param error\n";
     exit;
@@ -11,15 +12,24 @@ $NM = $argv[5];
 $ND = $argv[6];
 
 require_once("../functions.php");
+$stmt = ExecuteSql("SELECT a.`ID`,a.`imgurl`,b.`articleid` FROM `".$config["prefix"]."newsimgs` AS a LEFT OUTER JOIN `wf_news` AS b ON a.`createtime` < b.`createtime` AND INSTR(b.`content`, a.`imgurl`) > 0");
+$params = $stmt->fetchAll(PDO::FETCH_ASSOC);
+foreach ($params as $val) {
+    if ($val["articleid"] === NULL) {
+        unlink("..".$val["imgurl"]);
+    }
+}
+ExecuteSql("DELETE FROM `".$config["prefix"]."newsimgs`");
+
 $url = "cdn.baidubce.com";
+$siteurl = $webmsg["siteurl"];
+$needclearurls = array();
 $params = array(
     "/uploads/article/".$YY."/".$YM."/".$YD."/",
     "/uploads/article/".$NY."/".$NM."/".$ND."/",
     "/uploads/ueditor/imgs/".$YY.$YM.$YD."/",
     "/uploads/ueditor/imgs/".$NY.$NM.$ND."/"
 );
-$siteurl = $webmsg["siteurl"];
-$needclearurls = array();
 foreach($params as $val) {
     array_push($needclearurls, array("url" => $siteurl.$val, "type" => "directory"));
 }

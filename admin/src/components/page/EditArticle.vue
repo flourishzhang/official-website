@@ -183,16 +183,25 @@ export default {
             if (_this.oldthumbnail != '') {
                 formdata.append ('oldthumbnail', _this.oldthumbnail)
             }
+            const loading = this.$loading({
+                lock: true,
+                text: '传输中',
+                spinner: 'el-icon-loading',
+                background: 'rgba(0, 0, 0, 0.7)'
+            })
             let res = await func.ajax(APIADDR + '/index.php?do=apieditarticle', formdata)
             let obj = JSON.parse(res)
             if (obj.errcode == 0) {
-                _this.$message.success('新建文章成功')
+                loading.close()
+                _this.$message.success('创建或修改文章成功')
                 _this.$router.go(-1)
             } else if (obj.errcode === 2000) {
+                loading.close()
                 _this.$message.error(obj.errmsg)
                 sessionStorage.clear()
                 _this.$router.push('/login')
             } else {
+                loading.close()
                 _this.$message.error(obj.errmsg)
             }
         }

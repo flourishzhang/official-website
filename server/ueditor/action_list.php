@@ -11,16 +11,16 @@ include "Uploader.class.php";
 switch ($_GET['action']) {
     /* 列出文件 */
     case 'listfile':
-        $allowFiles = $CONFIG['fileManagerAllowFiles'];
-        $listSize = $CONFIG['fileManagerListSize'];
-        $path = $CONFIG['fileManagerListPath'];
+        $allowFiles = $ueditor_config['fileManagerAllowFiles'];
+        $listSize = $ueditor_config['fileManagerListSize'];
+        $path = $ueditor_config['fileManagerListPath'];
         break;
     /* 列出图片 */
     case 'listimage':
     default:
-        $allowFiles = $CONFIG['imageManagerAllowFiles'];
-        $listSize = $CONFIG['imageManagerListSize'];
-        $path = $CONFIG['imageManagerListPath'];
+        $allowFiles = $ueditor_config['imageManagerAllowFiles'];
+        $listSize = $ueditor_config['imageManagerListSize'];
+        $path = $ueditor_config['imageManagerListPath'];
 }
 $allowFiles = substr(str_replace(".", "|", join("", $allowFiles)), 1);
 
