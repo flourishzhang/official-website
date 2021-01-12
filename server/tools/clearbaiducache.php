@@ -1,39 +1,16 @@
 <?php
-
-if (!isset($argc) || $argc != 7) {
-    echo "param error\n";
-    exit;
-}
-$YY = $argv[1];
-$YM = $argv[2];
-$YD = $argv[3];
-$NY = $argv[4];
-$NM = $argv[5];
-$ND = $argv[6];
-
 require_once("../functions.php");
-$stmt = ExecuteSql("SELECT a.`ID`,a.`imgurl`,b.`articleid` FROM `".$config["prefix"]."newsimgs` AS a LEFT OUTER JOIN `wf_news` AS b ON a.`createtime` < b.`createtime` AND INSTR(b.`content`, a.`imgurl`) > 0");
+$stmt = ExecuteSql("SELECT a.`ID`,a.`imgurl`,b.`articleid` FROM `".$config["prefix"]."newsimgs` AS a LEFT OUTER JOIN `".$config["prefix"]."news` AS b ON a.`createtime` < b.`createtime` AND INSTR(b.`content`, a.`imgurl`) > 0 WHERE b.`articleid` IS NULL");
 $params = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($params as $val) {
-    if ($val["articleid"] === NULL) {
-        unlink("..".$val["imgurl"]);
-    }
+    unlink("..".$val["imgurl"]);
 }
 ExecuteSql("DELETE FROM `".$config["prefix"]."newsimgs`");
 
 $url = "cdn.baidubce.com";
 $siteurl = $webmsg["siteurl"];
 $needclearurls = array();
-$params = array(
-    "/uploads/article/".$YY."/".$YM."/".$YD."/",
-    "/uploads/article/".$NY."/".$NM."/".$ND."/",
-    "/uploads/ueditor/imgs/".$YY.$YM.$YD."/",
-    "/uploads/ueditor/imgs/".$NY.$NM.$ND."/"
-);
-foreach($params as $val) {
-    array_push($needclearurls, array("url" => $siteurl.$val, "type" => "directory"));
-}
-$stmt = ExecuteSql("SELECT `requesturl` FROM `".$config["prefix"]."clientlog` WHERE `httphost` = 'www.worldflying.cn' AND `isclear` = 0 GROUP BY `requesturl` LIMIT 196");
+$stmt = ExecuteSql("SELECT `requesturl` FROM `".$config["prefix"]."clientlog` WHERE `httphost` = ? AND `isclear` = 0 GROUP BY `requesturl` LIMIT 200", array($webmsg["domain"]));
 $params = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $offset = 196;
 while (count($params) != 0) {
@@ -65,8 +42,9 @@ while (count($params) != 0) {
     curl_close($ch);
     echo $ret;
     $needclearurls = array();
-    $stmt = ExecuteSql("SELECT `requesturl` FROM `".$config["prefix"]."clientlog` WHERE `httphost` = 'www.worldflying.cn' AND `isclear` = 0 GROUP BY `requesturl` LIMIT ".$offset.",200");
+    $stmt = ExecuteSql("SELECT `requesturl` FROM `".$config["prefix"]."clientlog` WHERE `httphost` = ? AND `isclear` = 0 GROUP BY `requesturl` LIMIT ".$offset.",200", array($webmsg["domain"]));
     $params = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $offset += 200;
 }
-ExecuteSql("UPDATE `".$config["prefix"]."clientlog` SET `isclear` = 1 WHERE `httphost` = 'www.worldflying.cn'");
+ExecuteSql("UPDATE `".$config["prefix"]."clientlog` SET `isclear` = 1 WHERE `isclear` != 1 AND `httphost` = ?", array($webmsg["domain"]));
+ExecuteSql("DELETE FROM `".$config["prefix"]."ddnslog` WHERE `ischanged` = 0");

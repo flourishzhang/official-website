@@ -332,6 +332,37 @@ function ClearBaiduCdnCache ($params) {
     curl_close($ch);
 }
 
+function CompressImage ($imgPath, $percent = 1) {
+    list($width, $height, $type, $attr) = getimagesize($imgPath);
+    switch ($type) { // 1 = GIF，2 = JPG，3 = PNG，4 = SWF，5 = PSD，6 = BMP，7 = TIFF(intel byte order)，8 = TIFF(motorola byte order)，9 = JPC，10 = JP2，11 = JPX，12 = JB2，13 = SWC，14 = IFF，15 = WBMP，16 = XBM
+        case 1: $srcImage = imagecreatefromgif($imgPath);break;
+        case 2: $srcImage = imagecreatefromjpeg($imgPath);break;
+        case 3: $srcImage = imagecreatefrompng($imgPath);break;
+        case 6: $srcImage = imagecreatefrombmp($imgPath);break;
+        case 15: $srcImage = imagecreatefromwbmp($imgPath);break;
+        case 16: $srcImage = imagecreatefromxbm($imgPath);break;
+        default: return;break;
+    }
+    $new_width = $width * $percent;
+    $new_height = $height * $percent;
+    $image = imagecreatetruecolor($new_width, $new_height);
+    imagecopyresampled($image, $srcImage, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
+    $tmp_file = RandomStr(16).time().".tmp";
+    switch ($type) { // 1 = GIF，2 = JPG，3 = PNG，4 = SWF，5 = PSD，6 = BMP，7 = TIFF(intel byte order)，8 = TIFF(motorola byte order)，9 = JPC，10 = JP2，11 = JPX，12 = JB2，13 = SWC，14 = IFF，15 = WBMP，16 = XBM
+        case 1: imagegif($image, $tmp_file);break;
+        case 2: imagejpeg($image, $tmp_file);break;
+        case 3: imagepng($image, $tmp_file);break;
+        case 6: imagebmp($image, $tmp_file);break;
+        case 15: imagewbmp($image, $tmp_file);break;
+        case 16: imagexbm($image, $tmp_file);break;
+    }
+    imagedestroy($image);
+    if (file_exists($tmp_file)) {
+        unlink($imgPath);
+        rename($tmp_file, $imgPath);
+    }
+}
+
 function CreateArticle ($title, $desc, $content, $type, $userid, $publishtime, $status, $file) {
     global $config;
     $timestamp = time();
@@ -340,7 +371,9 @@ function CreateArticle ($title, $desc, $content, $type, $userid, $publishtime, $
     if (!is_dir(getcwd().$path)) {
         mkdir (getcwd().$path, 0777, true);
     }
-    move_uploaded_file($file["tmp_name"], getcwd().$filepath);
+    $fullpath = getcwd().$filepath;
+    move_uploaded_file($file["tmp_name"], $fullpath);
+    CompressImage($fullpath);
     $ret = ExecuteSql ("INSERT INTO `".$config["prefix"]."news` (`title`, `desc`, `content`, `thumbnail`, `articletype`, `userid`, `createtime`, `modifytime`, `publishtime`, `articlestatus`) VALUES (?,?,?,?,?,?,datetime('now', 'localtime'),datetime('now', 'localtime'),?,?) ",
                 array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status), true);
     $articleid = $ret["lastInsertId"];
@@ -375,7 +408,9 @@ function EditArticle ($articleid, $title, $desc, $content, $type, $userid, $publ
         if (!is_dir(getcwd().$path)) {
             mkdir (getcwd().$path, 0777, true);
         }
-        move_uploaded_file($file["tmp_name"], getcwd().$filepath);
+        $fullpath = getcwd().$filepath;
+        move_uploaded_file($file["tmp_name"], $fullpath);
+        CompressImage($fullpath);
         $stmt = ExecuteSql ("UPDATE `".$config["prefix"]."news` SET `title` = ?, `desc` = ?, `content` = ?, `thumbnail` = ?, `articletype` = ?, `userid` = ?, `modifytime` = datetime('now', 'localtime'), `publishtime` = ?, `articlestatus` = ? WHERE `articleid` = ?",
                     array($title, $desc, $content, $filepath, $type, $userid, $publishtime, $status, $articleid));
     } else {
