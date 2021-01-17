@@ -1,4 +1,8 @@
 <?php
+if (substr($_SERVER["REQUEST_URI"], 0, 2) === "/?") {
+    echo "Hello, hacker friend!!!";
+    exit;
+}
 ob_start();
 require_once("functions.php");
 $do = isset($_GET["do"]) ? $_GET["do"] : "index";
