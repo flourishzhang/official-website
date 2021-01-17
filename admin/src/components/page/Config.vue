@@ -74,7 +74,7 @@ export default {
             let option = {
                 token: _this.$root.token
             }
-            let res = await func.ajax(APIADDR + '/index.php?do=apigetconfig', JSON.stringify(option));
+            let res = await func.ajax(APIADDR + '?do=apigetconfig', JSON.stringify(option));
             let obj = JSON.parse (res)
             if (obj.errcode == 0) {
                 _this.title = obj.data.title
@@ -110,7 +110,7 @@ export default {
                 importantword: _this.importantword,
                 record: _this.record
             }
-            let res = await func.ajax(APIADDR + '/index.php?do=apisetconfig', JSON.stringify(option));
+            let res = await func.ajax(APIADDR + '?do=apisetconfig', JSON.stringify(option));
             let obj = JSON.parse (res)
             if (obj.errcode == 0) {
                 _this.$message.success('设置成功')

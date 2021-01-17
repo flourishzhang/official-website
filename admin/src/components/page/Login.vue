@@ -46,7 +46,7 @@ export default {
             let _this = this
             _this.$refs[formName].validate(async (valid) => {
                 if (valid) {
-                    let res1 = await func.ajax(APIADDR + '/index.php?do=apilogin', JSON.stringify({
+                    let res1 = await func.ajax(APIADDR + '?do=apilogin', JSON.stringify({
                         username: _this.ruleForm.username,
                         password: _this.ruleForm.password
                     }))
@@ -54,7 +54,7 @@ export default {
                     if (obj1.errcode === 0) {
                         _this.$root.token = obj1.token
                         sessionStorage.setItem('token', obj1.token)
-                        let res2 = await func.ajax(APIADDR + '/index.php?do=apigetuserinfo', JSON.stringify({
+                        let res2 = await func.ajax(APIADDR + '?do=apigetuserinfo', JSON.stringify({
                             token: obj1.token
                         }))
                         let obj2 = JSON.parse(res2)

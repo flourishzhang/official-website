@@ -19,7 +19,7 @@ export default {
             _this.showview = true
             _this.$router.push('/')
         } else {
-            let res = await func.ajax(APIADDR + '/index.php?do=apigetuserinfo', JSON.stringify({
+            let res = await func.ajax(APIADDR + '?do=apigetuserinfo', JSON.stringify({
                 token: token
             }))
             let obj = JSON.parse(res)

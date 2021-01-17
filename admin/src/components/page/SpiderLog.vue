@@ -85,7 +85,7 @@ export default {
             } else if (_this.spidertype == 5) {
                 option.spidertype = '搜搜搜索'
             }
-            let res = await func.ajax(APIADDR + '/index.php?do=apigetspiderlist', JSON.stringify(option));
+            let res = await func.ajax(APIADDR + '?do=apigetspiderlist', JSON.stringify(option));
             let obj = JSON.parse(res)
             if (obj.errcode == 0) {
                 _this.spiderlist = obj.spiderlist

@@ -124,7 +124,7 @@ export default {
                 spinner: 'el-icon-loading',
                 background: 'rgba(0, 0, 0, 0.7)'
             })
-            let res = await func.ajax(APIADDR + '/index.php?do=apipushbaidu', JSON.stringify(option));
+            let res = await func.ajax(APIADDR + '?do=apipushbaidu', JSON.stringify(option));
             let obj = JSON.parse(res)
             if (obj.errcode == 0) {
                 loading.close()
@@ -160,7 +160,7 @@ export default {
             if (_this.keyword != '') {
                 option.keyword = _this.keyword
             }
-            let res = await func.ajax(APIADDR + '/index.php?do=apigetarticlelist', JSON.stringify(option));
+            let res = await func.ajax(APIADDR + '?do=apigetarticlelist', JSON.stringify(option));
             let obj = JSON.parse(res)
             if (obj.errcode == 0) {
                 _this.articlelist = obj.articlelist

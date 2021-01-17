@@ -87,7 +87,7 @@ export default {
         _this.ue = UE.getEditor(_this.textareaid)
         if (_this.$route.query.hasOwnProperty('articleid')) {
             let articleid = parseInt(_this.$route.query.articleid)
-            let res = await func.ajax(APIADDR + '/index.php?do=apigetarticledesc', JSON.stringify({
+            let res = await func.ajax(APIADDR + '?do=apigetarticledesc', JSON.stringify({
                 token: _this.$root.token,
                 articleid: articleid
             }))
@@ -189,7 +189,7 @@ export default {
                 spinner: 'el-icon-loading',
                 background: 'rgba(0, 0, 0, 0.7)'
             })
-            let res = await func.ajax(APIADDR + '/index.php?do=apieditarticle', formdata)
+            let res = await func.ajax(APIADDR + '?do=apieditarticle', formdata)
             let obj = JSON.parse(res)
             if (obj.errcode == 0) {
                 loading.close()
