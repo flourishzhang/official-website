@@ -1,5 +1,5 @@
 <?php
-if (substr($_SERVER["REQUEST_URI"], 0, 2) === "/?") {
+if (!strncmp($_SERVER["REQUEST_URI"], "/?", 2)) {
     echo "Hello, hacker friend!!!";
     exit;
 }
