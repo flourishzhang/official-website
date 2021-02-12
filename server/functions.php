@@ -68,9 +68,14 @@ function GetWxToken ($wxappid, $wxappsecret, $wxaccesstoken, $wxtokentime, $wxto
         $res = curl_exec($ch);
         curl_close($ch);
     } else {
+        $stmt = ExecuteSql("SELECT COUNT(*) AS count FROM `wf_ipwhitelist` WHERE `ip` = ? AND `".$wxaccesstoken."` = 1", array($_SERVER["REMOTE_ADDR"]));
+        $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        if ($res[0]["count"] == 0) {
+            return "Illegal IP.";
+        }
         $nowtime = time();
         $expiresin = intval($webmsg[$wxtokenexpirein]) - ($nowtime - intval($webmsg[$wxtokentime]));
-        if ($expiresin < 3600) {
+        if ($expiresin < 600) {
             $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=".$webmsg[$wxappid]."&secret=".$webmsg[$wxappsecret];
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
